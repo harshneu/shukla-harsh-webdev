@@ -22,6 +22,11 @@ module.exports = function(app)
     });
 
     var TestModel = mongoose.model("TestModel", TestSchema);
+    
+    var connectionString = 'mongodb://127.0.0.1:27017/test';
+    if(process.env.MONGODB_URI){
+        connectionString = process.env.MONGODB_URI
+    }
 
     function findAllMessages(req, res) {
         TestModel
