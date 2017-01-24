@@ -1,5 +1,6 @@
 .list-group-item {
     border: none;
+    color: rgb(51, 122, 183);;
 }
 .list-items {
     margin-top: 50px;
@@ -8,26 +9,24 @@
     float: right;
     padding-top: 15px;
     font-size: 17px;
-    color: white;
 }
 .glyphicon-chevron-left {
     float: left;
     padding-top: 15px;
     font-size: 17px;
-    color: white;
 }
 .navbar-default
 .navbar-brand {
     font-size: 20px;
-    color: white;
 }
 
 
 .glyphicon-user{
     float: right;
     padding-top: 15px;
-    color: white;
+    color: rgb(51, 122, 183);
 }
-.container-fluid {
-    background-color: rgb(51, 122, 183);
+.glyphicon-cog{
+    float: right;
+    color: rgb(51, 122, 183);
 }
