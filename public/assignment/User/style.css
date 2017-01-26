@@ -1,0 +1,33 @@
+.list-group-item {
+    border: none;
+}
+.list-items {
+    margin-top: 50px;
+}
+.glyphicon-plus {
+    float: right;
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+}
+.glyphicon-chevron-left {
+    float: left;
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+}
+.navbar-default,
+.navbar-brand {
+    font-size: 20px;
+    color: white;
+}
+
+
+.glyphicon-user{
+    float: right;
+    padding-top: 15px;
+    color: white;
+}
+.container-fluid {
+    background-color: rgb(51, 122, 183);
+}
