@@ -1,5 +1,9 @@
 .list-group-item {
     border: none;
+    margin-top:10px;
+}
+.col-sm-8 {
+    margin-top: 100px;
 }
 .list-items {
     margin-top: 50px;
@@ -16,18 +20,22 @@
     font-size: 17px;
     color: white;
 }
-.navbar-default,
+
 .navbar-brand {
     font-size: 20px;
-    color: white;
+    color: white !important;
 }
 
-
+.glyphicon-ok{
+    color:white;
+    float:right;
+    padding-top: 15px;
+}
 .glyphicon-user{
     float: right;
     padding-top: 15px;
     color: white;
 }
-.container-fluid {
+.navbar {
     background-color: rgb(51, 122, 183);
 }
