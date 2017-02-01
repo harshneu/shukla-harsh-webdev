@@ -1,13 +1,18 @@
 .list-group-item {
     border: none;
     margin-top:10px;
+
 }
 .col-sm-8 {
     margin-top: 100px;
 }
-.list-items {
+.list-group {
+    margin-top: -10px;
+}
+.form-group{
     margin-top: 50px;
 }
+
 .glyphicon-plus {
     float: right;
     padding-top: 15px;
@@ -30,6 +35,7 @@
     color:white;
     float:right;
     padding-top: 15px;
+    padding-right: 10px;
 }
 .glyphicon-user{
     float: right;
@@ -38,4 +44,16 @@
 }
 .navbar {
     background-color: rgb(51, 122, 183);
+}
+
+.scroll {
+    overflow-y:scroll;
+    height: 100px;
+}
+@media (min-width: 1200px){
+    .col-lg-8 {
+        width: initial;
+    }
+
+
 }

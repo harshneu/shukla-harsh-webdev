@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Website New Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Title</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../css/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Register</h1>
-        <input type="text"
-               class="form-control"
-               placeholder="username"/>
-        <input type="password"
-               class="form-control"
-               placeholder="password"/>
-        <input type="password"
-               class="form-control"
-               placeholder="very password"/>
-        <a class="btn btn-primary btn-block"
-           href="profile.html">Register</a>
-        <a class="btn btn-danger  btn-block"
-           href="login.html">Cancel</a>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <span class="glyphicon glyphicon-ok"></span>
+        <a class="navbar-brand" href="#">Login</a>
     </div>
+    </div>
+</nav>
+<div class="form-group">
+    <p><input class="form-control input-sm" id="inputsm" type="text" placeholder="Username"></p>
+    </p><input class="form-control input-sm" id="inputsm" type="text" placeholder="Password"></p>
+    <p><input class="form-control input-sm" id="inputsm" type="text" placeholder="Verify Password"></p>
+</div>
+<div class="login-button">
+    <a class="btn btn-primary btn-block" href="profile.html">Login</a>
+</div>
+<div class="register-button">
+    <a class="btn btn-danger btn-block" href="profile.html">Cancel</a>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <span class="glyphicon glyphicon-user"></span>
+        <div class="navbar-footer">
+            <a class="navbar-brand" href="#"></a>
+        </div>
+    </div>
+</nav>
 </body>
 </html>

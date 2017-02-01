@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Website Edit Page</title>
+    <title>Website New Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -11,30 +10,75 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <span class="glyphicon glyphicon-plus"></span>
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSite</a>
+<section>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid" >
+            <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <div class="row">
+
+                <div class="col-sm-4 container hidden-xs ">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">WebSites</a>
+                    </div>
+
+                </div>
+                <span class="glyphicon glyphicon-ok"></span>
+                <div class="col-lg-8">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">New Website</a>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-    <div class="list-items">
+    </nav>
+
+    <div class="col-sm-4 container hidden-xs">
         <ul class="list-group">
-            <li class="list-group-item">Address Book App</li>
-            <li class="list-group-item">Blogger</li>
-            <li class="list-group-item">Blogging App</li>
-            <li class="list-group-item">Script Testing App</li>
+            <li class="list-group-item">
+                <a href="../page/page-list.html">Blogging App</a>
+                <a href="website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
+
+            <li class="list-group-item">
+                <a href="../page/page-list.html">Address Book App</a>
+                <a href="website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
+
+            <li class="list-group-item">
+                <a href="../page/page-list.html">Script Testing App App</a>
+                <a href="website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
+
+            <li class="list-group-item">
+                <a href="../page/page-list.html">Address Book App</a>
+                <a href="website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
+            <li class="list-group-item">
+                <a href="../page/page-list.html">Blogging App</a>
+                <a href="website-edit.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
+            </li>
         </ul>
     </div>
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid">
-        <span class="glyphicon glyphicon-user"></span>
-        <div class="navbar-footer">
-            <a class="navbar-brand" href="#"></a>
+
+    <div class="form-group">
+        <div class="col-sm-6">
+            <label for="inputsm">Name</label>
+            <input class="form-control input-sm" id="inputsm" type="text">
+            <label for="description">Description</label>
+            <textarea class="form-control" rows="5" id="description"></textarea>
         </div>
     </div>
-</nav>
+
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <span class="glyphicon glyphicon-user"></span>
+            <div class="navbar-footer">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
