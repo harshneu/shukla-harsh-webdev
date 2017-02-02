@@ -173,23 +173,28 @@ a:hover{
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 55px;
+
 }
 .login-button{
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 .register-button{
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .delete-button{
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 .website-button{
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 
