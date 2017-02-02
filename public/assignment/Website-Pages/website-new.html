@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
     <title>New Website</title>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid" >
+        <a href="website-list.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <div class="row">
-            <div class="col-sm-4 container hidden-xs">
-                <ul class="nav navbar-nav pull-left no-left-margin">
-                    <li><a href="website-list.html" class="navbar-link"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-                </ul>
-                <p class="navbar-brand">Websites</p>
-                <ul class="nav navbar-nav pull-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-plus"></span></a></li>
-                </ul>
+
+            <div class="col-sm-4 container hidden-xs ">
+                <span class="glyphicon glyphicon-plus"></span>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSites</a>
+                </div>
+
             </div>
-            <ul class="nav navbar-nav pull-left hidden-sm hidden-md hidden-lg no-left-margin">
-                <li><a href="#" class="navbar-link"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-            </ul>
-            <p class="navbar-brand">New Website</p>
-            <ul class="nav navbar-nav pull-right no-right-margin">
-                <li><a href="website-list.html"><span class="glyphicon glyphicon-ok"></span></a></li>
-            </ul>
+            <a href="website-list.html"> <span class="glyphicon glyphicon-ok"></span></a>
+            <div class="col-lg-8">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">New Website</a>
+
+                </div>
+            </div>
         </div>
     </div>
 </nav>
@@ -172,7 +172,7 @@
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
         <ul class="nav navbar-nav navbar-right pull-right">
-            <li><a href="../user/profile.html"><span class="glyphicon glyphicon-user"></span></a></li>
+            <a href="../user/profile.html"><span class="glyphicon glyphicon-user"></span></a>
         </ul>
     </div>
 </nav>
