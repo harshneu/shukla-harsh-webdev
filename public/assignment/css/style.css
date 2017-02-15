@@ -19,7 +19,7 @@
     transform: scale(1.5);
     color:#fff !important;
 }
-.navbar-fixed-top{
+.navbar-adjusted-top{
     border-width: 0 0 0;
 }
 
@@ -72,12 +72,12 @@ a{
     margin-bottom: 5px;
 }
 
-.margin-right-fix{
+.margin-right-adjust{
 
     margin-right: -15px;
 }
 
-.margin-left-fix{
+.margin-left-adjust{
     margin-left: -15px;
 }
 
@@ -119,12 +119,7 @@ a{
 }
 
 
-.website-record{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.form-padding{
+.form-adjust{
     padding-top: 10px;
 }
 

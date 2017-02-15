@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-adjusted-top bar-color">
+    <div class="container-fluid container-side-space-adjust">
+        <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/new">
                 <span class="glyphicon glyphicon-plus"></span>
@@ -11,11 +11,11 @@
                href="#/user/{{model.userId}}/website/">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="navbar-brand margin-left-fix">Pages</a>
+            <a class="navbar-brand margin-left-adjust">Pages</a>
         </div>
     </div>
 </nav>
-<div class="container-fluid container-side-space-fix">
+<div class="container-fluid container-side-space-adjust">
     <div ng-show="model.error" class="alert alert-warning text-center" role="alert"> {{model.error}}</div>
     <div class="row page-list-record"
          ng-repeat="page in model.pages">
@@ -29,9 +29,9 @@
         </a>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-adjusted-bottom bar-color">
+    <div class="container-fluid container-side-space-adjust">
+        <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>

@@ -1,7 +1,7 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="row container-fluid container-side-space-fix">
+<nav class="navbar navbar-default navbar-adjusted-top bar-color">
+    <div class="row container-fluid container-side-space-adjust">
         <div class="col-sm-4 hidden-xs">
-            <div class="pull-right margin-right-fix">
+            <div class="pull-right margin-right-adjust">
                 <a class="navbar-brand"
                    href="#/user/{{model.userId}}/website/new">
                     <span class="glyphicon glyphicon-plus"></span>
@@ -18,18 +18,18 @@
             </div>
         </div>
         <div class="col-sm-8">
-            <div class="pull-right margin-right-fix">
+            <div class="pull-right margin-right-adjust">
                 <a class="navbar-brand"
                    ng-click="model.addNewWebsite(website)">
                     <span class="glyphicon glyphicon-ok"></span>
                 </a>
             </div>
             <div class="navbar-header">
-                <a class="navbar-brand visible-xs margin-left-fix"
+                <a class="navbar-brand visible-xs margin-left-adjust"
                    href="#/user/{{model.userId}}/website/">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <a class="navbar-brand margin-left-fix">
+                <a class="navbar-brand margin-left-adjust">
                     New Website
                 </a>
             </div>
@@ -56,7 +56,7 @@
 
     <div class="col-sm-8 col-xs-12 right-pane">
         <div ng-show="model.blankerror" class="alert alert-danger text-center" role="alert"> {{model.blankerror}}</div>
-        <form class="form-padding"
+        <form class="form-adjust"
               >
             <div class="form-group">
                 <label for="wname">Name</label>
@@ -77,9 +77,9 @@
         </form>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-adjusted-bottom bar-color">
+    <div class="container-fluid container-side-space-adjust">
+        <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>
