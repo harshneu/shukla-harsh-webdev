@@ -16,64 +16,15 @@
     font-weight: bold;
 }
 .navbar-brand:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color:#fff !important;
 }
 .navbar-adjusted-top{
     border-width: 0 0 0;
 }
-.vertical-line {
-    height: 75vh;
-    border-right: 2px solid white;
-    overflow: auto;
-}
 
-.align-center {
-    text-align: center;
-}
-
-.website-name {
-    font-family: 'Cookie', cursive;
-    font-size: 64px;
-    text-shadow: 4px 4px 4px #aaa;
-}
-
-.enter-website {
-    font-family: 'Tangerine', serif;
-    text-shadow: 4px 4px 4px #aaa;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-}
-
-.btn {
-    margin-bottom: 10px;
-}
-
-.blank-lines {
-    margin-bottom: 50px;
-}
-
-.white {
-    color: white;
-}
-
-
-a:hover, a:link {
-    text-decoration: none;
-}
-input.form-control {
-    margin-bottom: 5px;
-}
-
-
-.list-group-item {
-    border: none;
-}
-
-.list-group-item {
-    border: none;
-    margin-left: 10px;
+.navbar-brand{
+    font-size: 14px;
 }
 
 .glyphicon-ok, .glyphicon-plus, .glyphicon-user, .glyphicon-share-alt{
@@ -133,14 +84,24 @@ a{
 
 .left-pane {
     position: absolute;
-    margin: 50px 0 ;
-    padding : 10px 0 0 0 ;
+    top: 0px;
+    bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
     overflow: auto;
 }
 .right-pane {
     position: absolute;
-    margin: 50px 50px;
-    padding-left: 10px 15px 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 10px;
     overflow-y: auto;
 }
 
@@ -150,9 +111,11 @@ a{
 .profile-heading{
     font-size:26px;
     padding: 10px;
-    max-width: 500px;
-    margin-bottom: 0 auto 10px;
     max-width: 600px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 
