@@ -40,8 +40,8 @@
         function updateUser(newUser) {
             vm.blankerror = null;
             vm.error = null;
-            if(newUser.email == null || newUser.firstName == null ||newUser.lastName == null){
-                vm.blankerror = "Values for required fields not provided";
+            if(newUser.email == "" || newUser.firstName == ""||newUser.lastName == ""){
+                vm.blankerror = "Please provide values for all fields to update";
                 return;
             }
             var user = UserService.updateUser(vm.userId, newUser);
@@ -71,18 +71,23 @@
 
         function register(user) {
             if(user == null){
-                vm.registrationerror = "Values for required fields not provided";
+                vm.registrationerror = "Please enter your username, email and password";
                 return;
             }
-            if(user.username == null || user.password == null){
-                vm.registrationerror = "Values for required fields not provided";
+            if(user.username == null || user.email == null || user.password == null){
+                vm.registrationerror = "Please enter your username, email and password";
                 return;
             }
-
+            var userInDB = UserService.findUserByUsername(user.username);
+            if(userInDB != null){
+                vm.registrationerror = "Username taken, please try another username";
+                vm.passwordmismatch = "";
+                return;
+            }
             else{
                 if (user.password != user.passwordverification){
-                    vm.registrationerror ="Registration error";
-                    vm.passwordmismatch = "Passwords fields not same";
+                    vm.registrationerror ="";
+                    vm.passwordmismatch = "Passwords do not match";
                     return;
                 }
                 var newuser = UserService.createUser(user);

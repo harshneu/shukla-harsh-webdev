@@ -1,9 +1,9 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}/website/new">
-                <span class="glyphicon glyphicon-plus"></span>
+                <span class="glyphicon glyphicon-plus-sign"></span>
             </a>
         </div>
         <div class="navbar-header">
@@ -11,15 +11,15 @@
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="navbar-brand margin-left-fix">Websites</a>
+            <a class="navbar-brand wbdev-margin-left-fix">Websites</a>
         </div>
     </div>
 </nav>
-<div class="container-fluid container-side-space-fix">
+<div class="container-fluid wbdev-container-side-space-fix">
     <div ng-show="model.error"
          class="alert alert-warning text-center"
          role="alert"> {{model.error}}</div>
-    <div class="row website-record"
+    <div class="row wbdev-website-record"
          ng-repeat="website in model.websites">
         <a href="#/user/{{model.userId}}/website/{{website._id}}/page"
            class="col-xs-10">
@@ -31,9 +31,9 @@
         </a>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>
