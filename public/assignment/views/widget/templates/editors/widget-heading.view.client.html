@@ -1,0 +1,32 @@
+<form method="POST">
+    <div ng-show="model.updateerror"
+         class="alert alert-warning text-center"
+         role="alert">
+        {{model.updateerror}}
+    </div>
+    <div class="form-group">
+        <label for="inputname">Name</label>
+        <input type="text"
+               class="form-control"
+               id="inputname"
+               ng-model="model.widget.text"
+               placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="headersize">Size</label>
+        <select id="headersize"
+                ng-model="model.widget.size"
+                class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+    </div>
+    <a class="form-control btn btn-danger"
+       ng-click="model.deleteWidget(model.widget._id)">
+        Delete
+    </a>
+</form>

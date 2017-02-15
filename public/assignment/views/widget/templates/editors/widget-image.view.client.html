@@ -1,0 +1,32 @@
+<form method="POST">
+    <div ng-show="model.updateerror"
+         class="alert alert-warning text-center"
+         role="alert">
+        {{model.updateerror}}
+    </div>
+    <div class="form-group">
+        <label for="inputwidth">Width</label>
+        <input type="text"
+               id="inputwidth"
+               class="form-control"
+               ng-model="model.widget.width"/>
+    </div>
+    <div class="form-group">
+        <label for="inputimage">Upload</label>
+        <input type="file"
+               id="inputimage"
+               class="form-control"
+               ng-model="model.widget.url"/>
+    </div>
+    <div class="form-group wbdev-btn-margin-bottom">
+        <btn class="btn btn-primary btn-block">
+            Upload Image
+        </btn>
+    </div>
+    <div class="form-group">
+        <a class="btn btn-danger btn-block"
+           ng-click="model.deleteWidget(model.widget._id)">
+            Delete
+        </a>
+    </div>
+</form>

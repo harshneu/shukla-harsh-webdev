@@ -1,42 +1,80 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-brand">
-            <div class="black">
-                Register
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="navbar-header">
+            <a class="navbar-brand">CS5610 Assignments</a>
         </div>
     </div>
 </nav>
-
-<div class="container">
-    <form>
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input ng-model="model.user.username"
-                   type="text"
-                   class="form-control"
-                   id="username"
-                   placeholder="Username">
-            <label for="password">Password</label>
-            <input ng-model="model.user.password"
-                   type="password"
-                   class="form-control"
-                   id="password"
-                   placeholder="Password">
+<div class="container-fluid">
+    <div class="row wbdev-registration-container">
+        <div class="col-xs-12">
+            <h3>Register</h3>
+            <div ng-show="model.registrationerror"
+                 class="alert alert-danger text-center"
+                 role="alert"> {{model.registrationerror}}</div>
+            <div ng-show="model.passwordmismatch"
+                 class="alert alert-danger text-center"
+                 role="alert"> {{model.passwordmismatch}}</div>
+            <form action="#!/register"
+                  method="POST">
+                <div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               ng-model="model.user.email"
+                               placeholder="Please enter your email address"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Firt Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="firstname"
+                               ng-model="model.user.firstname"
+                               placeholder="First Name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="lastname"
+                               ng-model="model.user.lastname"
+                               placeholder="Last Name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text"
+                               class="form-control"
+                               id="username"
+                               ng-model="model.user.username"
+                               placeholder="Username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               ng-model="model.user.password"
+                               placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="vpassword">Verify Password</label>
+                        <input type="password"
+                               class="form-control"
+                               id="vpassword"
+                               ng-model="model.user.passwordverification"
+                               placeholder="Verify Password"/>
+                    </div>
+                </div>
+                <div class="wbdev-buttons-style">
+                    <a class="btn btn-success btn-block"
+                       ng-click="model.register(model.user)">
+                        Register</a>
+                    <a class="btn btn-danger  btn-block"
+                       href="#!/login">Cancel</a>
+                </div>
+            </form>
         </div>
-        <div class="form-group blank-lines">
-            <label for="verifyPassword">Verify Password</label>
-            <input ng-model="model.user.verifyPassword"
-                   type="text"
-                   class="form-control"
-                   id="verifyPassword"
-                   placeholder="Verify Password">
-        </div>
-        <a class="btn btn-primary btn-block" href="#/user/:uid">
-            Register
-        </a>
-        <a class="btn btn-danger btn-block" href="#/login">
-            Cancel
-        </a>
-    </form>
+    </div>
 </div>

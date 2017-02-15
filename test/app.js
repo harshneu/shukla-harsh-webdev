@@ -5,6 +5,7 @@ module.exports = function(app)
     app.delete("/api/test/:id", deleteMessage);
 
     var connectionString = 'mongodb://127.0.0.1:27017/test';
+
     if(process.env.MLAB_USERNAME) {
         connectionString = process.env.MLAB_USERNAME + ":" +
             process.env.MLAB_PASSWORD + "@" +
@@ -21,8 +22,6 @@ module.exports = function(app)
     });
 
     var TestModel = mongoose.model("TestModel", TestSchema);
-    
-   
 
     function findAllMessages(req, res) {
         TestModel
