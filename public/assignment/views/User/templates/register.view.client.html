@@ -1,14 +1,18 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
+<nav class="navbar navbar-default navbar-fixed-top bar-color">
+    <div class="container-fluid container-side-space-fix">
+        <div class="pull-right margin-right-fix">
+            <a class="navbar-brand"
+               ng-click="model.updateUser(model.user)">
+                <span class="glyphicon glyphicon-ok"></span>
+            </a>
+        </div>
         <div class="navbar-header">
-            <a class="navbar-brand">CS5610 Assignments</a>
+            <a class="navbar-brand">Register</a>
         </div>
     </div>
 </nav>
 <div class="container-fluid">
-    <div class="row wbdev-registration-container">
-        <div class="col-xs-12">
-            <h3>Register</h3>
+    <div class="row registration-container">
             <div ng-show="model.registrationerror"
                  class="alert alert-danger text-center"
                  role="alert"> {{model.registrationerror}}</div>
@@ -67,7 +71,7 @@
                                placeholder="Verify Password"/>
                     </div>
                 </div>
-                <div class="wbdev-buttons-style">
+                <div class="buttons-style">
                     <a class="btn btn-success btn-block"
                        ng-click="model.register(model.user)">
                         Register</a>

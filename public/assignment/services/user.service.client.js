@@ -5,11 +5,12 @@
 
     function UserService() {
         var users = [
-            {_id: "123", username : "alice", password : "alice", email:"alice@gmail.com", firstName: "Alice", lastName: "Wonder"},
-            {_id: "234", username : "bob", password : "bob", email:"bob@gmail.com", firstName: "Bob", lastName: "Marley"},
-            {_id: "345", username : "charly", password : "charly", email:"charly@gmail.com", firstName: "Charly", lastName: "Garcia"},
-            {_id: "456", username : "jannunzi", password : "jannunzi", email:"jannunaziato@gmail.com", firstName: "Jose", lastName: "Annunzi"}
+            {_id: "123", username: "alice",    password: "alice",    firstName: "Alice",  lastName: "Wonder"  },
+            {_id: "234", username: "bob",      password: "bob",      firstName: "Bob",    lastName: "Marley"  },
+            {_id: "345", username: "charly",   password: "charly",   firstName: "Charly", lastName: "Garcia"  },
+            {_id: "456", username: "jannunzi", password: "jannunzi", firstName: "Jose",   lastName: "Annunzi" }
         ];
+
 
         var api={
             "createUser":createUser,
@@ -63,7 +64,6 @@
                 if( user._id === userId ) {
                     users[u].firstName = newUser.firstName;
                     users[u].lastName = newUser.lastName;
-                    users[u].email = newUser.email;
                     return angular.copy(user);
                 }
             }
@@ -74,7 +74,7 @@
                 var user = users[u];
                 if( user._id === uid ) {
                     users.splice(u,1);
-                    return "success";
+                    return "User Deleted";
                 }
             }
             return null;
