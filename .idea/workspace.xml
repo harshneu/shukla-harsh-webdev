@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f0c6577-1f96-4147-8f22-d4fa98a13c20" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assignment/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assignment/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assignment/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assignment/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assignment/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4f0c6577-1f96-4147-8f22-d4fa98a13c20" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -762,7 +755,7 @@
       <workItem from="1487182776348" duration="1745000" />
       <workItem from="1487185026776" duration="457000" />
       <workItem from="1487190487954" duration="115000" />
-      <workItem from="1487190706430" duration="3016000" />
+      <workItem from="1487190706430" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="Local XML">
       <created>1485229083790</created>
@@ -789,7 +782,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90468000" />
+    <option name="totallyTimeSpent" value="90486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
