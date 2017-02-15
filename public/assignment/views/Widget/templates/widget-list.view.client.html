@@ -1,96 +1,115 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-text pull-left">
-            <a href="../user/profile.html">
+    <div class="row container-fluid">
+
+        <div class="col-xs-1 navbar-text">
+            <a href="#/user/:uid/page/:wid/page" class="white">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
         </div>
-        <div class="navbar-text pull-right">
-            <a href="website-new.html">
+
+        <div class="col-xs-8 col-sm-9 navbar-brand">
+            <div class="black">
+                Widgets
+            </div>
+        </div>
+
+        <div class="col-xs-2 col-sm-1 navbar-text pull-right">
+            <a href="widget-choose.html" class="white">
                 <span class="glyphicon glyphicon-plus"></span>
             </a>
         </div>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Widgets</a>
-        </div>
+
     </div>
 </nav>
 
 <div class="container-fluid">
-
-    <div ng-repeat="widget in model.widgets">
-        <div class="jga-toolbar">
-            <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <h1>This is the header</h1>
+        </div>
+        <br>
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-heading.html">
                 <span class="glyphicon glyphicon-cog"></span>
             </a>
             <span class="glyphicon glyphicon-align-justify"></span>
-        </div>
-
-        <!--<ng-include src="model.getWidgetTemplateUrl(widget.widgetType)"></ng-include>-->
-
-        <div ng-switch="widget.widgetType">
-            <div ng-switch-when="HEADER">
-                <ng-include src="'views/widget/templates/widget-HEADER.view.client.html'"></ng-include>
-            </div>
-            <div ng-switch-when="IMAGE">
-                <ng-include src="'views/widget/templates/widget-IMAGE.view.client.html'"></ng-include>
-            </div>
-            <div ng-switch-when="HTML">
-                <ng-include src="'views/widget/templates/widget-HTML.view.client.html'"></ng-include>
-            </div>
-            <div ng-switch-when="YOUTUBE">
-                <ng-include src="'views/widget/templates/widget-YOUTUBE.view.client.html'"></ng-include>
-            </div>
         </div>
     </div>
 
-    {{model.widgets}}
-    <div>
-        <div class="jga-toolbar">
-            <a>
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <h3>This is the text below the header</h3>
+        </div>
+        <br>
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-heading.html">
                 <span class="glyphicon glyphicon-cog"></span>
             </a>
             <span class="glyphicon glyphicon-align-justify"></span>
         </div>
-        <h1>GIZMODO</h1>
     </div>
-    <div>
-        <h3>New Measurements of the Universe Expanding Tell a Confusing Story</h3>
-    </div>
-    <div>
-        <div class="jga-toolbar">
-            <a>
-                <span class="glyphicon glyphicon-cog"></span>
-            </a>
-            <span class="glyphicon glyphicon-align-justify"></span>
+    <br>
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <img src="https://i.ytimg.com/vi/m46b-Dwoan4/maxresdefault.jpg" height="100%" width="100%">
         </div>
 
-        <img width="100%" src="https://i.kinja-img.com/gawker-media/image/upload/s--UE7cu6DV--/c_scale,fl_progressive,q_80,w_800/xoo0evqxzxrrmrn4ayoq.jpg">
-    </div>
-    <div>
-        <div class="jga-toolbar">
-            <a>
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-image.html">
                 <span class="glyphicon glyphicon-cog"></span>
             </a>
             <span class="glyphicon glyphicon-align-justify"></span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
         </div>
 
-        <p>At the Environmental Protection Agency, it’s typical for an incoming administration to implement a realignment of sorts—with some grants or contracts, for instance, being frozen temporarily—but a decision by President Donald Trump’s staff to <a href="http://www.latimes.com/politics/washington/la-na-trailguide-updates-trump-administration-orders-media-1485281190-htmlstory.html" target="_blank" rel="noopener">order a total media blackout</a>, as well as ban any new spending, has left some employees rattled. <br></p>    </div>
-    <div>
-        <div class="jga-toolbar">
-            <a>
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-heading.html">
                 <span class="glyphicon glyphicon-cog"></span>
             </a>
             <span class="glyphicon glyphicon-align-justify"></span>
         </div>
-        <iframe width="100%" src="https://www.youtube.com/embed/vQD1Txzvq70" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <h3>Gerard Way - No Shows</h3>
+        </div>
+        <br>
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-heading.html">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-10 col-sm-11">
+            <iframe src="https://www.youtube.com/embed/FsDSIEq7O08" width="100%" height="300px" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-1 col-sm-1">
+            <a href="widget-youtube.html">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </div>
     </div>
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Footer</a>
+        <div class="navbar-text pull-right">
+            <a href="#/user/:uid" class="white">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
         </div>
     </div>
 </nav>

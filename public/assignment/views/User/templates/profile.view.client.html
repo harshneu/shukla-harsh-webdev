@@ -1,97 +1,72 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-        <div class="navbar-text pull-right">
-            <a>
-                <span class="glyphicon glyphicon-ok"></span>
-            </a>
+        <div class="navbar-brand">
+            <div class="black">
+                Profile
+            </div>
         </div>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                Header
+
+        <div class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}" class="white">
+                <span ng-click="model.updateUser(model.user)"
+                      class="glyphicon glyphicon-ok"></span>
             </a>
         </div>
     </div>
 </nav>
 
+<div class="container">
 
-<div class="container-fluid">
-    <h1>Profile</h1>
-
-    <div class="alert alert-danger" ng-show="model.error">
+    <div ng-show="model.error"
+         class="alert alert-danger">
         {{model.error}}
     </div>
 
-    <div class="alert alert-success" ng-show="model.message">
+    <div ng-show="model.message"
+         class="alert alert-success">
         {{model.message}}
     </div>
 
-    <label for="first">First Name</label>
-    <input ng-model="model.user.firstName"
-           id="first"
-           class="form-control"
-           type="text"
-           placeholder="First Name"/>
-
-    <label for="last">Last Name</label>
-    <input ng-model="model.user.lastName"
-           id="last"
-           class="form-control"
-           type="text"
-           placeholder="Last Name"/>
-
-    <label for="email">Email</label>
-    <input ng-model="model.user.email"
-           id="email"
-           class="form-control"
-           type="email"
-           placeholder="Email"/>
-
-    <label>Username</label>
-    <input ng-model="model.user.username"
-           class="form-control"
-           type="text"
-           placeholder="Username"/>
-
-    <label>Password</label>
-    <input class="form-control" type="password" placeholder="Password"/>
-
-    <a href="#/user/{{model.user._id}}/website" class="btn btn-success btn-block">
-        Websites
-    </a>
-
-    <a ng-click="model.update(model.user)"
-       class="btn btn-primary btn-block">
-        Update
-    </a>
-
-    <a class="btn btn-danger btn-block" href="#/login">
-        Logout
-    </a>
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input ng-model="model.user.username"
+                   type="text"
+                   class="form-control"
+            <label for="email">Email address</label>
+            <input ng-model="model.user.email"
+                   type="email"
+                   class="form-control"
+                   id="email"
+                   placeholder="alice@wonderland.com">
+            <label for="first-name">First Name</label>
+            <input ng-model="model.user.firstName"
+                   type="text"
+                   class="form-control"
+                   id="first-name">
+            <label for="last-name">Last Name</label>
+            <input ng-model="model.user.lastName"
+                   type="text"
+                   class="form-control"
+                   id="last-name">
+        </div>
+        <a class="btn btn-primary btn-block"
+           href="#/user/{{model.userId}}/website">
+            Websites
+        </a>
+        <a class="btn btn-danger btn-block"
+           href="#/login">
+            Logout
+        </a>
+    </form>
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
-        <div class="row navbar-text text-center">
-            <div class="col-xs-3">
-                <a href="profile.html">
-                    <span class="glyphicon glyphicon-home"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a>
-                    <span class="glyphicon glyphicon-user"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a>
-                    <span class="glyphicon glyphicon-star"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a>
-                    <span class="glyphicon glyphicon-cloud"></span>
-                </a>
-            </div>
+        <div class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}/#" class="white">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
         </div>
     </div>
 </nav>

@@ -1,13 +1,42 @@
-<div class="container-fluid">
-    <h1>Register</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <div class="black">
+                Register
+            </div>
+        </div>
+    </div>
+</nav>
 
-    <input class="form-control" placeholder="username"/>
-    <input class="form-control" type="password" placeholder="password"/>
-    <input class="form-control" type="password" placeholder="validate password"/>
-    <a class="btn btn-primary btn-block" href="#/profile">
-        Register
-    </a>
-    <a class="btn btn-success btn-block" href="#/login">
-        Cancel
-    </a>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input ng-model="model.user.username"
+                   type="text"
+                   class="form-control"
+                   id="username"
+                   placeholder="Username">
+            <label for="password">Password</label>
+            <input ng-model="model.user.password"
+                   type="password"
+                   class="form-control"
+                   id="password"
+                   placeholder="Password">
+        </div>
+        <div class="form-group blank-lines">
+            <label for="verifyPassword">Verify Password</label>
+            <input ng-model="model.user.verifyPassword"
+                   type="text"
+                   class="form-control"
+                   id="verifyPassword"
+                   placeholder="Verify Password">
+        </div>
+        <a class="btn btn-primary btn-block" href="#/user/:uid">
+            Register
+        </a>
+        <a class="btn btn-danger btn-block" href="#/login">
+            Cancel
+        </a>
+    </form>
 </div>

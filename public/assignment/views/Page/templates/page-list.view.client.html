@@ -1,55 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Website Edit Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta charset="UTF-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="../css/style.css" rel="stylesheet"/>
-</head>
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <a href="../views/Website/website-list.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a href="page-new.view.client.html"> <span class="glyphicon glyphicon-plus"></span></a>
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../views/Widget/widget-list.html">Page List</a>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="row container-fluid">
+
+        <div class="col-xs-1 navbar-text">
+            <a href="#/user/:uid/website" class="white">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+
+        <div class="col-xs-8 col-sm-9 navbar-brand">
+            <div class="black">
+                Pages
             </div>
         </div>
-    </nav>
-    <div class="col-sm-12">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <a href="../page/page-list.html">Blogging App</a>
-                <a href="page-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
-            </li>
 
-            <li class="list-group-item">
-                <a href="../page/page-list.html">Address Book App</a>
-                <a href="page-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
-            </li>
+        <div class="col-xs-2 col-sm-1 navbar-text pull-right">
+            <a href="#/user/:uid/page/:wid/page/new" class="white">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </div>
 
-            <li class="list-group-item">
-                <a href="../page/page-list.html">Script Testing App App</a>
-                <a href="page-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
-            </li>
-
-            <li class="list-group-item">
-                <a href="../page/page-list.html">Blogger</a>
-                <a href="page-edit.view.client.html"><span class="glyphicon glyphicon-cog pull-right"></span></a>
-            </li>
-        </ul>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container-fluid">
-           <a href="../views/User/profile.html"> <span class="glyphicon glyphicon-user"></span></a>
-            <div class="navbar-footer">
-                <a class="navbar-brand" href="#"></a>
-            </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="pull-left">
+            <a href="#/user/:uid/page/:wid/page/:pid/widget">Blog Post</a>
         </div>
-    </nav>
-</body>
-</html>
+        <div class="pull-right">
+            <a href="#/user/:uid/page/:wid/page/:pid">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="pull-left">
+            <a href="#/user/:uid/page/:wid/page/:pid/widget">Blog</a>
+        </div>
+        <div class="pull-right">
+            <a href="#/user/:uid/page/:wid/page/:pid">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="pull-left">
+            <a href="#/user/:uid/page/:wid/page/:pid/widget">Home</a>
+        </div>
+        <div class="pull-right">
+            <a href="#/user/:uid/page/:wid/page/:pid">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="pull-left">
+            <a href="#/user/:uid/page/:wid/page/:pid/widget">About</a>
+        </div>
+        <div class="pull-right">
+            <a href="#/user/:uid/page/:wid/page/:pid">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="pull-left">
+            <a href="#/user/:uid/page/:wid/page/:pid/widget">Contact Us</a>
+        </div>
+        <div class="pull-right">
+            <a href="#/user/:uid/page/:wid/page/:pid">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-text pull-right">
+            <a href="#/user/:uid" class="white">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </div>
+    </div>
+</nav>

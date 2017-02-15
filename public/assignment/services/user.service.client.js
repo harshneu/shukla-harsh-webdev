@@ -1,10 +1,10 @@
 /**
- * Created by harshshukla on 2/14/17.
+ * Created by Ashton on 2/7/2017.
  */
-(function(){
+(function () {
     angular
         .module("WebAppMaker")
-        .factory('UserService', userService);
+        .factory("UserService", userService);
 
     function userService() {
         var users = [
@@ -15,30 +15,32 @@
         ];
 
         var api = {
-            "users": users,
-            "updateUser": updateUser,
+            "createUser": createUser,
+            "findUserById": findUserById,
+            "findUserByUsername": findUserByUsername,
             "findUserByCredentials": findUserByCredentials,
-            "findUserById": findUserById
+            "updateUser": updateUser,
+            "deleteUser": deleteUser
         };
         return api;
 
-        function updateUser(userId, newUser) {
+        function createUser(userId, username, password, firstName, lastName) {
+
+        }
+
+        function findUserById(userId) {
             for(var u in users) {
-                var user = users[u];
-                if( user._id === userId ) {
-                    users[u].firstName = newUser.firstName;
-                    users[u].lastName = newUser.lastName;
-                    return user;
+                if( users[u]._id == userId ) {
+                    return users[u];
                 }
             }
             return null;
         }
 
-        function findUserById(uid) {
+        function findUserByUsername(username) {
             for(var u in users) {
-                var user = users[u];
-                if( user._id === uid ) {
-                    return angular.copy(user);
+                if( users[u].username === username) {
+                    return users[u];
                 }
             }
             return null;
@@ -46,13 +48,32 @@
 
         function findUserByCredentials(username, password) {
             for(var u in users) {
-                var user = users[u];
-                if( user.username === username &&
-                    user.password === password) {
-                    return angular.copy(user);
+                if( users[u].username === username &&
+                    users[u].password === password ) {
+                    return users[u];
                 }
             }
             return null;
         }
+
+        function updateUser(userId, newUser) {
+            for(var u in users) {
+                if( users[u]._id === userId ) {
+                    users[u].firstName = newUser.firstName;
+                    users[u].lastName = newUser.lastName;
+                    return users[u];
+                }
+            }
+            return null;
+        }
+
+        function deleteUser(userId) {
+            for(var u in users) {
+                if( users[u]._id === userId) {
+                    users.splice(u, 1);
+                }
+            }
+        }
+
     }
 })();
