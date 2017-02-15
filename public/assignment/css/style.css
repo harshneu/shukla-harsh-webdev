@@ -1,10 +1,19 @@
 
-.navbar-default .navbar-brand{
+.navbar-default {
+    color:#fff;
+    font-weight: bold;
+}
+.navbar-brand {
     color:#fff;
     font-weight: bold;
 }
 
-.navbar-default .navbar-brand:hover{
+.navbar-default {
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.navbar-brand:hover{
     transform: scale(1.5);
     color: #fff;
 }
