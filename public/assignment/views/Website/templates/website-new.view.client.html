@@ -1,87 +1,111 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
-    <div class="row container-fluid wbdev-container-side-space-fix">
-        <div class="col-sm-4 hidden-xs">
-            <div class="pull-right wbdev-margin-right-fix">
-                <a class="navbar-brand"
-                   href="#!/user/{{model.userId}}/website/new">
-                    <span class="glyphicon glyphicon-plus-sign"></span>
-                </a>
-            </div>
-            <a class="navbar-brand"
-               href="#!/user/{{model.userId}}/website/">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="row container-fluid">
+
+        <div class="col-xs-1 col-sm-1 navbar-text">
+            <a href="#/user/:uid/website" class="white">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <div class="navbar-header">
-                <a class="navbar-brand">
-                    Websites
-                </a>
+        </div>
+
+        <div class="hidden-xs col-sm-2 navbar-brand">
+            <div class="black">
+                Websites
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="pull-right wbdev-margin-right-fix">
-                <a class="navbar-brand"
-                   ng-click="model.addNewWebsite(website)">
-                    <span class="glyphicon glyphicon-ok-sign"></span>
-                </a>
-            </div>
-            <div class="navbar-header">
-                <a class="navbar-brand visible-xs wbdev-margin-left-fix"
-                   href="#!/user/{{model.userId}}/website/">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="navbar-brand wbdev-margin-left-fix">
-                    New Website
-                </a>
+
+        <div class="hidden-xs col-sm-1 navbar-text">
+            <a href="#/user/:uid/website/new" class="white">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </div>
+
+        <div class="col-xs-8 col-sm-6 navbar-brand">
+            <div class="black">
+                New Website
             </div>
         </div>
+
+        <div class="col-xs-2 col-sm-1 navbar-text pull-right">
+            <a href="#/user/:uid/website" class="white">
+                <span class="glyphicon glyphicon-ok"></span>
+            </a>
+        </div>
+
     </div>
 </nav>
-<div class="row container-fluid">
-    <div class="col-sm-4 hidden-xs wbdv-left-pane">
-        <div ng-show="model.error"
-             class="alert alert-warning text-center wbdev-empty-form-margin"
-             role="alert"> {{model.error}}</div>
-        <div class="row wbdev-website-record"
-             ng-repeat="website in model.websites">
-            <a href="#!/user/{{model.userId}}/website/{{website._id}}/page"
-               class="col-xs-10">
-                {{website.name}}
-            </a>
-            <a href="#!/user/{{model.userId}}/website/{{website._id}}"
-               class="col-xs-2 text-right">
-                <span class="glyphicon glyphicon-cog"></span>
-            </a>
-        </div>
-    </div>
 
-    <div class="col-sm-8 col-xs-12 wbdv-right-pane">
-        <div ng-show="model.blankerror" class="alert alert-danger text-center" role="alert"> {{model.blankerror}}</div>
-        <form class="wbdev-form-padding"
-              method="POST">
-            <div class="form-group">
-                <label for="wname">Name</label>
-                <input type="text"
-                       class="form-control"
-                       id="wname"
-                       ng-model="website.name"
-                       placeholder="Name of your website">
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="hidden-xs col-sm-4 vertical-line">
+            <div class="pull-left">
+                <a href="#/user/:uid/page/:wid/page">Address Book App</a>
             </div>
-            <div class="form-group">
-                <label for="wdesc">Description</label>
-                <textarea rows="4"
-                          class="form-control"
-                          id="wdesc"
-                          ng-model="website.description"
-                          placeholder="Description"></textarea>
+            <div class="pull-right">
+                <a href="#/user/:uid/website/:wid">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
             </div>
-        </form>
+            <br>
+            <br>
+            <div class="pull-left">
+                <a href="#/user/:uid/page/:wid/page">Blogger</a>
+            </div>
+            <div class="pull-right">
+                <a href="#/user/:uid/website/:wid">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="pull-left">
+                <a href="#/user/:uid/page/:wid/page">Blogging App</a>
+            </div>
+            <div class="pull-right">
+                <a href="#/user/:uid/website/:wid">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="pull-left">
+                <a href="#/user/:uid/page/:wid/page">Script Testing App</a>
+            </div>
+            <div class="pull-right">
+                <a href="#/user/:uid/website/:wid">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input ng-model="model.website.name"
+                           type="text"
+                           class="form-control"
+                           id="name"
+                           placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea ng-model="model.website.description"
+                              rows="5"
+                              class="form-control"
+                              id="description"
+                              placeholder="Description"></textarea>
+                </div>
+            </form>
+        </div>
+
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
-        <div class="pull-right wbdev-margin-right-fix">
-            <a class="navbar-brand"
-               href="#!/user/{{model.userId}}">
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-text pull-right">
+            <a href="#/user/:uid" class="white">
                 <span class="glyphicon glyphicon-user"></span>
             </a>
         </div>

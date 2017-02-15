@@ -1,40 +1,42 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
-<div class="container-fluid wbdev-container-side-space-fix">
-    <div class="navbar-header">
-        <a class="navbar-brand">Login</a>
-    </div>
-</div>
-</nav>
-<div class="container-fluid">
-    <div class="row wbdev-login-container">
-        <div class="col-xs-12">
-            <h3>Login </h3>
-            <form method="POST">
-                <div ng-show="model.error" class="alert alert-danger text-center" role="alert"> {{model.error}}</div>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text"
-                           ng-model="model.username"
-                           class="form-control"
-                           id="username"
-                           placeholder="Username"
-                    />
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password"
-                           ng-model="model.password"
-                           class="form-control"
-                           id="password"
-                           placeholder="Password"/>
-                </div>
-                <div class="wbdev-buttons-style">
-                    <a class="btn btn-primary btn-block"
-                       ng-click="model.login(model.username, model.password)">Login</a>
-                    <a class="btn btn-success btn-block"
-                       href="#!/register">Register</a>
-                </div>
-            </form>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <div class="black">
+                Login
+            </div>
         </div>
     </div>
+</nav>
+
+<div class="container">
+    <form>
+        <div ng-show="model.error"
+             class="alert alert-danger blank-lines">
+            {{model.error}}
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input ng-model="model.user.username"
+                   type="text"
+                   class="form-control"
+                   id="username"
+                   placeholder="Username">
+        </div>
+        <div class="form-group blank-lines">
+            <label for="password">Password</label>
+            <input ng-model="model.user.password"
+                   type="password"
+                   class="form-control"
+                   id="password"
+                   placeholder="Password">
+        </div>
+        <a ng-click="model.login(model.user)"
+           class="btn btn-primary btn-block">
+            Login
+        </a>
+        <a class="btn btn-success btn-block blank-lines"
+           href="#/register">
+            Register
+        </a>
+    </form>
 </div>

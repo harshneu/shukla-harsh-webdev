@@ -1,80 +1,77 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
-        <div class="pull-right wbdev-margin-right-fix">
-            <a class="navbar-brand"
-               ng-click="model.updateUser(model.user)">
-                <span class="glyphicon glyphicon-ok"></span>
-            </a>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <div class="black">
+                Profile
+            </div>
         </div>
-        <div class="navbar-header">
-            <a class="navbar-brand">Profile</a>
+
+        <div class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}" class="white">
+                <span ng-click="model.updateUser(model.user)"
+                      class="glyphicon glyphicon-ok"></span>
+            </a>
         </div>
     </div>
 </nav>
-<div class="container-fluid">
 
-        <div class="alert alert-success"
-             ng-show="model.message">
-            {{model.message}}
-        </div>
-        <div class="alert alert-danger"
-             ng-show="model.error">
-            {{model.error}}
-        </div>
-        <div class="alert alert-danger"
-             ng-show="model.blankerror">
-            {{model.blankerror}}
-        </div>
+<div class="container">
 
-        <form method="POST">
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email"
-                       class="form-control"
-                       id="email"
-                       placeholder="username@any.com">
-            </div>
-            <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text"
-                       class="form-control"
-                       id="first-name"
-                       placeholder="First name">
-            </div>
-            <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text"
-                       class="form-control"
-                       id="last-name"
-                       placeholder="Last name">
-            </div>
-            <div class="form-group wbdev-btn-margin-bottom">
-                <a ng-click="model.updateUser(model.user)"
-                   class="btn btn-success btn-block">
-                    Update
-                </a>
-            </div>
-            <div>
-                <div class="form-group wbdev-btn-margin-bottom">
-                <a class="btn btn-primary btn-block"
-                   href="#!/user/{{model.userId}}/website">
-                    Websites</a>
-            </div>
-            <div>
-                <div class="form-group wbdev-btn-margin-bottom">
-                <a class="btn btn-danger btn-block"
-                   href="#!/login">Logout</a>
-            </div>
-
-        </form>
-    </div>
+    <div ng-show="model.error"
+         class="alert alert-danger">
+        {{model.error}}
     </div>
 
-<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
-        <div class="pull-right wbdev-margin-right-fix">
-            <a class="navbar-brand"
-               href="#!/user/{{model.userId}}">
+    <div ng-show="model.message"
+         class="alert alert-success">
+        {{model.message}}
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input ng-model="model.user.username"
+                   type="text"
+                   class="form-control"
+                   id="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input ng-model="model.user.email"
+                   type="email"
+                   class="form-control"
+                   id="email"
+                   placeholder="alice@wonderland.com">
+        </div>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input ng-model="model.user.firstName"
+                   type="text"
+                   class="form-control"
+                   id="first-name">
+        </div>
+        <div class="form-group blank-lines">
+            <label for="last-name">Last Name</label>
+            <input ng-model="model.user.lastName"
+                   type="text"
+                   class="form-control"
+                   id="last-name">
+        </div>
+        <a class="btn btn-primary btn-block"
+           href="#/user/{{model.userId}}/website">
+            Websites
+        </a>
+        <a class="btn btn-danger btn-block"
+           href="#/login">
+            Logout
+        </a>
+    </form>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}/#" class="white">
                 <span class="glyphicon glyphicon-user"></span>
             </a>
         </div>
