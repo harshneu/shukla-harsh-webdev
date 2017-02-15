@@ -10,6 +10,18 @@
                 controller: "LoginController",
                 controllerAs: "model"
             })
+
+            .when("/", {
+                templateUrl: "views/user/templates/login.view.client.html",
+                controller: "LoginController",
+                controllerAs: "model"
+            })
+
+            .when("/default", {
+                templateUrl: "views/user/templates/login.view.client.html",
+                controller: "LoginController",
+                controllerAs: "model"
+            })
             .when("/register",{
                 templateUrl: 'views/user/register.view.client.html',
                 controller: "RegisterController",
@@ -65,9 +77,6 @@
                 controller: "EditWidgetController",
                 controllerAs: "model"
             })
-            .otherwise({
-                // Default
-                templateUrl: 'views/user/login.view.client.html'
-            })
+
     }
 })();

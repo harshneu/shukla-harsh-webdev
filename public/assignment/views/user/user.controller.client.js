@@ -20,7 +20,7 @@
 
         }
     }
-    
+
     function ProfileController($routeParams, UserService, $location) {
         var vm = this;
         vm.userId = $routeParams["uid"];
@@ -40,8 +40,8 @@
         function updateUser(newUser) {
             vm.blankerror = null;
             vm.error = null;
-            if(newUser.email == "" || newUser.firstName == ""||newUser.lastName == ""){
-                vm.blankerror = "Please provide values for all fields to update";
+            if(newUser.email == null || newUser.firstName == null ||newUser.lastName == null){
+                vm.blankerror = "Values for required fields not provided";
                 return;
             }
             var user = UserService.updateUser(vm.userId, newUser);
@@ -64,30 +64,24 @@
             }
         }
     }
-    
+
     function RegisterController($location, UserService) {
         var vm = this;
         vm.register = register;
 
         function register(user) {
             if(user == null){
-                vm.registrationerror = "Please enter your username, email and password";
+                vm.registrationerror = "Values for required fields not provided";
                 return;
             }
-            if(user.username == null || user.email == null || user.password == null){
-                vm.registrationerror = "Please enter your username, email and password";
+            if(user.username == null || user.password == null){
+                vm.registrationerror = "Values for required fields not provided";
                 return;
             }
-            var userInDB = UserService.findUserByUsername(user.username);
-            if(userInDB != null){
-                vm.registrationerror = "Username taken, please try another username";
-                vm.passwordmismatch = "";
-                return;
-            }
+
             else{
                 if (user.password != user.passwordverification){
-                    vm.registrationerror ="";
-                    vm.passwordmismatch = "Passwords do not match";
+                    vm.passwordmismatch = "Passwords fields not same";
                     return;
                 }
                 var newuser = UserService.createUser(user);

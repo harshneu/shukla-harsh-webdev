@@ -12,7 +12,7 @@
         function init(){
             vm.pages = PageService.findPagesByWebsiteId(vm.websiteId);
             if(vm.pages.length == 0){
-                vm.error = "No pages created yet";
+                vm.error = "Page not created";
             }
         }
         init();
@@ -25,7 +25,7 @@
         function init(){
             vm.pages = PageService.findPagesByWebsiteId(vm.websiteId);
             if(vm.pages.length == 0){
-                vm.error = "No pages created yet";
+                vm.error = "Page not created";
             }
         }
         init();
@@ -33,12 +33,12 @@
         vm.addNewPage = addNewPage;
         function addNewPage(newPage) {
             if(newPage == null || newPage.name == null || newPage.name == "" || newPage.description == ""){
-                vm.blankerror = "Please enter the page name and description";
+                vm.blankerror = "Please provide the required details";
                 return;
             }
             var page = PageService.createPage(vm.websiteId,newPage);
             if(page == null){
-                vm.error = "Could not create page, try again after some time";
+                vm.error = "Page not created";
                 return;
             }
             else{
@@ -59,7 +59,7 @@
             }
             vm.pages = PageService.findPagesByWebsiteId(vm.websiteId);
             if(vm.pages.length == 0){
-                vm.error = "No pages created yet";
+                vm.error = "Create Pages to view";
             }
         }
         init();
@@ -69,12 +69,12 @@
 
         function updatePage(page) {
             if(page == null || page.name == null || page.name == "" || page.description == ""){
-                vm.blankerror = "Name or description cannot be empty";
+                vm.blankerror = "Please proveide the required fields";
                 return;
             }
             var page = PageService.updatePage(vm.pageId, page);
             if(page == null){
-                vm.error = "Update failed, please try again later";
+                vm.error = "Can not update";
             }
             else {
                 $location.url("user/"+vm.userId+"/website/"+vm.websiteId+"/page");
@@ -83,7 +83,7 @@
         function deletePage() {
             var result = PageService.deletePage(vm.pageId);
             if(result == null){
-                vm.deleteError = "Page could not be deleted, please try again";
+                vm.deleteError = "Deletion failed";
                 return;
             }
             else{
