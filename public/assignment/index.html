@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="WebAppMaker">
 <head>
-    <!--<script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
 
+    <title>Assignment Home Page</title>
+    <meta name="description" content="">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
+    <script src="js/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="config.js"></script>
-
-    <!-- Controllers -->
-    <script src="views/user/controllers/user.controller.client.js"></script>
-    <script src="views/website/controllers/website.controller.client.js"></script>
-    <script src="views/page/controllers/page.controller.client.js"></script>
-    <script src="views/widget/controllers/widget.controller.client.js"></script>
-
-    <!-- Services -->
     <script src="services/user.service.client.js"></script>
     <script src="services/website.service.client.js"></script>
     <script src="services/page.service.client.js"></script>
     <script src="services/widget.service.client.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
-    <title>INDEX</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <script src="views/user/controller/user.controller.client.js"></script>
+    <script src="views/website/controller/website.controller.client.js"></script>
+    <script src="views/page/controller/page.controller.client.js"></script>
+    <script src="views/widget/controllers/widget.controller.client.js"></script>
 </head>
 <body>
-    <div ng-view></div>
+    <div ng-view>
+    </div>
 </body>
 </html>
+

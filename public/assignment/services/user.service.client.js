@@ -1,12 +1,9 @@
-/**
- * Created by Ashton on 2/7/2017.
- */
-(function () {
+(function(){
     angular
         .module("WebAppMaker")
-        .factory("UserService", userService);
+        .factory("UserService",UserService);
 
-    function userService() {
+    function UserService() {
         var users = [
             {_id: "123", username: "alice",    password: "alice",    firstName: "Alice",  lastName: "Wonder"  },
             {_id: "234", username: "bob",      password: "bob",      firstName: "Bob",    lastName: "Marley"  },
@@ -14,66 +11,74 @@
             {_id: "456", username: "jannunzi", password: "jannunzi", firstName: "Jose",   lastName: "Annunzi" }
         ];
 
-        var api = {
-            "createUser": createUser,
-            "findUserById": findUserById,
-            "findUserByUsername": findUserByUsername,
-            "findUserByCredentials": findUserByCredentials,
-            "updateUser": updateUser,
-            "deleteUser": deleteUser
+
+        var api={
+            "createUser":createUser,
+            "findUserById":findUserById,
+            "findUserByUsername":findUserByUsername,
+            "findUserByCredentials":findUserByCredentials,
+            "updateUser":updateUser,
+            "deleteUserById":deleteUserById
         };
+
         return api;
-
-        function createUser(userId, username, password, firstName, lastName) {
-
+        function createUser(user) {
+            var userId = (parseInt(users[users.length -1]._id) + 1).toString();
+            var newUser = {_id: userId,
+                            username: user.username,
+                            password: user.password,
+                            email: user.email,
+                            firstName: user.firstname,
+                            lastName: user.lastname};
+            users.push(newUser);
+            return angular.copy(newUser);
         }
-
-        function findUserById(userId) {
+        function findUserById(userid) {
             for(var u in users) {
-                if( users[u]._id == userId ) {
-                    return users[u];
+                var user = users[u];
+                if( user._id === userid ) {
+                    return angular.copy(user);
                 }
             }
             return null;
         }
-
-        function findUserByUsername(username) {
-            for(var u in users) {
-                if( users[u].username === username) {
-                    return users[u];
+        function findUserByUsername(usernamesent) {
+            for(var i = 0; i< users.length;i++){
+                if(users[i].username === usernamesent){
+                    return angular.copy(users[i]);
                 }
             }
             return null;
         }
-
         function findUserByCredentials(username, password) {
-            for(var u in users) {
-                if( users[u].username === username &&
-                    users[u].password === password ) {
-                    return users[u];
+            for(var i = 0; i < users.length; i++){
+                if(users[i].username === username && users[i].password === password){
+                    return users[i];
                 }
             }
             return null;
         }
-
         function updateUser(userId, newUser) {
             for(var u in users) {
-                if( users[u]._id === userId ) {
+                var user = users[u];
+                if( user._id === userId ) {
                     users[u].firstName = newUser.firstName;
                     users[u].lastName = newUser.lastName;
-                    return users[u];
+                    users[u].email = newUser.email;
+                    return angular.copy(user);
                 }
             }
             return null;
         }
-
-        function deleteUser(userId) {
+        function deleteUserById(uid) {
             for(var u in users) {
-                if( users[u]._id === userId) {
-                    users.splice(u, 1);
+                var user = users[u];
+                if( user._id === uid ) {
+                    users.splice(u,1);
+                    return "success";
                 }
             }
+            return null;
         }
-
     }
 })();

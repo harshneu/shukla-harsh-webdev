@@ -1,121 +1,93 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
     <div class="row container-fluid">
-
-        <div class="col-xs-1 navbar-text">
-            <a href="#/user/:uid/page/:wid/page" class="white">
+        <div class="col-sm-4 hidden-xs">
+            <div class="pull-right wbdev-margin-right-fix">
+                <a class="navbar-brand"
+                   href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/new">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                </a>
+            </div>
+            <a class="navbar-brand"
+               href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-        </div>
-
-        <div class="hidden-xs col-sm-2 navbar-brand">
-            <div class="black">
-                Pages
-            </div>
-        </div>
-
-        <div class="hidden-xs col-sm-1 navbar-text">
-            <a href="#/user/:uid/page/:wid/page/new" class="white">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
-        </div>
-
-        <div class="col-xs-8 col-sm-6 navbar-brand">
-            <div class="black">
-                New Page
-            </div>
-        </div>
-
-        <div class="col-xs-2 col-sm-1 navbar-text pull-right">
-            <a href="#/user/:uid/page/:wid/page" class="white">
-                <span class="glyphicon glyphicon-ok"></span>
-            </a>
-        </div>
-
-    </div>
-</nav>
-
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="hidden-xs col-sm-4 vertical-line">
-            <div class="pull-left">
-                <a href="#/user/:uid/page/:wid/page/:pid/widget">Blog Post</a>
-            </div>
-            <div class="pull-right">
-                <a href="#/user/:uid/page/:wid/page/:pid">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <br>
-            <div class="pull-left">
-                <a href="#/user/:uid/page/:wid/page/:pid/widget">Blog</a>
-            </div>
-            <div class="pull-right">
-                <a href="#/user/:uid/page/:wid/page/:pid">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <br>
-            <div class="pull-left">
-                <a href="#/user/:uid/page/:wid/page/:pid/widget">Home</a>
-            </div>
-            <div class="pull-right">
-                <a href="#/user/:uid/page/:wid/page/:pid">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <br>
-            <div class="pull-left">
-                <a href="#/user/:uid/page/:wid/page/:pid/widget">About</a>
-            </div>
-            <div class="pull-right">
-                <a href="#/user/:uid/page/:wid/page/:pid">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <br>
-            <div class="pull-left">
-                <a href="#/user/:uid/page/:wid/page/:pid/widget">Contact Us</a>
-            </div>
-            <div class="pull-right">
-                <a href="#/user/:uid/page/:wid/page/:pid">
-                    <span class="glyphicon glyphicon-cog"></span>
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    Pages
                 </a>
             </div>
         </div>
 
         <div class="col-sm-8">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input ng-model="model.page.name"
-                           type="text"
-                           class="form-control"
-                           id="name"
-                           placeholder="Page Name">
-                </div>
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input ng-model="model.page.title"
-                           type="text"
-                           class="form-control"
-                           id="title"
-                           placeholder="Page Title">
-                </div>
-            </form>
+            <div class="pull-right wbdev-margin-right-fix">
+                <a class="navbar-brand"
+                   ng-click="model.addNewPage(page)">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand visible-xs wbdev-margin-left-fix"
+                   href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="navbar-brand wbdev-margin-left-fix">
+                    New Page
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="row container-fluid">
+    <div class="col-sm-4 hidden-xs wbdv-left-pane">
+        <div ng-show="model.error"
+             class="alert alert-warning text-center wbdev-empty-form-margin"
+             role="alert">
+            {{model.error}}
+        </div>
+        <div class="row wbdev-page-list-record"
+             ng-repeat="page in model.pages">
+            <a href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}/widget"
+               class="col-xs-10">
+                {{page.name}}
+            </a>
+            <a href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}"
+               class="col-xs-2 text-right">
+                <span class="glyphicon glyphicon-cog"></span>
+            </a>
         </div>
 
     </div>
+    <div class="col-sm-8 col-xs-12 wbdv-right-pane">
+        <div ng-show="model.blankerror"
+             class="alert alert-danger text-center wbdev-form-padding"
+             role="alert"> {{model.blankerror}}
+        </div>
+        <form method="POST"
+              class="wbdev-form-padding">
+            <div class="form-group">
+                <label for="pname">Name</label>
+                <input type="text"
+                       class="form-control"
+                       id="pname"
+                       placeholder="Page Name"
+                       ng-model="page.name">
+            </div>
+            <div class="form-group">
+                <label for="pdesc">Description</label>
+                <input type="text"
+                       class="form-control"
+                       id="pdesc"
+                       placeholder="Page Description"
+                       ng-model="page.description"></textarea>
+            </div>
+        </form>
+    </div>
 </div>
-
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid">
-        <div class="navbar-text pull-right">
-            <a href="#/user/:uid" class="white">
+<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
+            <a class="navbar-brand"
+               href="#!/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>
             </a>
         </div>
