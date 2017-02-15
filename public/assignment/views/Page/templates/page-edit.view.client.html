@@ -4,7 +4,7 @@
             <div class="pull-right wbdev-margin-right-fix">
                 <a class="navbar-brand"
                    href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/new">
-                    <span class="glyphicon glyphicon-plus-sign"></span>
+                    <span class="glyphicon glyphicon-plus"></span>
                 </a>
             </div>
             <a class="navbar-brand"
@@ -21,7 +21,7 @@
             <div class="pull-right wbdev-margin-right-fix">
                 <a class="navbar-brand"
                    ng-click="model.updatePage(model.page)">
-                    <span class="glyphicon glyphicon-ok-sign"></span>
+                    <span class="glyphicon glyphicon-ok"></span>
                 </a>
             </div>
             <div class="navbar-header">
@@ -29,7 +29,7 @@
                    href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <a class="navbar-brand wbdev-margin-left-fix">
+                <a class="navbar-brand margin-left-fix">
                     Edit Page
                 </a>
             </div>
@@ -43,7 +43,7 @@
              role="alert">
             {{model.error}}
         </div>
-        <div class="row wbdev-page-list-record"
+        <div class="row page-list-record"
              ng-repeat="page in model.pages">
             <a href="#!/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}/widget"
                class="col-xs-10">
@@ -73,7 +73,7 @@
             {{model.deleteError}}
         </div>
         <form method="POST"
-              class="wbdev-form-padding">
+              class="form-padding">
             <div class="form-group">
                 <label for="pname">Name</label>
                 <input type="text"
@@ -99,9 +99,9 @@
         </form>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
-        <div class="pull-right wbdev-margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
+    <div class="container-fluid container-side-space-fix">
+        <div class="pull-right margin-right-fix">
             <a class="navbar-brand"
                href="#!/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>

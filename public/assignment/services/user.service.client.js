@@ -64,7 +64,6 @@
                 if( user._id === userId ) {
                     users[u].firstName = newUser.firstName;
                     users[u].lastName = newUser.lastName;
-                    users[u].email = newUser.email;
                     return angular.copy(user);
                 }
             }
@@ -75,7 +74,7 @@
                 var user = users[u];
                 if( user._id === uid ) {
                     users.splice(u,1);
-                    return "success";
+                    return "User Deleted";
                 }
             }
             return null;
