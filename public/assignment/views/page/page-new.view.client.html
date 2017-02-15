@@ -1,7 +1,7 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
+<nav class="navbar navbar-default navbar-fixed-top bar-color">
     <div class="row container-fluid">
         <div class="col-sm-4 hidden-xs">
-            <div class="pull-right wbdev-margin-right-fix">
+            <div class="pull-right margin-right-fix">
                 <a class="navbar-brand"
                    href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/new">
                     <span class="glyphicon glyphicon-plus-sign"></span>
@@ -19,18 +19,18 @@
         </div>
 
         <div class="col-sm-8">
-            <div class="pull-right wbdev-margin-right-fix">
+            <div class="pull-right margin-right-fix">
                 <a class="navbar-brand"
                    ng-click="model.addNewPage(page)">
                     <span class="glyphicon glyphicon-ok-sign"></span>
                 </a>
             </div>
             <div class="navbar-header">
-                <a class="navbar-brand visible-xs wbdev-margin-left-fix"
+                <a class="navbar-brand visible-xs margin-left-fix"
                    href="#/user/{{model.userId}}/website/{{model.websiteId}}/page">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <a class="navbar-brand wbdev-margin-left-fix">
+                <a class="navbar-brand margin-left-fix">
                     New Page
                 </a>
             </div>
@@ -40,11 +40,11 @@
 <div class="row container-fluid">
     <div class="col-sm-4 hidden-xs wbdv-left-pane">
         <div ng-show="model.error"
-             class="alert alert-warning text-center wbdev-empty-form-margin"
+             class="alert alert-warning text-center empty-form-margin"
              role="alert">
             {{model.error}}
         </div>
-        <div class="row wbdev-page-list-record"
+        <div class="row page-list-record"
              ng-repeat="page in model.pages">
             <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}/widget"
                class="col-xs-10">
@@ -59,11 +59,11 @@
     </div>
     <div class="col-sm-8 col-xs-12 wbdv-right-pane">
         <div ng-show="model.blankerror"
-             class="alert alert-danger text-center wbdev-form-padding"
+             class="alert alert-danger text-center form-padding"
              role="alert"> {{model.blankerror}}
         </div>
         <form method="POST"
-              class="wbdev-form-padding">
+              class="form-padding">
             <div class="form-group">
                 <label for="pname">Name</label>
                 <input type="text"
@@ -83,9 +83,9 @@
         </form>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
-    <div class="container-fluid wbdev-container-side-space-fix">
-        <div class="pull-right wbdev-margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
+    <div class="container-fluid container-side-space-fix">
+        <div class="pull-right margin-right-fix">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>

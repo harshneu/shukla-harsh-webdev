@@ -1,15 +1,14 @@
-<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
-<div class="container-fluid wbdev-container-side-space-fix">
+<nav class="navbar navbar-default navbar-fixed-top bar-color">
+<div class="container-fluid container-side-space-fix">
     <div class="navbar-header">
-        <a class="navbar-brand">CS5610 Assignments</a>
+        <a class="navbar-brand">Login</a>
     </div>
 </div>
 </nav>
 <div class="container-fluid">
-    <div class="row wbdev-login-container">
+    <div class="row login-container">
         <div class="col-xs-12">
-            <h3>Login </h3>
-            <form method="POST">
+            <form >
                 <div ng-show="model.error" class="alert alert-danger text-center" role="alert"> {{model.error}}</div>
                 <div class="form-group">
                     <label for="username">Username</label>
@@ -28,7 +27,7 @@
                            id="password"
                            placeholder="Password"/>
                 </div>
-                <div class="wbdev-buttons-style">
+                <div class="buttons-style">
                     <a class="btn btn-primary btn-block"
                        ng-click="model.login(model.username, model.password)">Login</a>
                     <a class="btn btn-success btn-block"
