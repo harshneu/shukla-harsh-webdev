@@ -4,7 +4,7 @@
             <div class="pull-right wbdev-margin-right-fix">
                 <a class="navbar-brand"
                    href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/new">
-                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="glyphicon glyphicon-plus-sign"></span>
                 </a>
             </div>
             <a class="navbar-brand"
@@ -17,11 +17,12 @@
                 </a>
             </div>
         </div>
+
         <div class="col-sm-8">
             <div class="pull-right wbdev-margin-right-fix">
                 <a class="navbar-brand"
-                   ng-click="model.updatePage(model.page)">
-                    <span class="glyphicon glyphicon-ok"></span>
+                   ng-click="model.addNewPage(page)">
+                    <span class="glyphicon glyphicon-ok-sign"></span>
                 </a>
             </div>
             <div class="navbar-header">
@@ -29,8 +30,8 @@
                    href="#/user/{{model.userId}}/website/{{model.websiteId}}/page">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
-                <a class="navbar-brand margin-left-fix">
-                    Edit Page
+                <a class="navbar-brand wbdev-margin-left-fix">
+                    New Page
                 </a>
             </div>
         </div>
@@ -39,11 +40,11 @@
 <div class="row container-fluid">
     <div class="col-sm-4 hidden-xs wbdv-left-pane">
         <div ng-show="model.error"
-             class="alert alert-warning text-center"
+             class="alert alert-warning text-center wbdev-empty-form-margin"
              role="alert">
             {{model.error}}
         </div>
-        <div class="row page-list-record"
+        <div class="row wbdev-page-list-record"
              ng-repeat="page in model.pages">
             <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}/widget"
                class="col-xs-10">
@@ -54,54 +55,37 @@
                 <span class="glyphicon glyphicon-cog"></span>
             </a>
         </div>
-    </div>
 
+    </div>
     <div class="col-sm-8 col-xs-12 wbdv-right-pane">
-        <div ng-show="model.error"
-             class="alert alert-danger text-center"
-             role="alert">
-            {{model.error}}
-        </div>
         <div ng-show="model.blankerror"
-             class="alert alert-danger text-center"
-             role="alert">
-            {{model.blankerror}}
-        </div>
-        <div ng-show="model.deleteError"
-             class="alert alert-danger text-center"
-             role="alert">
-            {{model.deleteError}}
+             class="alert alert-danger text-center wbdev-form-padding"
+             role="alert"> {{model.blankerror}}
         </div>
         <form method="POST"
-              class="form-padding">
+              class="wbdev-form-padding">
             <div class="form-group">
                 <label for="pname">Name</label>
                 <input type="text"
                        class="form-control"
                        id="pname"
-                       placeholder="Name of your page"
-                       ng-model="model.page.name"
-                       value="Blog post">
+                       placeholder="Page Name"
+                       ng-model="page.name">
             </div>
             <div class="form-group">
-                <label for="ptitle">Title</label>
+                <label for="pdesc">Description</label>
                 <input type="text"
                        class="form-control"
-                       id="ptitle"
-                       placeholder="Name of your page"
-                       ng-model="model.page.description"
-                       value="Some page title">
+                       id="pdesc"
+                       placeholder="Page Description"
+                       ng-model="page.description"></textarea>
             </div>
-            <a class="form-control btn btn-danger"
-               ng-click="model.deletePage()">
-                Delete
-            </a>
         </form>
     </div>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>

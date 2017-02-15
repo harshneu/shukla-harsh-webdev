@@ -1,9 +1,9 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+<nav class="navbar navbar-default navbar-fixed-top wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
             <a class="navbar-brand"
                ng-click="model.updateUser(model.user)">
-                <span class="glyphicon glyphicon-ok"></span>
+                <span class="glyphicon glyphicon-ok-sign"></span>
             </a>
         </div>
         <div class="navbar-header">
@@ -12,7 +12,10 @@
     </div>
 </nav>
 <div class="container-fluid">
-
+    <div class="row wbdev-profile-heading text-center">
+        Welcome {{model.firstName}}
+    </div>
+    <div class="wbdev-profile-container">
         <div class="alert alert-success"
              ng-show="model.message">
             {{model.message}}
@@ -32,47 +35,55 @@
                 <input type="email"
                        class="form-control"
                        id="email"
-                       placeholder="username@any.com">
+                       placeholder="username@domain.com"
+                       ng-model="model.user.email">
             </div>
             <div class="form-group">
                 <label for="first-name">First Name</label>
                 <input type="text"
                        class="form-control"
                        id="first-name"
-                       placeholder="First name">
+                       placeholder="First name"
+                       ng-model="model.user.firstName">
             </div>
             <div class="form-group">
                 <label for="last-name">Last Name</label>
                 <input type="text"
                        class="form-control"
                        id="last-name"
-                       placeholder="Last name">
+                       placeholder="Last name"
+                       ng-model="model.user.lastName">
             </div>
-            <div class="form-group btn-margin-bottom">
+            <div class="form-group wbdev-btn-margin-bottom">
                 <a ng-click="model.updateUser(model.user)"
                    class="btn btn-success btn-block">
                     Update
                 </a>
             </div>
-            <div>
-                <div class="form-group btn-margin-bottom">
-                <a class="btn btn-primary btn-block"
-                   href="#/user/{{model.userId}}/website">
-                    Websites</a>
+            <div class="form-group">
+                <a ng-click="model.deleteUser(model.user)"
+                   class="btn btn-danger btn-block">
+                    Unregister
+                </a>
             </div>
-            <div>
-                <div class="form-group btn-margin-bottom">
-                <a class="btn btn-danger btn-block"
-                   href="#/login">Logout</a>
-            </div>
-
         </form>
     </div>
-    </div>
 
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
-        <div class="pull-right margin-right-fix">
+    <div class="row wbdev-other-links">
+        <div class="col-xs-12 col-md-6">
+            <a class="btn btn-primary btn-block"
+               href="#/user/{{model.userId}}/website">
+            Websites</a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <a class="btn btn-danger btn-block"
+               href="#/login">Logout</a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom wbdev-bar-color">
+    <div class="container-fluid wbdev-container-side-space-fix">
+        <div class="pull-right wbdev-margin-right-fix">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
                 <span class="glyphicon glyphicon-user"></span>
