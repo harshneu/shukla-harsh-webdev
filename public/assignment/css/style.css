@@ -1,13 +1,24 @@
-/* Bootstrap overrides */
-.navbar-default .navbar-brand{
-    color:#fff;
+
+.navbar-default {
+    color:#fff !important;;
     font-weight: bold;
 }
 
-.navbar-default .navbar-brand:hover{
+.navbar-default {
     color:#fff;
 }
 
+.navbar-header {
+    color:#fff;
+}
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+.navbar-brand:hover {
+    transform: scale(1.5);
+    color:#fff !important;
+}
 .navbar-fixed-top{
     border-width: 0 0 0;
 }
@@ -18,6 +29,10 @@
 
 .glyphicon-ok, .glyphicon-plus, .glyphicon-user, .glyphicon-share-alt{
     color: white;
+}
+.glyphicon-ok:hover, .glyphicon-plus:hover, .glyphicon-user:hover, .glyphicon-share-alt:hover .glyphicon-cog:hover{
+    transform: scale(1.5);
+
 }
 
 .form-control{
@@ -31,22 +46,16 @@ input.form-control {
     margin-bottom: 5px;
 }
 
-a:hover{
-    text-decoration: none;
-}
+
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin-top: 60px;
     margin-bottom: 50px;
 }
 
 a{
     cursor: pointer;
-}
-
-a.thumbnail:hover, .thumbnail{
-    border: 0;
 }
 
 /* My webdev custom styles */
@@ -73,7 +82,7 @@ a.thumbnail:hover, .thumbnail{
 }
 
 
-.wbdv-left-pane {
+.left-pane {
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -82,7 +91,7 @@ a.thumbnail:hover, .thumbnail{
     padding-top: 10px;
     overflow: auto;
 }
-.wbdv-right-pane {
+.right-pane {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -96,27 +105,11 @@ a.thumbnail:hover, .thumbnail{
     overflow-y: auto;
 }
 
-.buttons-style{margin-top: 30px;}
-
-
-
-.other-links{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    max-width: 600px;
-    margin-left:auto;
-    margin-right: auto;
-}
-
-.other-links a.btn{
-    padding: 20px 25px;
-}
 .other-links .col-md-6{
     padding: 0;
 }
 .profile-heading{
     font-size:26px;
-    color: #000000;
     padding: 10px;
     max-width: 600px;
     margin-bottom: 10px;
