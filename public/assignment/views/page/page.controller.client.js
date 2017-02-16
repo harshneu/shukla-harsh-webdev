@@ -59,7 +59,7 @@
             }
             vm.pages = PageService.findPagesByWebsiteId(vm.websiteId);
             if(vm.pages.length == 0){
-                vm.error = "Create Pages to view";
+                vm.error = "No page to view";
             }
         }
         init();
