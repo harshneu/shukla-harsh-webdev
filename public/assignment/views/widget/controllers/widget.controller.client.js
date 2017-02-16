@@ -14,7 +14,9 @@
         vm.checkSafeYouTubeUrl = checkSafeYouTubeUrl;
 
         function init(){
+            console.log("I am here")
             vm.widgets = WidgetService.findWidgetsByPageId(vm.pageId);
+            console.log(vm.widgets);
             if(vm.widgets.length == 0){
                 vm.error = "No widgets used yet";
             }
