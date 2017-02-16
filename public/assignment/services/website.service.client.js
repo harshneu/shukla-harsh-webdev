@@ -10,10 +10,8 @@
             {_id: "345", name : "Gizmodo", developerId: "111", description:"Gizmodo is a design, technology, science and science fiction website that often writes articles on politics. It was originally launched as part of the Gawker Media"},
             {_id: "456", name : "Tic Tac Toe", developerId: "111", description:"Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid."},
             {_id: "567", name : "Checkers", developerId: "333", description:"Checkers is a group of strategy board games for two players which involve diagonal moves of uniform game pieces and mandatory captures by jumping over opponent pieces. Draughts developed from alquerque."},
-            {_id: "678", name : "Chess", developerId: "123", description:"Play chess on Chess.com - the #1 chess community with millions of members around the world. Fun stats, analysis, and training tools for players of all levels."},
-            {_id: "888", name : "Facebook", developerId: "234", description:"Connect with friends and the world around you on Facebook."},
-            {_id: "999", name : "Instagram", developerId: "234", description:"Our mission: To give everyone the power to create and share ideas and information instantly, without barriers."},
-            ];
+            {_id: "678", name : "Chess", developerId: "123", description:"Play chess on Chess.com - the #1 chess community with millions of members around the world. Fun stats, analysis, and training tools for players of all levels."}
+        ];
 
         var api={
             "createWebsite":createWebsite,
