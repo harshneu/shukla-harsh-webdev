@@ -6,11 +6,11 @@
     function WidgetService() {
         var widgets = [
             {_id: "123", widgetType : "HEADER", pageId: "321", size:"1", text: "GIZMODO"},
-            {_id: "234", widgetType : "HEADER", pageId: "123", size:"4", text: "Something"},
-            {_id: "345", widgetType : "IMAGE", pageId: "321", width:"90%", url : "http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg"},
-            {_id: "456", widgetType : "HTML", pageId: "123", text: "<p>Some text of paragraph</p>"},
-            {_id: "567", widgetType : "HEADER", pageId: "321", size:"5", text: "Watch the match higglights here"},
-            {_id: "678", widgetType : "YOUTUBE", pageId: "321", width:"75%", url: "https://www.youtube.com/embed/mFIOGpIQtVU"},
+            {_id: "234", widgetType : "HEADER", pageId: "123", size:"1", text: "Lorem"},
+            {_id: "345", widgetType : "IMAGE", pageId: "321", width:"50%", url : "http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg"},
+            {_id: "456", widgetType : "HTML", pageId: "123", text: "<p>Ipsum</p>"},
+            {_id: "567", widgetType : "HEADER", pageId: "321", size:"3", text: "Watch the match higglights here"},
+            {_id: "678", widgetType : "YOUTUBE", pageId: "321", width:"100%", url: "https://www.youtube.com/embed/mFIOGpIQtVU"},
             {_id: "789", widgetType : "HTML", pageId: "321", text: "<p>Thats about it</p>"}
         ];
 
