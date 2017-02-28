@@ -1,12 +1,12 @@
 <nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-adjust">
+    <div class="container-fluid container-side-space-fix">
         <div class="navbar-header">
             <a class="navbar-brand">Register</a>
         </div>
     </div>
 </nav>
 <div class="container-fluid">
-    <div class="row registration-container">
+    <div class="row ">
         <div class="col-xs-12">
             <div ng-show="model.registrationerror"
                  class="alert alert-danger text-center"
@@ -14,7 +14,8 @@
             <div ng-show="model.passwordmismatch"
                  class="alert alert-danger text-center"
                  role="alert"> {{model.passwordmismatch}}</div>
-            <form action="#/register">
+            <form action="#/register"
+                  method="POST">
                 <div>
                     <div class="form-group">
                         <label for="email">Email</label>

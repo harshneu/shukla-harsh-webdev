@@ -541,7 +541,7 @@ th {
 .glyphicon-chevron-right:before {
   content: "\e080";
 }
-.glyphicon-plus-sign:before {
+.glyphicon-plus:before {
   content: "\e081";
 }
 .glyphicon-minus-sign:before {
@@ -550,7 +550,7 @@ th {
 .glyphicon-remove-sign:before {
   content: "\e083";
 }
-.glyphicon-ok-sign:before {
+.glyphicon-ok:before {
   content: "\e084";
 }
 .glyphicon-question-sign:before {

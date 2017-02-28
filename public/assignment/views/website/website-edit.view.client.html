@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="row container-fluid container-side-space-adjust">
+    <div class="row container-fluid container-side-space-fix">
         <div class="col-sm-4 hidden-xs">
             <div class="pull-right margin-right-adjust">
                 <a class="navbar-brand"
@@ -66,8 +66,8 @@
              class="alert alert-danger text-center"
              role="alert"> {{model.deleteError}}</div>
         <!-- Errors -->
-        <form class="form-adjust"
-              >
+        <form class="form-padding"
+              method="POST">
             <div class="form-group">
                 <label for="wname">Website Name</label>
                 <input type="text"
@@ -94,8 +94,14 @@
     </div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-adjust">
+    <div class="container-fluid container-side-space-fix">
         <div class="navbar-brand">
+            <a class="visible-xs margin-left-adjust">
+                <span class="glyphicon glyphicon-share-alt"></span>
+            </a>
+            <a class="hidden-xs">
+                <span class="glyphicon glyphicon-share-alt"></span>
+            </a>
         </div>
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"

@@ -59,11 +59,11 @@
     </div>
     <div class="col-sm-8 col-xs-12 right-pane">
         <div ng-show="model.blankerror"
-             class="alert alert-danger text-center form-adjust"
+             class="alert alert-danger text-center form-padding"
              role="alert"> {{model.blankerror}}
         </div>
-        <form 
-              class="form-adjust">
+        <form method="POST"
+              class="form-padding">
             <div class="form-group">
                 <label for="pname">Name</label>
                 <input type="text"
@@ -84,7 +84,7 @@
     </div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-adjust">
+    <div class="container-fluid container-side-space-fix">
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">

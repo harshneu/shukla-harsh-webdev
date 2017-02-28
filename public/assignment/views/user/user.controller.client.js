@@ -9,14 +9,18 @@
         var vm = this;
         vm.login = login;
         function login(username, password) {
-            var user = UserService.findUserByCredentials(username,password);
-            if(user == null){
-                vm.error = "Username/password does not match";
-                return null;
-            }
-            else{
-                $location.url("/user/"+user._id);
-            }
+            UserService
+                .findUserByCredentials(username,password)
+                .success(function (response) {
+                    var user = response;
+                    if(user){
+                        $location.url("/user/"+user._id);
+                    }})
+                .error(function (error) {
+                    vm.error = "Username/password does not match";
+                    return null;
+                });
+
 
         }
     }
@@ -27,41 +31,52 @@
         vm.updateUser = updateUser;
         vm.deleteUser = deleteUser;
         function init() {
-            vm.user = UserService.findUserById(vm.userId);
-            if (vm.user == null){
-                $location.url("/login");
-            }
-            else{
-                vm.firstName = angular.copy(vm.user.firstName);
-            }
+            var promise = UserService.findUserById(vm.userId);
+            promise.success(function (user) {
+                vm.user = user;
+                if (vm.user == null){
+                    $location.url("/login");
+                }
+                else{
+                    vm.firstName = angular.copy(vm.user.firstName);
+                }
+            });
+
         }
         init();
 
         function updateUser(newUser) {
             vm.blankerror = null;
             vm.error = null;
-            if(newUser.email == null || newUser.firstName == null ||newUser.lastName == null){
-                vm.blankerror = "Values for required fields not provided";
+            if(newUser.email == "" || newUser.firstName == ""||newUser.lastName == ""){
+                vm.blankerror = "Please provide values for all fields to update";
                 return;
             }
-            var user = UserService.updateUser(vm.userId, newUser);
-            vm.firstName = user.firstName;
-            if(user == null) {
-                vm.error = "Unable to update user";
-            } else {
-                vm.message = "User successfully updated"
-            }
+            UserService
+                .updateUser(vm.userId, newUser)
+                .success(function (user) {
+                    if(user == null) {
+                        vm.error = "Unable to update user";
+                        vm.user = user;
+                    }
+                    else {
+                        vm.firstName = user.firstName;
+                        vm.message = "User successfully updated"
+                    }
+                });
+
         }
 
         function deleteUser(userToDelete) {
-            var result = UserService.deleteUserById(userToDelete._id);
-            if (result == null){
-                vm.error = "User not found";
-            }
-            else{
-                $location.url("/login");
-                return;
-            }
+            UserService
+                .deleteUserById(userToDelete._id)
+                .success(function (response) {
+                    $location.url("/login");
+                })
+                .error(function (response) {
+                    vm.error = "User not found";
+                });
+
         }
     }
 
@@ -71,22 +86,32 @@
 
         function register(user) {
             if(user == null){
-                vm.registrationerror = "Values for required fields not provided";
+                vm.registrationerror = "Please enter your username, email and password";
                 return;
             }
-            if(user.username == null || user.password == null){
-                vm.registrationerror = "Values for required fields not provided";
+            if(user.username == null || user.email == null || user.password == null){
+                vm.registrationerror = "Please enter your username, email and password";
                 return;
             }
+            if (user.password != user.passwordverification){
+                vm.registrationerror ="";
+                vm.passwordmismatch = "Passwords do not match";
+                return;
+            }
+            UserService
+                .findUserByUsername(user.username)
+                .success(function(user){
+                    vm.registrationerror = "Username taken, please try another username";
+                    vm.passwordmismatch = "";
+                })
+                .error(function (err) {
+                    UserService
+                        .createUser(user)
+                        .success(function (newuser) {
+                            $location.url("/user/"+newuser._id);
+                        });
+                });
 
-            else{
-                if (user.password != user.passwordverification){
-                    vm.passwordmismatch = "Passwords fields not same";
-                    return;
-                }
-                var newuser = UserService.createUser(user);
-                $location.url("/user/"+newuser._id);
-            }
         }
     }
 })();

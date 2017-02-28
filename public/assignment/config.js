@@ -3,22 +3,12 @@
         .module("WebAppMaker")
         .config(configuration);
 
-    function configuration($routeProvider) {
+    function configuration($routeProvider, $httpProvider) {
+        $httpProvider.defaults.headers.post['Content-Type']='application/json;charset=UTF-8';
+        $httpProvider.defaults.headers.put['Content-Type'] = 'application/json;charset=UTF-8';
         $routeProvider
             .when("/login", {
                 templateUrl: 'views/user/login.view.client.html',
-                controller: "LoginController",
-                controllerAs: "model"
-            })
-
-            .when("/", {
-                templateUrl: "views/user/templates/login.view.client.html",
-                controller: "LoginController",
-                controllerAs: "model"
-            })
-
-            .when("/default", {
-                templateUrl: "views/user/templates/login.view.client.html",
                 controller: "LoginController",
                 controllerAs: "model"
             })
@@ -77,6 +67,9 @@
                 controller: "EditWidgetController",
                 controllerAs: "model"
             })
-
+            .otherwise({
+                // Default
+                templateUrl: 'views/user/login.view.client.html'
+            })
     }
 })();
