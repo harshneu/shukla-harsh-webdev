@@ -19,10 +19,9 @@
                 .success(function (response) {
                     vm.widgets = response;
                     if(vm.widgets.length == 0){
-                        vm.error = "No widgets used yet";
+                        vm.error = "No widgets";
                     }
                 });
-
         }
         init();
 
@@ -37,7 +36,7 @@
             return $sce.trustAsResourceUrl(url);
         }
     }
-    
+
     function NewWidgetController($routeParams, $location, WidgetService) {
         var vm = this;
         vm.uid = $routeParams.uid;
@@ -51,8 +50,8 @@
 
         function createHeaderWidget(headerSize) {
             var widget = {type: "HEADER",
-                          size: headerSize.toString(),
-                          text: "Sample Heading "+headerSize}
+                size: headerSize.toString(),
+                text: "Sample Heading "+headerSize}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
@@ -64,11 +63,13 @@
                 .error(function (response) {
 
                 })
-
+            // if(newWidget != null){
+            //     $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
+            // }
         }
         function createHTMLWidget() {
             var widget = {type: "HTML",
-                          text: "Sample <i>HTML</i> text"};
+                text: "Sample <i>HTML</i> text"};
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
@@ -85,7 +86,7 @@
         function createImageWidget() {
             var widget = {type: "IMAGE",
                 width: "100%",
-                url: "https://www.djaysgourmet.com.au/wp-content/uploads/2016/02/sample.jpg"}
+                url: ""}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
@@ -97,7 +98,6 @@
                 .error(function (response) {
 
                 })
-
         }
         function createYoutubeWidget() {
             var widget = {type: "YOUTUBE",
@@ -114,10 +114,9 @@
                 .error(function (response) {
 
                 })
-
         }
     }
-    
+
     function EditWidgetController($routeParams, $location, WidgetService) {
         var vm = this;
         vm.uid = $routeParams.uid;
@@ -140,6 +139,9 @@
 
         function hasEmptyProperties(target) {
             for (var member in target) {
+                if(member === "url" || member == "index"){
+                    continue;
+                }
                 if (target[member] == "")
                     return true;
             }
@@ -163,7 +165,6 @@
                 .error(function(response){
                     vm.updateerror = "Could not update the widget!";
                 });
-
         }
         function deleteWidget(wgid) {
             WidgetService
@@ -176,7 +177,6 @@
                 .error(function (response) {
                     vm.deleteerror = "Could not delete the widget!";
                 })
-
         }
     }
 })();

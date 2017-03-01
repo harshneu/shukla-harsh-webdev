@@ -12,7 +12,7 @@
 }
 
 .navbar-brand:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .navbar-fixed-top{
     border-width: 0 0 0;
