@@ -7,18 +7,16 @@
         function linkfunc(scope, element, attributes, sortingController) {
             element.sortable({
                 start: function(event, ui){
-                    // Set the start index and make it available for ui item
                     ui.item.startPos = ui.item.index();
                 },
                 update: function(event, ui){
-                    // var widget = ui.item.scope().widget;
                     var startIndex = ui.item.startPos;
                     var endIndex = ui.item.index();
                     sortingController.widgetsSort(startIndex, endIndex);
                 },
                 axis: 'y',
                 cursor: "move",
-                handle: ".wbdev-hamburger-style"
+                handle: ".hamburger-style"
                 // scroll: false
             });
         }

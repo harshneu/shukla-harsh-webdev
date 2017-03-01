@@ -139,6 +139,13 @@ a.thumbnail:hover, .thumbnail{
     color: #337ab7;
 }
 
+.hamburger-style{
+    padding: 5px;
+    color: #337ab7;
+    cursor: move;
+
+}
+
 .widget-type-style {
     padding: 0;
 }
