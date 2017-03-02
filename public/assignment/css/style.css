@@ -152,3 +152,11 @@ a.thumbnail:hover, .thumbnail{
 .widget-chooser-record{
     padding: 15px;
 }
+
+.image-text{
+    font-family: Optima;
+    background-color: #337ab7;
+    color:#fff;
+    width: 30%;
+    height: 100%;
+}
