@@ -36,7 +36,7 @@ module.exports = function (app) {
         });
         res.json(pagesList);
     }
-
+    // finding page by id.
     function findPageById(req, res){
         var pageId = req.params.pageId;
         var page = pages.find(function (page) {

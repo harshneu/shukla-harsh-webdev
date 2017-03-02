@@ -48,6 +48,9 @@
         vm.createImageWidget = createImageWidget;
         vm.createYoutubeWidget = createYoutubeWidget;
 
+
+        // Functions to create and update the pages.
+
         function createHeaderWidget(headerSize) {
             var widget = {type: "HEADER",
                 size: headerSize.toString(),
@@ -57,15 +60,12 @@
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
-                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
                 })
                 .error(function (response) {
 
                 })
-            // if(newWidget != null){
-            //     $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
-            // }
+
         }
         function createHTMLWidget() {
             var widget = {type: "HTML",
@@ -75,8 +75,7 @@
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
-                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
                 })
                 .error(function (response) {
 
@@ -92,8 +91,7 @@
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
-                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
                 })
                 .error(function (response) {
 
@@ -108,8 +106,7 @@
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id);
-                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
                 })
                 .error(function (response) {
 
@@ -137,6 +134,22 @@
         }
         init();
 
+        // navigates to the list of widgets if we have not added the the widget from the new widget page.
+        //checks if the status flag is set to new.
+
+        function navigateToExistingWidgetList(widget) {
+                                    if($location.search().status === "new"){
+                                WidgetService
+                                   .deleteWidget(widget._id)
+                                    .success(function () {
+                                            $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget");
+                                        });
+                            }
+                        else{
+                               $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget");
+                            }
+                   }
+
         function hasEmptyProperties(target) {
             for (var member in target) {
                 if(member === "url" || member == "index"){
@@ -151,7 +164,7 @@
         function updateWidget(updatedWidget) {
             vm.updateerror = null;
             if(vm.hasEmptyProperties(updatedWidget)){
-                vm.updateerror = "Could not update the widget!";
+                vm.updateerror = "Widget could not be updated";
                 return;
             }
             WidgetService
@@ -163,7 +176,7 @@
                     }
                 })
                 .error(function(response){
-                    vm.updateerror = "Could not update the widget!";
+                    vm.updateerror = "Widget could not be updated";
                 });
         }
         function deleteWidget(wgid) {
@@ -175,7 +188,7 @@
                     }
                 })
                 .error(function (response) {
-                    vm.deleteerror = "Could not delete the widget!";
+                    vm.deleteerror = "Widget could not be deleted";
                 })
         }
     }

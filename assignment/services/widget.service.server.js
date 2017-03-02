@@ -189,8 +189,10 @@ module.exports = function (app) {
                 deletedIndex = widget.index;
                 deletedWidgetPageId = widget.pageId;
                 if(widget.widgetType === "IMAGE"){
-                    var imageName = widget.url.split('//').pop().split("/").pop();
-                    deleteUploadedImage(imageName);
+                    if(widget.url){
+                                    var imageName = widget.url.split('//').pop().split("/").pop();
+                                    deleteUploadedImage(imageName);
+                                   }
                 }
                 widgets.splice(i,1);
                 updateIndexesAfterDelete(deletedIndex, deletedWidgetPageId);
@@ -216,7 +218,11 @@ module.exports = function (app) {
             var path = myFile.path;
             var destination = myFile.destination;
             var size = myFile.size;
-            var mimetype = myFile.mimetype;
+            var imgtype = myFile.imgtype;
+            if(imageWidget.url){
+                var imageName = imageWidget.url.split('//').pop().split("/").pop();
+                                 deleteUploadedImage(imageName);
+                             }
             imageWidget.url = req.protocol + '://' +req.get('host')+"/uploads/"+myFile.filename;
         }
         res.redirect("/assignment/#/user/"+uid+"/website/"+wid+"/page/"+imageWidget.pageId+"/widget");
