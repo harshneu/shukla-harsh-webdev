@@ -135,7 +135,6 @@ module.exports = function (app) {
         var widgetsList = widgets.filter(function(widget){
             return widget.pageId === pageId;
         });
-        // Sort by index
         var sortedWidgetList = widgetsList.sort(function (widgeta, widgetb) {
             return widgeta.index > widgetb.index;
         })

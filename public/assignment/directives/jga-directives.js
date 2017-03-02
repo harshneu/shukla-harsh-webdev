@@ -17,7 +17,6 @@
                 axis: 'y',
                 cursor: "move",
                 handle: ".hamburger-style"
-                // scroll: false
             });
         }
         return {

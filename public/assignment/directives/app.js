@@ -4,10 +4,6 @@
 (function(){
     angular
         .module('DirectiveApp',[])
-        .directive('hello', helloDir)
-        .directive('helloWorld', helloWorldDir)
-        .directive('hahaWorld', quick)
-        .directive('colorMeRed',colormeredDir)
         .directive("makeMeDraggable",makeMeDraggableDir)
         .directive('makeMeSortable',makemesortableDir);
 
@@ -22,37 +18,6 @@
         return {
             link: linkfunc
         }
-    }
-    function helloDir() {
-        var config = {
-            template:'<h2>hello from hello directive</h2>'
-        }
-        return config;
-    }
-
-    function helloWorldDir(){
-        var config = {
-            template:'<h2>Camel cased hello-world directive</h2>'
-        };
-        return config;
-    }
-
-    function quick() {
-        var config = {
-            template:'<h2>Underscores</h2>'
-        };
-        return config;
-    }
-
-    function colormeredDir() {
-        function linkFunction(scope, element) {
-            console.log(element);
-            element.css('color','red');
-        }
-        var config ={
-            link: linkFunction
-        };
-        return config;
     }
 
     function  makeMeDraggableDir() {
