@@ -44,12 +44,6 @@
                 }, function (err) {
                     vm.updateerror = "Could not get the widget!";
                 });
-            // WidgetService
-            //     .updateWidget(websiteId, pageId, widgetId, {url: url})
-            //     .then(function (response) {
-            //
-            //     }, function (err) {
-            //     });
         }
     }
 })();

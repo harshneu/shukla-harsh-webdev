@@ -49,7 +49,7 @@
 
         function createTEXTWidget() {
             var widget = {  type: "TEXT",
-                            text: "Sample text",
+                            text: "Text",
                             rows: 1,
                             placeholder: "Enter text",
                             formatted: false};
@@ -68,7 +68,7 @@
         function createHeaderWidget(headerSize) {
             var widget = {type: "HEADING",
                           size: headerSize.toString(),
-                          text: "Sample Heading "+headerSize}
+                          text: "Heading"}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
