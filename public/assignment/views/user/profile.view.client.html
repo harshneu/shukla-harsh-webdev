@@ -1,5 +1,7 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-fix">
+<!-- Top Navigation Bar -->
+
+<nav class="navbar navbar-default navbar-fixed-top bar-colour">
+    <div class="container-fluid wbdev-container-side-space-fix">
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                ng-click="model.updateUser(model.user)">
@@ -11,7 +13,12 @@
         </div>
     </div>
 </nav>
+
+
+<!-- Field Names -->
+
 <div class="container-fluid">
+    <div class="wbdev-profile-container">
         <div class="alert alert-success"
              ng-show="model.message">
             {{model.message}}
@@ -50,23 +57,40 @@
                        placeholder="Last name"
                        ng-model="model.user.lastName">
             </div>
-            <div class="form-group btn-margin-bottom">
-                <a ng-click="model.deleteUser(model.user)"
-                   class="btn btn-warning btn-block">
-                    Delete
+
+<!-- Buttons-->
+
+            <div class="row other-links">
+                <div class="col-xs-12 col-md-6">
+                <a ng-click="model.updateUser(model.user)"
+                   class="btn btn-success btn-block">
+                    Update
                 </a>
-                <a class="btn btn-primary btn-block"
-                   href="#/user/{{model.userId}}/website">
-                    Websites</a>
-                <a class="btn btn-danger btn-block"
-                   href="#/login">Logout</a>
+                    </div>
+                <div class="col-xs-12 col-md-6">
+                        <a class="btn btn-danger btn-block"
+                           href="#/login">Logout</a>
+                    </div>
+                <div class="col-xs-12 col-md-6">
+                    <a class="btn btn-primary btn-block"
+                       href="#/user/{{model.userId}}/website">
+                        Websites</a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <a ng-click="model.deleteUser(model.user)"
+                       class="btn btn-warning btn-block">
+                        Delete
+                    </a>
+                </div>
             </div>
         </form>
     </div>
+</div>
 
+<!-- Bottom Navbar -->
 
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom bar-colour">
+    <div class="container-fluid wbdev-container-side-space-fix">
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">

@@ -1,40 +1,40 @@
+body {
+    background-image: url("001-subtle-light-pattern-background-texture-vol5.jpg")
+}
 
-.navbar-default {
+.navbar-default .navbar-brand{
     color:#fff;
     font-weight: bolder;
 }
-.navbar-brand {
-    color:#fff !important;
-    font-weight: bolder;
-}
-.navbar-default {
-    color:#fff;
-}
 
-.navbar-brand:hover{
+.navbar-default {
+    color:#122b40;
+}
+.navbar-brand:hover {
     transform: scale(1.2);
+    color:#fff !important;
 }
+
 .navbar-fixed-top{
     border-width: 0 0 0;
 }
 
 .navbar-brand{
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.glyphicon-ok, .glyphicon-plus, .glyphicon-user, .glyphicon-share-alt
-{
-    color: fff;
+.glyphicon-ok, .glyphicon-plus, .glyphicon-user, .glyphicon-share-alt .glyphicon-search{
+    color: white;
 }
-.glyphicon-ok:hover, .glyphicon-plus:hover, .glyphicon-user:hover, .glyphicon-share-alt:hover .glyphicon-cog:hover{
+
+.glyphicon-ok:hover, .glyphicon-plus:hover, .glyphicon-user:hover, .glyphicon-share-alt:hover {
     transform: scale(1.1);
 }
-
 .form-control{
     border-radius: 0;
 }
 .btn{
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 input.form-control {
@@ -47,10 +47,13 @@ a:hover{
 
 body {
     font-family: 'Helvetica', sans-serif;
-    margin-top: 55px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 
+textarea{
+    resize: vertical;
+}
 a{
     cursor: pointer;
 }
@@ -59,13 +62,16 @@ a.thumbnail:hover, .thumbnail{
     border: 0;
 }
 
+a.thumbnail{
+    cursor: default;
+}
 
-.bar-color{
-    background-color: #337ab7;
+.bar-colour{
+    background-color: #122b40;
 }
 
 .empty-form-margin{
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .btn-margin-bottom{
@@ -80,40 +86,68 @@ a.thumbnail:hover, .thumbnail{
     margin-left: -15px;
 }
 
-.left-pane {
+a.btn{
+    padding: 7px 0;
+    max-width: 200px;
+    align-content: center;
+    margin: 5px;
+    align: center;
+}
+.left-scroller {
     position: absolute;
     top: 0px;
     bottom: 0px;
-    margin: 50px 0;
-    padding: 10px 0 0;
+    margin-top: 50px 0;
+    padding-top: 10px;
     overflow: auto;
 }
-.right-pane {
+.right-scroller {
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
-    margin: 50px 0;
-    padding: 10 15px 0 15px;
+    margin: 50px 15px;
+    padding-top: 10px;
     overflow-y: auto;
 }
 
 
-.buttons-style{margin-top: 30px;}
+.buttons-styles{
+    margin-top: 30px;
+    }
+
+
+.other-links{
+    margin: 20px auto 10px;
+    max-width: 500px;
+
+}
+
+.other-links {
+    padding: 30px 25px;
+}
+.other-links {
+    padding: 0;
+}
+
+.col-md-6{
+    padding: 0;
+}
 
 .profile-heading{
     font-size:26px;
-    color: #000000;
+    color: #000;
     padding: 10px;
-    max-width: 400px;
+    max-width: 600px;
     margin-bottom: 10px;
-    margin : 0 auto;
+    max-width: 500px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 
 .website-record{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .form-padding{
@@ -124,11 +158,10 @@ a.thumbnail:hover, .thumbnail{
     padding: 10px 0;
 }
 
-.widget-type-style{
-    padding-top: 10px 0;
-    border-bottom: 1px solid #eeeeee;
+.widget-type-styles{
+    padding-bottom:30px;
 }
-.widget-setings-icons{
+.widget-setings-icon{
     position: absolute;
     float: right;
     right:15px;
@@ -136,27 +169,61 @@ a.thumbnail:hover, .thumbnail{
 }
 .cog-style{
     padding: 5px;
-    color: #337ab7;
+    background-color: #122b40;
+    color: #FFF;
 }
-
 .hamburger-style{
     padding: 5px;
-    color: #337ab7;
-    cursor: move;
-
+    background-color: #122b40;
+    color: #FFF;
 }
 
-.widget-type-style {
-    padding: 0;
+.hamburger-style:hover{
+    transform: scale(1.1);
+    cursor:move;
 }
+.widget-type-styles .thumbnail{
+    padding: 10px;
+}
+
 .widget-chooser-record{
     padding: 15px;
 }
 
-.image-text{
-    font-family: Optima;
-    background-color: #337ab7;
-    color:#fff;
-    width: 30%;
+.hide-element{
+    display: none;
+}
+
+.youtube-widget{
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+}
+
+.youtube-widget iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
     height: 100%;
 }
+
+.flickr-image-box{
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.flickr-image-box img {
+    cursor: pointer;
+    width: 75%;
+    height: 75%;
+}
+.btn-black {
+    color: #fff;
+    background-color: black;
+}
+
+.btn-black:hover{
+    color: #fff !important;
+}
+

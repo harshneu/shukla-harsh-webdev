@@ -18,8 +18,14 @@
                class="form-control"
                ng-model="model.widget.width"/>
     </div>
+    <p>
+    <a class="form-control btn btn-primary"
+       ng-click="model.updateWidget(model.widget)">
+        Update Video
+    </a>
+    </p>
     <a class="form-control btn btn-danger"
        ng-click="model.deleteWidget(model.widget._id)">
-        Delete
+        Delete Video
     </a>
 </form>

@@ -12,19 +12,19 @@
             UserService
                 .findUserByCredentials(username,password)
                 .success(function (response) {
-                    var user = response;
+                   var user = response;
                     if(user){
                         $location.url("/user/"+user._id);
                     }})
-                .error(function (error) {
-                    vm.error = "Username/password does not match";
-                    return null;
-                });
+                    .error(function (error) {
+                        vm.error = "Username/password does not match";
+                        return null;
+            });
 
 
         }
     }
-
+    
     function ProfileController($routeParams, UserService, $location) {
         var vm = this;
         vm.userId = $routeParams["uid"];
@@ -41,7 +41,6 @@
                     vm.firstName = angular.copy(vm.user.firstName);
                 }
             });
-
         }
         init();
 
@@ -53,18 +52,17 @@
                 return;
             }
             UserService
-                .updateUser(vm.userId, newUser)
-                .success(function (user) {
-                    if(user == null) {
-                        vm.error = "Unable to update user";
-                        vm.user = user;
-                    }
-                    else {
-                        vm.firstName = user.firstName;
-                        vm.message = "User successfully updated"
-                    }
-                });
-
+                       .updateUser(vm.userId, newUser)
+                       .success(function (user) {
+                            if(user == null) {
+                                vm.error = "Unable to update user";
+                                vm.user = user;
+                            }
+                            else {
+                                vm.firstName = user.firstName;
+                                vm.message = "User successfully updated"
+                            }
+            });
         }
 
         function deleteUser(userToDelete) {
@@ -76,10 +74,9 @@
                 .error(function (response) {
                     vm.error = "User not found";
                 });
-
         }
     }
-
+    
     function RegisterController($location, UserService) {
         var vm = this;
         vm.register = register;
@@ -101,8 +98,8 @@
             UserService
                 .findUserByUsername(user.username)
                 .success(function(user){
-                    vm.registrationerror = "Username taken, please try another username";
-                    vm.passwordmismatch = "";
+                        vm.registrationerror = "Username taken, please try another username";
+                        vm.passwordmismatch = "";
                 })
                 .error(function (err) {
                     UserService
@@ -111,7 +108,6 @@
                             $location.url("/user/"+newuser._id);
                         });
                 });
-
         }
     }
 })();

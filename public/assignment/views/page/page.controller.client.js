@@ -17,10 +17,10 @@
                     if(vm.pages.length == 0){
                         vm.error = "No pages created yet";
                     }
+                })
+                .error(function (response) {
+                    vm.error = "Could not find the pages";
                 });
-            // if(vm.pages.length == 0){
-            //     vm.error = "No pages created yet";
-            // }
         }
         init();
     }
@@ -119,7 +119,6 @@
                     vm.deleteError = "Page could not be deleted, please try again";
                     return;
                 });
-
         }
     }
 })();

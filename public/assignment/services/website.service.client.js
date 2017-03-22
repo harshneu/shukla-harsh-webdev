@@ -4,7 +4,6 @@
         .factory("WebsiteService",WebsiteService);
 
     function WebsiteService($http) {
-
         var api={
             "createWebsite":createWebsite,
             "findWebsitesByUser":findWebsitesByUser,

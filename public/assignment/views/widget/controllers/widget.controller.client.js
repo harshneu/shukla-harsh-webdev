@@ -19,7 +19,7 @@
                 .success(function (response) {
                     vm.widgets = response;
                     if(vm.widgets.length == 0){
-                        vm.error = "No widgets";
+                        vm.zeroWidgetError = "No Widgets Added";
                     }
                 });
         }
@@ -29,69 +29,84 @@
             return $sce.trustAsHtml(html);
         }
         function checkSafeYouTubeUrl(url) {
-            var parts = url.split('/');
-            var id = parts[parts.length - 1];
+            var id = url.split("=")[1];
             url = "https://www.youtube.com/embed/"+id;
-            console.log(url);
             return $sce.trustAsResourceUrl(url);
         }
     }
-
+    
     function NewWidgetController($routeParams, $location, WidgetService) {
         var vm = this;
         vm.uid = $routeParams.uid;
         vm.wid = $routeParams.wid;
         vm.pid = $routeParams.pid;
 
-        vm.createHeaderWidget = createHeaderWidget;
-        vm.createHTMLWidget = createHTMLWidget;
-        vm.createImageWidget = createImageWidget;
-        vm.createYoutubeWidget = createYoutubeWidget;
+        vm.createHeaderWidget   = createHeaderWidget;
+        vm.createHTMLWidget     = createHTMLWidget;
+        vm.createImageWidget    = createImageWidget;
+        vm.createYoutubeWidget  = createYoutubeWidget;
+        vm.createTEXTWidget     = createTEXTWidget;
 
-
-        // Functions to create and update the pages.
-
-        function createHeaderWidget(headerSize) {
-            var widget = {type: "HEADER",
-                size: headerSize.toString(),
-                text: "Sample Heading "+headerSize}
+        function createTEXTWidget() {
+            var widget = {  type: "TEXT",
+                            text: "Sample text",
+                            rows: 1,
+                            placeholder: "Enter text",
+                            formatted: false};
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");
+                    }
+                })
+                .error(function (response) {
+
+                });
+        }
+        function createHeaderWidget(headerSize) {
+            var widget = {type: "HEADING",
+                          size: headerSize.toString(),
+                          text: "Sample Heading "+headerSize}
+            WidgetService
+                .createWidget(vm.pid, widget)
+                .success(function (response) {
+                    var newWidget = response;
+                    if(newWidget){
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");
+                    }
                 })
                 .error(function (response) {
 
                 })
-
         }
         function createHTMLWidget() {
             var widget = {type: "HTML",
-                text: "Sample <i>HTML</i> text"};
+                          text: "Sample HTML text"};
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");
+                    }
                 })
                 .error(function (response) {
 
                 })
-
         }
         function createImageWidget() {
             var widget = {type: "IMAGE",
-                width: "100%",
+                width: "90%",
                 url: ""}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");
+                    }
                 })
                 .error(function (response) {
 
@@ -100,20 +115,22 @@
         function createYoutubeWidget() {
             var widget = {type: "YOUTUBE",
                 width: "100%",
-                url: "https://www.youtube.com/embed/mFIOGpIQtVU"}
+                url: "https://www.youtube.com/watch?v=G62HrubdD6o"}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
                     var newWidget = response;
                     if(newWidget){
-                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");                    }
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/"+newWidget._id+"?status=new");
+                    }
                 })
                 .error(function (response) {
 
                 })
+
         }
     }
-
+    
     function EditWidgetController($routeParams, $location, WidgetService) {
         var vm = this;
         vm.uid = $routeParams.uid;
@@ -124,6 +141,7 @@
         vm.hasEmptyProperties = hasEmptyProperties;
         vm.updateWidget = updateWidget;
         vm.deleteWidget = deleteWidget;
+        vm.navigateToWidgetList = navigateToWidgetList;
 
         function init() {
             WidgetService
@@ -134,29 +152,26 @@
         }
         init();
 
-        // navigates to the list of widgets if we have not added the the widget from the new widget page.
-        //checks if the status flag is set to new.
-
-        function navigateToExistingWidgetList(widget) {
-                                    if($location.search().status === "new"){
-                                WidgetService
-                                   .deleteWidget(widget._id)
-                                    .success(function () {
-                                            $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget");
-                                        });
-                            }
-                        else{
-                               $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget");
-                            }
-                   }
-
+        function navigateToWidgetList(widget) {
+            if($location.search().status === "new"){
+                WidgetService
+                    .deleteWidget(widget._id)
+                    .success(function () {
+                        $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget/new");
+                    });
+            }
+            else{
+                $location.url("/user/"+vm.uid+"/website/"+vm.wid+"/page/"+vm.pid+"/widget");
+            }
+        }
         function hasEmptyProperties(target) {
             for (var member in target) {
-                if(member === "url" || member == "index"){
+                if(member == "index" || member == "formatted"){
                     continue;
                 }
-                if (target[member] == "")
+                if (target[member] == ""){
                     return true;
+                }
             }
             return false;
         }
@@ -164,7 +179,7 @@
         function updateWidget(updatedWidget) {
             vm.updateerror = null;
             if(vm.hasEmptyProperties(updatedWidget)){
-                vm.updateerror = "Widget could not be updated";
+                vm.updateerror = "Widget cannot be updated";
                 return;
             }
             WidgetService
@@ -176,7 +191,7 @@
                     }
                 })
                 .error(function(response){
-                    vm.updateerror = "Widget could not be updated";
+                    vm.updateerror = "Widget cannot be updated";
                 });
         }
         function deleteWidget(wgid) {
@@ -188,7 +203,7 @@
                     }
                 })
                 .error(function (response) {
-                    vm.deleteerror = "Widget could not be deleted";
+                    vm.deleteerror = "Widget cannot be deleted";
                 })
         }
     }

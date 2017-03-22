@@ -17,7 +17,6 @@
                         vm.error = "No websites created yet";
                     }
                 });
-
         }
         init();
     }

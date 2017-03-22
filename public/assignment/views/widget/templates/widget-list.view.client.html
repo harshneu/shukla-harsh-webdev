@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default navbar-fixed-top bar-color">
-    <div class="container-fluid container-side-space-fix">
+<nav class="navbar navbar-default navbar-fixed-top bar-colour">
+    <div class="container-fluid wbdev-container-side-space-fix">
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/new">
@@ -16,34 +16,46 @@
     </div>
 </nav>
 
-    <div jga-sortable class="container-fluid container-side-space-fix">
-    <div class="row widget-type-style"
+<div wbdv-sortable class="container-fluid wbdev-container-side-space-fix">
+    <div ng-if="model.zeroWidgetError"
+         class="alert alert-warning text-center">
+        {{model.zeroWidgetError}}
+    </div>
+    <div class="row widget-type-styles"
          ng-repeat="widget in model.widgets">
         <div class="col-xs-12">
-            <div ng-switch="widget.widgetType">
-                <div ng-switch-when="HEADER">
+
+            <!--<div class="wbdev-widget-setings-icons">-->
+                <!--<a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">-->
+                    <!--<span class="glyphicon glyphicon-cog wbdev-cog-style"></span>-->
+                <!--</a>-->
+                <!--<span class="glyphicon glyphicon-menu-hamburger wbdev-hamburger-style"></span>-->
+            <!--</div>-->
+
+            <div ng-switch="widget.type">
+                <div ng-switch-when="HEADING">
                     <ng-include src="'views/widget/templates/widget-HEADER.view.client.html'"></ng-include>
-                    <div class="widget-setings-icons">
+                    <div class="widget-setings-icon">
                         <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
-                           <span class="glyphicon glyphicon-cog cog-style"></span>
+                            <span class="glyphicon glyphicon-cog cog-style"></span>
                         </a>
-                         <span class="glyphicon glyphicon-menu-hamburger hamburger-style"></span>
+                        <span class="glyphicon glyphicon-menu-hamburger hamburger-style"></span>
                     </div>
+
                 </div>
                 <div ng-switch-when="YOUTUBE"
-                     class="text-center">
+                     class="text-center youtube-widget">
                     <ng-include src="'views/widget/templates/widget-YOUTUBE.view.client.html'"></ng-include>
-                    <div class="widget-setings-icons">
-                         <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
-                             <span class="glyphicon glyphicon-cog cog-style"></span>
-                         </a>
+                    <div class="widget-setings-icon">
+                        <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
+                            <span class="glyphicon glyphicon-cog cog-style"></span>
+                        </a>
                         <span class="glyphicon glyphicon-menu-hamburger hamburger-style"></span>
                     </div>
                 </div>
-
                 <div ng-switch-when="IMAGE">
                     <ng-include src="'views/widget/templates/widget-IMAGE.view.client.html'"></ng-include>
-                    <div class="widget-setings-icons">
+                    <div class="widget-setings-icon">
                         <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
                             <span class="glyphicon glyphicon-cog cog-style"></span>
                         </a>
@@ -52,9 +64,19 @@
                 </div>
                 <div ng-switch-when="HTML">
                     <ng-include src="'views/widget/templates/widget-HTML.view.client.html'"></ng-include>
-                    <div class="widget-setings-icons">
+                    <div class="widget-setings-icon">
                         <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
-                            <span class="glyphicon glyphicon-cog hamburger-style"></span>
+                            <span class="glyphicon glyphicon-cog cog-style"></span>
+                        </a>
+                        <span class="glyphicon glyphicon-menu-hamburger hamburger-style"></span>
+                    </div>
+                </div>
+
+                <div ng-switch-when="TEXT">
+                    <ng-include src="'views/widget/templates/widget-TEXT.view.client.html'"></ng-include>
+                    <div class="widget-setings-icon">
+                        <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/{{widget._id}}">
+                            <span class="glyphicon glyphicon-cog cog-style"></span>
                         </a>
                         <span class="glyphicon glyphicon-menu-hamburger hamburger-style"></span>
                     </div>
@@ -64,8 +86,8 @@
     </div>
 </div>
 
-<nav class="navbar navbar-default navbar-fixed-bottom bar-color">
-    <div class="container-fluid container-side-space-fix">
+<nav class="navbar navbar-default navbar-fixed-bottom bar-colour">
+    <div class="container-fluid wbdev-container-side-space-fix">
         <div class="pull-right margin-right-adjust">
             <a class="navbar-brand"
                href="#/user/{{model.userId}}">
