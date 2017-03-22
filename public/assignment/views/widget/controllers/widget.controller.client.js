@@ -83,7 +83,7 @@
         }
         function createHTMLWidget() {
             var widget = {type: "HTML",
-                          text: "Sample HTML text"};
+                          text: "HTML text"};
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
