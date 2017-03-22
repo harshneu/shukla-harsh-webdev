@@ -227,3 +227,10 @@ a.btn{
     color: #fff !important;
 }
 
+.image-upload{
+    max-width: 200px;
+    align:center;
+    min-height: 35px;
+    margin-top:15px;
+    margin-right:5px;
+}

@@ -39,18 +39,18 @@
                value="{{model.widget._id}}"
                class="hide-element"/>
         <button type="submit"
-                class="btn btn-block btn-primary">Upload Image</button>
+                class="btn btn-primary  btn-block col-xs-12 col-md-6 image-upload">Upload Image</button>
     </form>
 
 </div>
 <div class="form-group">
-    <a class="btn btn-black btn-block"
+    <a class="btn btn-black btn-block col-xs-12 col-md-6"
        href="#/user/{{model.uid}}/website/{{model.wid}}/page/{{model.pid}}/widget/{{model.wgid}}/flickrsearch">
         Search Flickr Image
     </a>
 </div>
 <div class="form-group">
-    <a class="btn btn-danger btn-block"
+    <a class="btn btn-danger btn-block col-xs-12 col-md-6"
        ng-click="model.deleteWidget(model.widget._id)">
         Delete Image
     </a>
