@@ -30,6 +30,19 @@ body {
 .glyphicon-ok:hover, .glyphicon-plus:hover, .glyphicon-user:hover, .glyphicon-share-alt:hover {
     transform: scale(1.1);
 }
+
+.input-group-btn:last-child>.btn {
+    margin-top: 0px !important;
+    margin-left: 5px !important;
+    width: 50px !important;
+    background-color: #122b40;
+    height: 35px;
+}
+
+.glyphicon-search{
+    color: #fff;
+}
+
 .form-control{
     border-radius: 0;
 }
@@ -234,3 +247,4 @@ a.btn{
     margin-top:15px;
     margin-right:5px;
 }
+
