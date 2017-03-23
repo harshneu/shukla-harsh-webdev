@@ -115,7 +115,7 @@
         function createYoutubeWidget() {
             var widget = {type: "YOUTUBE",
                 width: "90%",
-                url: "https://www.youtube.com/watch?v=G62HrubdD6o"}
+                url: "https://www.youtube.com/watch?v=TUxHf0Fsg0A"}
             WidgetService
                 .createWidget(vm.pid, widget)
                 .success(function (response) {
