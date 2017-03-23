@@ -17,7 +17,7 @@
                         $location.url("/user/"+user._id);
                     }})
                     .error(function (error) {
-                        vm.error = "Username/password does not match";
+                        vm.error = "Username/password pair do not exist";
                         return null;
             });
 
@@ -47,15 +47,15 @@
         function updateUser(newUser) {
             vm.blankerror = null;
             vm.error = null;
-            if(newUser.email == "" || newUser.firstName == ""||newUser.lastName == ""){
-                vm.blankerror = "Please provide values for all fields to update";
+            if(newUser.firstName == ""||newUser.lastName == ""){
+                vm.blankerror = "Please provide required values";
                 return;
             }
             UserService
                        .updateUser(vm.userId, newUser)
                        .success(function (user) {
                             if(user == null) {
-                                vm.error = "Unable to update user";
+                                vm.error = "Unable to update the user";
                                 vm.user = user;
                             }
                             else {
@@ -83,11 +83,11 @@
 
         function register(user) {
             if(user == null){
-                vm.registrationerror = "Please enter your username, email and password";
+                vm.registrationerror = "Please enter your username and password";
                 return;
             }
-            if(user.username == null || user.email == null || user.password == null){
-                vm.registrationerror = "Please enter your username, email and password";
+            if(user.username == null || user.password == null){
+                vm.registrationerror = "Please enter your username and password";
                 return;
             }
             if (user.password != user.passwordverification){
@@ -98,7 +98,7 @@
             UserService
                 .findUserByUsername(user.username)
                 .success(function(user){
-                        vm.registrationerror = "Username taken, please try another username";
+                        vm.registrationerror = "Username has been taken";
                         vm.passwordmismatch = "";
                 })
                 .error(function (err) {
