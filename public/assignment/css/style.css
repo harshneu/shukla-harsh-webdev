@@ -209,7 +209,7 @@ a.btn{
 
 .youtube-widget{
     position: relative;
-    padding-bottom: 55%;
+    padding-bottom: 56.25%;
     height: 0;
 }
 
@@ -217,7 +217,6 @@ a.btn{
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
     height: 100%;
 }
 
