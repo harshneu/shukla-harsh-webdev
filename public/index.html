@@ -1,201 +1,30 @@
-
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harsh Shukla</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css' />
-
-
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
-    <link href="../assignment/css/portfolio-style.css" rel="stylesheet"/>
-    <link href="../assignment/css/portfolio-css.css" rel="stylesheet"/>
-    <meta name="description" content="Harsh Shukla Home Page">
-    <meta name="author" content="Harsh Shukla">
+    <meta charset="UTF-8">
+    <title>Web Development Course Home Page</title>
 </head>
 <body>
-
-<div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" id="offCanvasWrapper" data-off-canvas-wrapper>
-
-        <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-            <div class="title-bar-left">
-                <button id="closeOffCanvas" class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-                <span class="title-bar-title"></span>
-            </div>
-        </div>
-        <!--<div class="sticky">-->
-        <!-- off-canvas left menu -->
-        <div class="off-canvas sticky position-left" id="offCanvasLeft" data-off-canvas>
-            <ul class="vertical dropdown menu" id="ocMenu" data-dropdown-menu>
-                <li><a href="#intro">About</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#cs5610">CS5610</a></li>
-                <li><a href="#projects">Other Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#resume">Download Resume</a></li>
-            </ul>
-        </div>
-        <!--</div>-->
-        <div id="widemenu" class="top-bar" data-magellan-target="intro">
-            <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text">Harsh Shukla</li>
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#projects">Assignments</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </div></div>
-
-        <div data-off-canvas-content>
-            <div  id="main-container">
-                <div class="parallax-window" data-parallax="scroll" data-ios-fix="true" data-bleed="50" data-image-src="../assignment/css/images/bkg.jpg">
-                    <div id="intro" class="row column">
-                        <div id="intro-text">
-                            <img src="../assignment/css/images/harsh.jpg" id="intro-img" width="150px"/>
-                            <h1 class="named">Harsh Shukla</h1>
-                            <h2 class="font-effect-fire-animation">I WORK ON <span id="role"></span></h2>
-                        </div>
-
-                        <div class="align-bottom" id="about-me" style="width:100vw">
-                            <h1>About Me</h1>
-                            <p class="text-justify">Student of Computers. Studing Computer Science at Northeastern University.
-                                <br>My Areas of Expertise are: Full Stack Web Development (MEAN Stack) and Software Development (JAVA) and Data Analytics.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="history" class="page">
-                    <div class="row">
-                        <div class="column small-12 large-6" id="education"><h1>Education</h1>
-                            <h3>Northeastern University</h3>
-                            <h4>Boston, MA</h4>
-                            <h4>College of Computer and Information Science</h4>
-                            <h5>Candidate for Master of Science in Computer Science</h5>
-                            <h6>Sept 2015 to Present</h6>
-                            <h6>Courses</h6>
-                            <ul>
-                                <li>Programming Design Paradigms</li>
-                                <li>Algorithms</li>
-                                <li>Affective Computing with Artificial Intelligence</li>
-                                <li>Web Development</li>
-                                <li>Database Management Systems</li>
-                                <li>Managing Software development</li>
-                            </ul>
-
-                            <h3>Rajiv Gandhi Technical University</h3>
-                            <h4>MAdhya Pradesh, India</h4>
-                            <h5>Bachelor of Engineering in Computer Science.</h5>
-                        </div>
-
-                        <div class="column small-12 large-6" id="experience">
-                            <h1>Experience</h1>
-                            <h3>Northeastern University</h3>
-                            <h4>Boston, MA</h4>
-                            <h5>Graduate Teaching Assistant</h5>
-                            <h6>January 2017 to Present</h6>
-                            <ul class="text-justify">
-                                <li>Help students with questions in course material and assignments</li>
-                                <li>Conduct labs</li>
-                                <li>Grade Assignments</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="projects" class="page" data-magellan-target="projects">
-                    <div class="row">
-                        <div class="project-pad">
-                            <h1>Projects</h1>
-                            <h3>Northeastern University</h3>
-                            <h5>Boston, MA</h5>
-                            <h6>Nov 2015 to Dec 2015</h6>
-
-                            <h6>Jan 2016 to April 2016</h6>
-                            <ul>
-                                <li><a href="https://shukla-harsh-webdev.herokuapp.com/assignment/#/login" target="_blank">Website Maker Application</a> using Node.js, MongoDB and Angular.JS. <a href="https://github.com/harshneu/shukla-harsh-webdev">Github</a></li>
-                                <li><a href="../project/client/index.html"" target="_blank">MusicZone</a>: A Web Application to listen to songs and latest trending music on the go using Node.js, MongoDB and Angular.JS (MEAN stack App).<a href="https://github.com/harshneu/shukla-harsh-webdev/tree/master/public/project">Github</a></li>
-                                <li><a href="https://docs.google.com/document/d/18j6HzEjzJiC1irGYCfWUj3g1Q8Me08MpxDmCFw3YyTE/edit?usp=sharing" target="_blank">Project documentation</a></li>
-                                <li>A desktop application which provides its user to recognise data from a picture by using prerecognised symbols from the database and comparing the patterns.The coding for the application was done using JAVA while interface was designed using nimbus touch n feel</li>
-
-                            </ul>
+<link href="../assignment/css/style.css" rel="stylesheet"/>
+<h1>Web Dev Course Home Page-Harsh Shukla</h1>
 
 
-                            <h3>Additional Projects</h3>
-                            <ul class="text-justify">
-                                <li>Developed software to implement feature extraction for accessing the capabilities of virtual agents.
-                                    Used sklearn(scikit-learn 0.17.0) library to validate approximate accuracy for the implementations. </li>
-                            </ul>
-                            <ul>
-                                <li>Developed project to establish a database to maintaing an intra-university Trash to treasure project. Implemented transaction service using paypal API.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<h2 style="font-family: 'Helvetica';font-size:x-large ">Required links</h2>
+<ul>
+    <li>
+        <a href="assignment/User/login.html" style="font-family: 'Songti TC';font-size: x-large">Project</a>
+    </li>
+    <li>
+        <a href="assignment/#/login" style="font-family: 'Songti TC';font-size: x-large">Assignment</a>
+    </li>
 
-
-            </div>
-
-            <a  name="contact"></a>
-            <div id="contacts" class="banner">
-                <div class="container content-section text-center">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2 class="contact-info">Contact Me:</h2>
-                        <p class="contact-info-p" >Feel free to email me to provide some feedback on my website, give me suggestions for changes, or to just say hello!</p>
-                        <p><a class="linkcolor" href="mailto:shukla.h@husky.neu.edu">shukla.h@husky.neu.edu</a>
-                        <p><a class="linkcolor" href="tel:8573008187" &nbsp;>Call Me Here</a></p>
-                        </p>
-                        <ul class="list-inline banner-social-buttons">
-                            <li>
-                                <a href="https://www.linkedin.com/in/harshneu" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/harneu/shukla-harsh-webdev" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/innershel" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="resume">
-                <a href="https://drive.google.com/file/d/0B7SZ06vbZZNiTzJTTHhLUnRVUE0/view?usp=sharing" target="_blank">
-                    <div>
-                        <span class="glyphicon glyphicon-download"></span>Download Resume
-                    </div>
-                </a>
-                <div>Copyright <sup>&copy;</sup>Harsh Shukla 2017.</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
-<script src="../assignment/js/portfolio-skills.js"></script>
-<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
-<script src="../assignment/js/smoothscroll.js"></script>
-<!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
-<script src="../assignment/js/portfolio-script.js"></script>
+    <li>
+        <a href="test/index.html" style="font-family: 'Songti TC';font-size: x-large">Test MongoDB</a>
+    </li>
+    <li>
+        <a href="https://github.com/harshneu/shukla-harsh-webdev"style="font-family: 'Songti TC';font-size: x-large">
+            Your public repository at GitHub.com</a>
+    </li>
+</ul>
 </body>
 </html>

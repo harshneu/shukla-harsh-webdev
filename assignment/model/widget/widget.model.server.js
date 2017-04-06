@@ -53,7 +53,7 @@ module.exports = function () {
             });
     }
 
-    function getWidgetsReserifly(count, widgetsOfPage, widgetCollectionForPage) {
+    function getWidgetsRecursively(count, widgetsOfPage, widgetCollectionForPage) {
         if(count == 0){
             return widgetCollectionForPage;
         }
@@ -61,7 +61,7 @@ module.exports = function () {
         return WidgetModel.findById(widgetsOfPage.shift()).select('-__v')
             .then(function (widget) {
                 widgetCollectionForPage.push(widget);
-                return getWidgetsReserifly(--count, widgetsOfPage, widgetCollectionForPage);
+                return getWidgetsRecursively(--count, widgetsOfPage, widgetCollectionForPage);
             }, function (err) {
                 return err;
             });
@@ -75,7 +75,7 @@ module.exports = function () {
                 var numberOfWidgets = widgetsOfPage.length;
                 var widgetCollectionForPage = [];
 
-                return getWidgetsReserifly(numberOfWidgets, widgetsOfPage, widgetCollectionForPage);
+                return getWidgetsRecursively(numberOfWidgets, widgetsOfPage, widgetCollectionForPage);
 
             }, function (err) {
                 return err;

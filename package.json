@@ -1,37 +1,19 @@
 {
   "name": "web-dev",
   "version": "1.0.0",
-  "description": "Heroku Sample Application",
-  "author": {
-    "name": "Harsh Shukla"
-  },
+  "main": "server.js",
   "dependencies": {
-    "angular-ui-bootstrap": "^1.2.4",
-    "angular-ui-sortable": "^0.13.4",
     "bluebird": "^3.5.0",
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.1",
-    "ejs": "^2.4.1",
-    "express": "^3.4.8",
-    "express-session": "^1.15.2",
-    "mongoose": "^4.4.10",
-    "multer": "^1.3.0",
-    "node-uuid": "^1.4.7",
-    "nonce": "^1.0.3",
-    "oauth-signature": "^1.3.1",
-    "passport": "^0.3.2",
-    "passport-facebook": "^2.1.0",
-    "passport-google-oauth": "^1.0.0",
-    "passport-local": "^1.0.0",
-    "q": "^1.5.0",
-    "request": "^2.69.0",
-    "soundcloud": "^3.1.0",
-    "soundcloud-audio": "^1.0.0",
-    "uuid": "^2.0.1"
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "multer": "^1.3.0"
   },
   "devDependencies": {},
-  "bundleDependencies": [],
-  "private": true,
-  "main": "server.js"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jose G. Annunziato",
+  "license": "ISC"
 }
