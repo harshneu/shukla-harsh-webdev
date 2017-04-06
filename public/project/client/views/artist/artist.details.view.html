@@ -1,0 +1,162 @@
+<div class="container-fuild" ng-controller="ArtistController">
+    <div  class="detail">
+
+        <div class="container-fluid">
+            <h1 class="page-header"> {{model.details.name}}
+                <div ng-show="currentUser" ng-switch=model.musicLiked>
+
+                    <div ng-switch-when="no">
+                        <a ng-click="model.userFavoritesMusic(model.details)" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-heart-empty">
+                                </span>
+                        </a>
+                    </div>
+
+                    <div ng-switch-when="yes">
+                        <a ng-click="model.userFavoritesMusic(model.details)" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-heart">
+                            </span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </h1>
+        </div>
+
+        <div id="tag" class="container-fluid">
+            <div class="row">
+                <label id="tagLabel">Tags</label>
+                <ul id="tags" ng-repeat="artistTags in model.tags">
+                    <li>
+                        <div id="taglist" class="row">
+                            <a href="#/tag/{{artistTags.name}}">{{artistTags.name}}</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="container-fluid">
+            <div id="about">
+                <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{model.details.image.large}}" alt = "No Image!">
+                <!--<div ng-show="artistImage.size.indexOf('mega')>=0">
+                <img class="media-object pull-left img-responsive" src="{{artistImage.#text}}" alt = "No Image Found!">
+                </div>-->
+            </div>
+            <div class="col-sm-offset-1">
+                <p>
+                    {{model.details.bio.summary}}
+                </p>
+            </div>
+
+            <label class="col-sm-3">Listeners:
+                <p>{{model.stats.listeners}}</p>
+            </label>
+            <label class="col-sm-3">Play Count:
+                <p>{{model.stats.playcount}}</p>
+            </label>
+        </div>
+
+        <br/>
+
+        <div class="container-fluid">
+            <h4 class="page-header">Tracks</h4>
+            <div class="row container-fluid">
+                <ul ng-repeat="track in model.tracks | limitTo: 30">
+                    <li>
+                        <a href="#/player/{{track.name}}/{{track.artist.name}}">
+                            <span class="glyphicon glyphicon-play-circle"></span> {{track.name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="similar" class="container-fluid">
+            <h4 class="page-header">Artists similar to {{model.details.name}}</h4>
+            <div ng-repeat="similarArtist in model.similar">
+                <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
+                    <div class="row container-fluid">
+                        <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{similarArtist.image.medium}}" alt = "No Image Found!">
+                        <div class="container-fluid col-md-6 col-sm-3 col-lg-6">
+                            <a href="#/search/artist/{{similarArtist.name}}">{{similarArtist.name}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fav" class="container-fluid">
+            <h4 class="page-header">Users who like {{model.details.name}}</h4>
+            <p ng-hide="currentUser"><a href="#/login">Login</a> to see users who like this</p>
+            <div ng-hide="model.favoriteUsers">
+                <p>Be the first to like {{model.details.name}}</p>
+            </div>
+            <div ng-show="model.favoriteUsers">
+                <ul ng-repeat = "user in model.favoriteUsers track by $index" ng-show="currentUser">
+                    <li><a href="#/profile/{{user.userId}}">{{user.username}}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="review" class="container-fluid">
+            <h4 id="reviews" class="page-header">Reviews</h4>
+            <p ng-hide="currentUser"><a href="#/login">Login</a> to post reviews</p>
+            <div class="row" ng-show="currentUser">
+                <div class="col-md-6">
+                    <div class="widget-area no-padding blank">
+                        <div class="status-upload">
+                            <form class="form-horizontal">
+                                <textarea id = "commentBox" placeholder="What are your thoughts about this music?" ng-model="model.commentBox"></textarea>
+                                <!--<ul>
+                                    <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
+                                </ul>-->
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-2">
+                                        <button type="submit" class="btn btn-default btn-sm" ng-click="model.postComment(model.details)">
+                                        <span class="glyphicon glyphicon-share"></span> Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- Status Upload  -->
+                    </div><!-- Widget Area -->
+                </div>
+            </div>
+
+            <div ng-show="model.comments">
+            <!-- Displaying comments -->
+                <div ng-repeat="comment in model.comments">
+                    <div class="row">
+                        <!--<div class="col-sm-1">
+                            <div class="thumbnail">
+                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                            </div>&lt;!&ndash; /thumbnail &ndash;&gt;
+                        </div>&lt;!&ndash; /col-sm-1 &ndash;&gt;-->
+                        <div class="col-sm-5">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="#/profile/{{comment.userId}}"><strong>{{comment.username}}</strong></a>
+                                    <span class="text-muted">{{comment.timestamp}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                    <span id="removeGlyph" ng-show = "comment.userId==currentUser._id || currentUser.roles.indexOf('admin')>=0"
+                                          class="glyphicon glyphicon-remove" ng-click="model.deleteComment($index)">
+                                    </span>
+                                </div>
+                                <div class="panel-body">
+                                    {{comment.comment}}
+                                </div><!-- /panel-body -->
+                            </div><!-- /panel panel-default -->
+                        </div><!-- /col-sm-5 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <footer>
+            <a href="{{model.details.url}}">Read more on Last.fm</a>
+        </footer> -->
+    </div>
+</div>
+</div>
