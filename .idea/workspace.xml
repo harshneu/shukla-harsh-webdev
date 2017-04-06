@@ -1,1100 +1,764 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="4f0c6577-1f96-4147-8f22-d4fa98a13c20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/css/style.css" afterPath="$PROJECT_DIR$/public/assignment/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/services/widget.service.client.js" afterPath="$PROJECT_DIR$/public/assignment/services/widget.service.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/views/page/page-edit.view.client.html" afterPath="$PROJECT_DIR$/public/assignment/views/page/page-edit.view.client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/views/page/page-new.view.client.html" afterPath="$PROJECT_DIR$/public/assignment/views/page/page-new.view.client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/views/user/profile.view.client.html" afterPath="$PROJECT_DIR$/public/assignment/views/user/profile.view.client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/views/website/website-edit.view.client.html" afterPath="$PROJECT_DIR$/public/assignment/views/website/website-edit.view.client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/views/website/website-new.view.client.html" afterPath="$PROJECT_DIR$/public/assignment/views/website/website-new.view.client.html" />
-    </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="shukla-harsh-webdev" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="widget-HEADER.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-HEADER.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widget-HTML.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-HTML.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/user/profile.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="50" lean-forward="false" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-              <folding>
-                <marker date="1487202513000" expanded="true" signature="2406:2717" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-list.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-list.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-              <folding>
-                <marker date="1487202513000" expanded="true" signature="1403:1714" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.view.client.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/user/login.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widget-image.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-image.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding>
-                <marker date="1487202490000" expanded="true" signature="54:111" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-new.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-new.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="12" lean-forward="false" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-              <folding>
-                <marker date="1487202513000" expanded="true" signature="3326:3637" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-edit.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-edit.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-              <folding>
-                <marker date="1487202513000" expanded="true" signature="3870:4181" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widget-list.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-list.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widget-youtube.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-youtube.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>background</find>
-      <find>conta</find>
-      <find>col</find>
-      <find>col-</find>
-      <find>sign</find>
-      <find>.wbdv-</find>
-      <find>.wbdev-</find>
-      <find>cog</find>
-      <find>cog-</find>
-      <find>thum</find>
-      <find>!</find>
-      <find>registration</find>
-      <find>container</find>
-      <find>back</find>
-      <find>box</find>
-      <find>wbdev-</find>
-      <find>-sign</find>
-      <find>font-fa</find>
-      <find>hover</find>
-      <find>color</find>
-      <find>a.</find>
-      <find>wbdv-</find>
-      <find>share</find>
-      <find>-fix{</find>
-      <find>-fix</find>
-      <find>wb</find>
-      <find>-wb</find>
-      <find>form-padding</find>
-      <find>Post</find>
-      <find>method=&quot;POST&quot;</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>.</replace>
-      <replace>-padding{</replace>
-      <replace>-padding</replace>
-      <replace>-adjust</replace>
-      <replace>-form-adjust</replace>
-      <replace>form-adjust</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/public/js/bootstrap.min.js" />
-        <option value="$PROJECT_DIR$/public/js/jquery.js" />
-        <option value="$PROJECT_DIR$/public/js/angular-route.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/controllers/user.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/page/controllers/page.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/website/controllers/website.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/controllers/widget.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/templates/register.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/app.js" />
-        <option value="$PROJECT_DIR$/public/assignment/services/website.service.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/templates/login.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/templates/profile.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/services/user.service.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/User/controller/user.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Widget/templates/widget-image.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Widget/templates/widget-youtube.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Page/templates/page-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Page/templates/page-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Page/templates/page-new.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/User/templates/login.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/User/templates/profile.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/User/templates/register.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Website/templates/website-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Website/templates/website-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Website/templates/website-new.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Widget/templates/widget-chooser.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Widget/templates/widget-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/Widget/templates/widget-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/index.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/user.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/page/page.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/config.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/widget-chooser.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/login.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-heading.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-html.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-image.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-youtube.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/widget-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/widget/templates/widget-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/services/widget.service.client.js" />
-        <option value="$PROJECT_DIR$/public/assignment/views/page/page-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/profile.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/user/register.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/website/website-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/css/style.css" />
-        <option value="$PROJECT_DIR$/public/assignment/views/website/website-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/website/website-new.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/page/page-edit.view.client.html" />
-        <option value="$PROJECT_DIR$/public/assignment/views/page/page-new.view.client.html" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="41" />
-    <option name="width" value="1400" />
-    <option name="height" value="833" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="editors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shukla-harsh-webdev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assignment/views/Widget/templates" />
-      <recent name="$PROJECT_DIR$/public/assignment/views/Widget/controllers" />
-      <recent name="$PROJECT_DIR$/public/assignment/css/bootstrap/css" />
-      <recent name="$PROJECT_DIR$/public/assignment/css" />
-      <recent name="$PROJECT_DIR$/public/assignment/views/website/templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/assignment/css" />
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public/assignment/Website-Pages" />
-      <recent name="$PROJECT_DIR$/public/assignment/Widget Pages" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
-      <profiling v8-profiler-path="" />
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
+    <component name="ChangeListManager">
+        <list default="true" id="0a7accdd-a783-41a8-be49-4fcf4dfc6d5a" name="Default" comment="">
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/Jose" afterPath="$PROJECT_DIR$/public/experiment/Jose" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/SC/soundcloud-audio" afterPath="$PROJECT_DIR$/public/experiment/SC/soundcloud-audio" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/SC/soundcloud-javascript" afterPath="$PROJECT_DIR$/public/experiment/SC/soundcloud-javascript" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/guity" afterPath="$PROJECT_DIR$/public/experiment/guity" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/juketube" afterPath="$PROJECT_DIR$/public/experiment/juketube" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/experiment/lastfm" afterPath="$PROJECT_DIR$/public/experiment/lastfm" />
+            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+        </list>
+        <ignored path="webdev2016.iws" />
+        <ignored path=".idea/workspace.xml" />
+        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+        <option name="TRACKING_ENABLED" value="true" />
+        <option name="SHOW_DIALOG" value="false" />
+        <option name="HIGHLIGHT_CONFLICTS" value="true" />
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+        <option name="LAST_RESOLUTION" value="IGNORE" />
+    </component>
+    <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+    <component name="CreatePatchCommitExecutor">
+        <option name="PATCH_PATH" value="" />
+    </component>
+    <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+    <component name="FavoritesManager">
+        <favorites_list name="webdev2016" />
+    </component>
+    <component name="FileEditorManager">
+        <leaf />
+    </component>
+    <component name="FileTemplateManagerImpl">
+        <option name="RECENT_TEMPLATES">
+            <list>
+                <option value="JavaScript File" />
+                <option value="HTML File" />
+                <option value="CSS File" />
+            </list>
         </option>
-        <option name="extraHosts">
-          <list />
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    </component>
+    <component name="IdeDocumentHistory">
+        <option name="CHANGED_PATHS">
+            <list>
+                <option value="$PROJECT_DIR$/public/project/client/views/artist/details/details.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/services/album.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/artist/details/details.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/services/artist.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/client/services/track.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/server/models/user.schema.server.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/login.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/profile.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/home/home.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/tag/tag.track.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/tag/tag.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/tag/tag.album.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/home/home.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/home/home.artist.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/player/player.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/index.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/services/music.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/server/models/music.model.js" />
+                <option value="$PROJECT_DIR$/public/project/server/services/music.service.server.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/track/track.details.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/player/player.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/tag/tag.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/register.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/admin/admin.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/admin/admin.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/header/header.view.html" />
+                <option value="$PROJECT_DIR$/public/portfolio/css/style.css" />
+                <option value="$PROJECT_DIR$/index.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/profile.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/login.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/css/dashboard.css" />
+                <option value="$PROJECT_DIR$/public/project/client/config.js" />
+                <option value="$PROJECT_DIR$/public/experiment/juketube/index.html" />
+                <option value="$PROJECT_DIR$/public/index.html" />
+                <option value="$PROJECT_DIR$/public/experiment/lastfm_api/index.html" />
+                <option value="$PROJECT_DIR$/public/project/client/services/chart.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/track/track.details.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/search/track.search.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/search/album.search.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/search/search.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html" />
+                <option value="$PROJECT_DIR$/public/project/client/services/display.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/search/search.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/profile.readonly.view.html" />
+                <option value="$PROJECT_DIR$/public/project/server/models/user.model.js" />
+                <option value="$PROJECT_DIR$/public/project/client/services/user.service.client.js" />
+                <option value="$PROJECT_DIR$/public/project/client/views/users/profile.readonly.controller.js" />
+                <option value="$PROJECT_DIR$/public/project/server/services/user.service.server.js" />
+            </list>
         </option>
-        <option name="links">
-          <list />
+    </component>
+    <component name="JsBuildToolGruntFileManager" detection-done="true" />
+    <component name="JsBuildToolPackageJson" detection-done="true" />
+    <component name="JsGulpfileManager">
+        <detection-done>true</detection-done>
+    </component>
+    <component name="ProjectFrameBounds">
+        <option name="width" value="1280" />
+        <option name="height" value="800" />
+    </component>
+    <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+        <OptionsSetting value="true" id="Add" />
+        <OptionsSetting value="true" id="Remove" />
+        <OptionsSetting value="true" id="Checkout" />
+        <OptionsSetting value="true" id="Update" />
+        <OptionsSetting value="true" id="Status" />
+        <OptionsSetting value="true" id="Edit" />
+        <ConfirmationsSetting value="2" id="Add" />
+        <ConfirmationsSetting value="0" id="Remove" />
+    </component>
+    <component name="ProjectView">
+        <navigator currentView="ProjectPane" proportions="" version="1">
+            <flattenPackages />
+            <showMembers />
+            <showModules />
+            <showLibraryContents />
+            <hideEmptyPackages />
+            <abbreviatePackageNames />
+            <autoscrollToSource />
+            <autoscrollFromSource />
+            <sortByType />
+            <manualOrder />
+            <foldersAlwaysOnTop value="true" />
+        </navigator>
+        <panes>
+            <pane id="Scratches" />
+            <pane id="ProjectPane">
+                <subPane>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="public" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="public" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="project" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="server" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="public" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="project" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="server" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="services" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                    <PATH>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="webdev2016" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="public" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                        <PATH_ELEMENT>
+                            <option name="myItemId" value="project" />
+                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+                        </PATH_ELEMENT>
+                    </PATH>
+                </subPane>
+            </pane>
+            <pane id="Scope" />
+        </panes>
+    </component>
+    <component name="PropertiesComponent">
+        <property name="last_opened_file_path" value="$PROJECT_DIR$/public/project/client/views/users/login.view.html" />
+        <property name="WebServerToolWindowFactoryState" value="false" />
+        <property name="HbShouldOpenHtmlAsHb" value="" />
+        <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+        <property name="DefaultHtmlFileTemplate" value="HTML File" />
+        <property name="editor.config.accepted" value="true" />
+        <property name="list.type.of.created.stylesheet" value="CSS" />
+        <property name="restartRequiresConfirmation" value="false" />
+        <property name="FullScreen" value="true" />
+        <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Medhavi/webdev2016/public/assignment/client/services/forms.service.client.js" />
+    </component>
+    <component name="RecentsManager">
+        <key name="CopyFile.RECENT_KEYS">
+            <recent name="$PROJECT_DIR$/public/project/client/views/album" />
+            <recent name="$PROJECT_DIR$" />
+            <recent name="$PROJECT_DIR$/public/project/server" />
+            <recent name="$PROJECT_DIR$/public/assignment/client/services" />
+            <recent name="$PROJECT_DIR$/public/assignment/client/views/forms" />
+        </key>
+        <key name="MoveFile.RECENT_KEYS">
+            <recent name="$PROJECT_DIR$/public/experiment/youtube_api" />
+            <recent name="$PROJECT_DIR$/public/experiment/lastfm_api" />
+            <recent name="$PROJECT_DIR$/public/project/client/views/track" />
+            <recent name="$PROJECT_DIR$/public/project/client/views/artist" />
+            <recent name="$PROJECT_DIR$/public/project/client/views/track/details" />
+        </key>
+    </component>
+    <component name="RunManager" selected="Node.js.form.model.js">
+        <configuration default="false" name="form.model.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="form.model.js" working-dir="$PROJECT_DIR$/public/assignment/server/models">
+            <method />
+        </configuration>
+        <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+            <method />
+        </configuration>
+        <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+            <method />
+        </configuration>
+        <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+            <envs />
+            <method />
+        </configuration>
+        <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+            <method />
+        </configuration>
+        <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+            <method />
+        </configuration>
+        <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+            <option name="cucumberJsArguments" value="" />
+            <option name="executablePath" />
+            <option name="filePath" />
+            <method />
+        </configuration>
+        <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+            <node-options />
+            <gulpfile />
+            <tasks />
+            <arguments />
+            <envs />
+            <method />
+        </configuration>
+        <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+            <command value="run-script" />
+            <scripts />
+            <envs />
+            <method />
+        </configuration>
+        <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+            <node-options />
+            <working-directory>$PROJECT_DIR$</working-directory>
+            <pass-parent-env>true</pass-parent-env>
+            <envs />
+            <ui>bdd</ui>
+            <extra-mocha-options />
+            <test-kind>DIRECTORY</test-kind>
+            <test-directory />
+            <recursive>false</recursive>
+            <method />
+        </configuration>
+        <configuration default="false" name="register.view.html" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/webdev2016/public/assignment/client/views/users/register.view.html">
+            <method />
+        </configuration>
+        <configuration default="false" name="Unnamed" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/webdev2016/public/assignment/client/views/users/register.view.html">
+            <method />
+        </configuration>
+        <configuration default="false" name="project - login" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/webdev2016/public/project/client/views/users/login.view.html">
+            <method />
+        </configuration>
+        <list size="4">
+            <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.register.view.html" />
+            <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Unnamed" />
+            <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.project - login" />
+            <item index="3" class="java.lang.String" itemvalue="Node.js.form.model.js" />
+        </list>
+        <recent_temporary>
+            <list size="1">
+                <item index="0" class="java.lang.String" itemvalue="Node.js.form.model.js" />
+            </list>
+        </recent_temporary>
+    </component>
+    <component name="ShelveChangesManager" show_recycled="false" />
+    <component name="SvnConfiguration">
+        <configuration />
+    </component>
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="0a7accdd-a783-41a8-be49-4fcf4dfc6d5a" name="Default" comment="" />
+            <created>1453355896227</created>
+            <option name="number" value="Default" />
+            <updated>1453355896227</updated>
+        </task>
+        <servers />
+    </component>
+    <component name="ToolWindowManager">
+        <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+        <editor active="false" />
+        <layout>
+            <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24543288" sideWeight="0.7042514" order="0" side_tool="false" content_ui="combo" />
+            <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+            <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+            <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650274" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+            <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+            <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26092896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+            <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24543288" sideWeight="0.29574862" order="2" side_tool="true" content_ui="tabs" />
+            <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+            <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+            <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+            <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+            <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+            <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+            <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+            <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+            <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989071" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+        </layout>
+    </component>
+    <component name="Vcs.Log.UiProperties">
+        <option name="RECENTLY_FILTERED_USER_GROUPS">
+            <collection />
         </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
+        <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+            <collection />
         </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
-      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
-        <profiling v8-profiler-path="" />
-      </EXTENSION>
-      <method />
-    </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4f0c6577-1f96-4147-8f22-d4fa98a13c20" name="Default" comment="" />
-      <created>1484309003028</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1484309003028</updated>
-      <workItem from="1484309004323" duration="111000" />
-      <workItem from="1484309247474" duration="45000" />
-      <workItem from="1484583962456" duration="143000" />
-      <workItem from="1484584866666" duration="2964000" />
-      <workItem from="1484868922460" duration="486000" />
-      <workItem from="1485041461883" duration="63000" />
-      <workItem from="1485211204312" duration="11412000" />
-      <workItem from="1485229514482" duration="419000" />
-      <workItem from="1485276819042" duration="12154000" />
-      <workItem from="1485551702241" duration="22102000" />
-      <workItem from="1485978745091" duration="11828000" />
-      <workItem from="1486004810255" duration="2015000" />
-      <workItem from="1486024090329" duration="326000" />
-      <workItem from="1486149064470" duration="115000" />
-      <workItem from="1486670905177" duration="192000" />
-      <workItem from="1487042573968" duration="349000" />
-      <workItem from="1487042938382" duration="2334000" />
-      <workItem from="1487049150475" duration="1441000" />
-      <workItem from="1487051163860" duration="1973000" />
-      <workItem from="1487122971953" duration="87000" />
-      <workItem from="1487123070312" duration="897000" />
-      <workItem from="1487141864061" duration="465000" />
-      <workItem from="1487142549025" duration="2658000" />
-      <workItem from="1487145232918" duration="74000" />
-      <workItem from="1487147332993" duration="636000" />
-      <workItem from="1487148209690" duration="1088000" />
-      <workItem from="1487149405043" duration="400000" />
-      <workItem from="1487149809971" duration="68000" />
-      <workItem from="1487149903309" duration="43000" />
-      <workItem from="1487150516505" duration="361000" />
-      <workItem from="1487153307922" duration="4883000" />
-      <workItem from="1487180211522" duration="500000" />
-      <workItem from="1487182776348" duration="1745000" />
-      <workItem from="1487185026776" duration="457000" />
-      <workItem from="1487190487954" duration="115000" />
-<<<<<<< HEAD
-      <workItem from="1487190706430" duration="3034000" />
-      <workItem from="1487194900979" duration="320000" />
-      <workItem from="1487196049137" duration="552000" />
-      <workItem from="1487202533318" duration="10000" />
-=======
-      <workItem from="1487190706430" duration="2870000" />
->>>>>>> parent of 221a6d4... Font update
-    </task>
-    <task id="LOCAL-00001" summary="Local XML">
-      <created>1485229083790</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1485229083790</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Page Refactoring.">
-      <created>1485391900902</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1485391900902</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Page Refactoring.">
-      <created>1485996437498</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1485996437500</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="91368000" />
-=======
-    <option name="totallyTimeSpent" value="90322000" />
->>>>>>> parent of 221a6d4... Font update
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="20" y="41" width="1400" height="833" extended-state="0" />
-    <editor active="true" />
-    <layout>
-<<<<<<< HEAD
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23930384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24147934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of 221a6d4... Font update
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Local XML" />
-    <MESSAGE value="Page Refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Page Refactoring." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assignment/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/Page/controllers/page.controller.client.js" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/js/angular.js" />
-    <entry file="file://$PROJECT_DIR$/public/neu.jpeg" />
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/templates/profile.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/templates/website-edit.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/templates/website-list.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/templates/website-new.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/Widget-edits/widget-image.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/controller/website.controller.client.js" />
-    <entry file="file://$PROJECT_DIR$/public/project/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/templates/page-list.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/templates/page-new.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/templates/page-edit.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/controller/page.controller.client.js" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/controller/user.controller.client.js" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/templates/login.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/templates/register.view.client.html" />
-    <entry file="file://$PROJECT_DIR$/public/assignment/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/services/user.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/services/website.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/services/widget.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/controllers/widget.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/website.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/services/page.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/register.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/user.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="87" column="52" lean-forward="false" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/website-edit.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/website-list.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/website/website-new.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-html.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-heading.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-image.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/editors/widget-youtube.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-chooser.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="85" column="43" lean-forward="false" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-edit.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-HEADER.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-HTML.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-image.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <marker date="1487202490000" expanded="true" signature="54:111" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-list.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/widget/templates/widget-youtube.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-edit.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-          <folding>
-            <marker date="1487202513000" expanded="true" signature="3870:4181" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-list.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <marker date="1487202513000" expanded="true" signature="1403:1714" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/page/page-new.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="12" lean-forward="false" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-          <folding>
-            <marker date="1487202513000" expanded="true" signature="3326:3637" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/profile.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="50" lean-forward="false" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-          <folding>
-            <marker date="1487202513000" expanded="true" signature="2406:2717" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/views/user/login.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
+    </component>
+    <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+    </component>
+    <component name="XDebuggerManager">
+        <breakpoint-manager>
+            <breakpoints-dialog>
+                <breakpoints-dialog />
+            </breakpoints-dialog>
+            <option name="time" value="5" />
+        </breakpoint-manager>
+        <watches-manager />
+    </component>
+    <component name="editorHistoryManager">
+        <entry file="file://$PROJECT_DIR$/public/project/client/css/dashboard.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.18831168">
+                    <caret line="281" column="36" selection-start-line="281" selection-start-column="36" selection-end-line="281" selection-end-column="36" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/track/track.details.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="4.5454545">
+                    <caret line="141" column="40" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/admin/admin.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.53216374">
+                    <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.75">
+                    <caret line="78" column="110" selection-start-line="78" selection-start-column="110" selection-end-line="78" selection-end-column="110" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.7894737">
+                    <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/index.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.17177914">
+                    <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/scripts/application.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.32304525">
+                    <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/index.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-7.125">
+                    <caret line="35" column="11" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="11" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/html/list.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-1.875">
+                    <caret line="3" column="54" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="54" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/css/bootstrap-responsive.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.76687115">
+                    <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/css/bootstrap.min.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/css/bootstrap.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/js/bootstrap.min.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/js/bootstrap.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/css/bootstrap-responsive.min.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/img/glyphicons-halflings.png">
+            <provider selected="true" editor-type-id="images">
+                <state />
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/bootstrap/img/glyphicons-halflings-white.png">
+            <provider selected="true" editor-type-id="images">
+                <state />
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/lastfm_api/css/main.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/index.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.2638037">
+                    <caret line="23" column="20" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="20" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/.gitignore">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/angular.min.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/app.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/index.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/search.png">
+            <provider selected="true" editor-type-id="images">
+                <state />
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/shattered.png">
+            <provider selected="true" editor-type-id="images">
+                <state />
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/style.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/experiment/youtube_api/juketube.png">
+            <provider selected="true" editor-type-id="images">
+                <state />
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/home/home.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/track/track.details.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/album/album.details.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/search/track.search.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.54545456">
+                    <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/search/album.search.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.41558442">
+                    <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="92" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/config.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.2631579">
+                    <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.030674847">
+                    <caret line="257" column="18" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="18" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/server.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/search/search.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.64327484">
+                    <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/search/search.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.71165645">
+                    <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/services/display.service.client.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.4385965">
+                    <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/services/chart.service.client.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.29239765">
+                    <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/models/music.schema.server.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.49707603">
+                    <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/services/music.service.server.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/services/music.service.client.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/models/music.model.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-4.4385967">
+                    <caret line="13" column="47" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="47" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/models/user.schema.server.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.32163742">
+                    <caret line="11" column="17" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="17" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.4601227">
+                    <caret line="15" column="61" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="61" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.36419752">
+                    <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/models/user.model.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.76608187">
+                    <caret line="280" column="30" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/services/user.service.client.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5906433">
+                    <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.readonly.view.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6809816">
+                    <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/server/services/user.service.server.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5185185">
+                    <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.readonly.controller.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.52469134">
+                    <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                    <folding />
+                </state>
+            </provider>
+        </entry>
+    </component>
 </project>
