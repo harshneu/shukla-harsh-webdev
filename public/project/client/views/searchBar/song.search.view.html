@@ -1,0 +1,60 @@
+<div ng-controller="SearchController as model">
+    <h1 class="page-header">Search</h1>
+    <<input class="form-control ng-pristine ng-untouched ng-valid ng-scope"
+           placeholer="Looking for music? Search here!" type="text" ng-model="model.searchTitle""/>
+    <br/>
+    <a href="#/search/track/{{model.searchTitle}}" class="btn btn-default btn-sm">
+        Search
+    </a>
+    <br/>
+    <br/>
+
+    <div ng-show="model.search">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li ng-show="model.artist"><a href="#/search/artist/{{model.searchTitle}}">Artists</a></li>
+                <li ng-show="model.album"><a href="#/search/album/{{model.searchTitle}}">Albums</a></li>
+                <li ng-show="model.track" class="active"><a href="#/search/track/{{model.searchTitle}}">Tracks</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div ng-show="model.track">
+        <h2>Tracks</h2>
+        <table class="table table-responsive table-striped table-hover ng-scope">
+            <thead>
+            <tr>
+                <th>Poster</th>
+                <th ng-click="model.sortType='track'; model.sortReverse = !model.sortReverse">
+                    <span ng-show="model.sortType == 'track'">
+                            <span ng-show="!model.sortReverse" class="glyphicon glyphicon-triangle-top"
+                                  aria-hidden="true"></span>
+                            <span ng-show="model.sortReverse" class="glyphicon glyphicon-triangle-bottom"></span></span>
+                    Track Name</th>
+                <th ng-click="model.sortType='artist'; model.sortReverse = !model.sortReverse">
+                    <span ng-show="model.sortType == 'artist'">
+                            <span ng-show="!model.sortReverse" class="glyphicon glyphicon-triangle-top"
+                                  aria-hidden="true"></span>
+                            <span ng-show="model.sortReverse" class="glyphicon glyphicon-triangle-bottom"></span></span>
+                    Artist Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="track in model.track | orderBy:model.sortType:model.sortReverse" class="ng-scope">
+                <td>
+                    <img class="media-object" ng-src="{{track.image.medium}}" alt="No Image!">
+                </td>
+                <td>
+                    <a href="#/player/{{track.name}}/{{track.artist}}">
+                        <span class="glyphicon glyphicon-play-circle"></span> {{track.name}}</a>
+                </td>
+                <td>
+                    <a href="#/search/artist/{{track.artist}}">{{track.artist}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

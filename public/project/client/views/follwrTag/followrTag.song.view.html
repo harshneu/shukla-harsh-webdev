@@ -1,0 +1,36 @@
+<div class="container-fuild" ng-controller="TagController">
+    <div  class="detail">
+        <div class="container-fluid">
+            <h1 class="page-header"> {{model.tagName}}</h1>
+        </div>
+
+        <br/>
+
+        <div ng-show="model.search">
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li ng-show="model.artists"><a href="#/tag/{{model.tagName}}">Artists</a></li>
+                    <li ng-show="model.albums"><a href="#/tag/album/{{model.tagName}}">Albums</a></li>
+                    <li ng-show="model.tracks" class="active"><a href="#/tag/track/{{model.tagName}}">Tracks</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div ng-show="model.tracks" id="similar" class="container-fluid">
+            <!--<div ng-include="'views/song/song.view.html'"></div>-->
+            <h4 class="page-header">Related Tracks</h4>
+            <div ng-repeat="track in model.tracks">
+                <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
+                    <div class="row container-fluid">
+                        <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{track.image.medium}}" alt = "No Image Found!">
+                        <div class="container-fluid">
+                            <a href="#/player/{{track.name}}/{{track.artist.name}}">
+                                <span class="glyphicon glyphicon-play-circle"></span> {{track.name}} </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

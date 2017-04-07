@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MusicZoneApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/music.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+    <script src="https://connect.soundcloud.com/sdk.js"></script>
+
+    <title>MusicZone</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/project-file.css" rel="stylesheet">
+
+    <!-- Java Scripts -->
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+
+    <!-- Controllers -->
+    <script src="views/header/header.controller.js"></script>
+    <script src="views/sidebar/sidebar.controller.js"></script>
+    <script src="views/searchBar/search.controller.js"></script>
+    <script src="views/artist/artist.details.controller.js"></script>
+    <script src="views/song/song.details.controller.js"></script>
+    <script src="views/album/album.details.controller.js"></script>
+    <script src="views/users/login.controller.js"></script>
+    <script src="views/users/register.controller.js"></script>
+    <script src="views/users/profile.controller.js"></script>
+    <script src="views/users/profile.readonly.controller.js"></script>
+    <script src="views/admin/admin.controller.js"></script>
+    <script src="views/home/home.controller.js"></script>
+    <script src="views/main/main.controller.js"></script>
+    <script src="views/player/player.controller.js"></script>
+    <script src="views/follwrTag/followrTag.controller.js"></script>
+
+
+
+
+    <!-- Services -->
+    <script src="services/artist.service.client.js"></script>
+    <script src="services/user.service.client.js"></script>
+    <script src="services/chart.service.client.js"></script>
+    <script src="services/portrait.service.client.js"></script>
+    <script src="services/song.service.client.js"></script>
+    <script src="services/music.service.client.js"></script>
+    <script src="services/follwerTag.service.client.js"></script>
+    <script src="services/album.service.client.js"></script>
+
+
+
+</head>
+<!--<body ng-controller="MainController" class="ng-scope">-->
+<body ng-controller="MainController">
+<div class="ng-scope">
+    <div ng-include="'views/header/header.view.html'"></div>
+<!--    <div class="col-sm-3 col-md-2 sidebar"
+         ng-include="'views/sidebar/sidebar.view.html'">
+    </div>-->
+    <div class="main" ng-view></div>
+
+    <!--footer
+    <div ng-include="'views/footer/footer.view.html'"></div>-->
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

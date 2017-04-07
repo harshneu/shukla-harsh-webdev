@@ -1216,7 +1216,7 @@ var csp = function() {
  * others ignored.
  *
  * @example
- * This example shows how to force jqLite using the `ngJq` directive to the `html` tag.
+ * This example shows how to force jqLite using the `ngJq` directive to the `html` follwrTag.
  ```html
  <!doctype html>
  <html ng-app ng-jq>
@@ -2820,7 +2820,7 @@ function publishExternalAPI(angular) {
  * jqLite (such as the element argument in a directive's compile / link function). They are never raw DOM references.</div>
  *
  * <div class="alert alert-warning">**Note:** Keep in mind that this function will not find elements
- * by tag name / CSS selector. For lookups by tag name, try instead `angular.element(document).find(...)`
+ * by follwrTag name / CSS selector. For lookups by follwrTag name, try instead `angular.element(document).find(...)`
  * or `$document.find()`, or use the standard DOM APIs, e.g. `document.querySelectorAll()`.</div>
  *
  * ## Angular's jqLite
@@ -2840,7 +2840,7 @@ function publishExternalAPI(angular) {
  * - [`detach()`](http://api.jquery.com/detach/)
  * - [`empty()`](http://api.jquery.com/empty/)
  * - [`eq()`](http://api.jquery.com/eq/)
- * - [`find()`](http://api.jquery.com/find/) - Limited to lookups by tag name
+ * - [`find()`](http://api.jquery.com/find/) - Limited to lookups by follwrTag name
  * - [`hasClass()`](http://api.jquery.com/hasClass/)
  * - [`html()`](http://api.jquery.com/html/)
  * - [`next()`](http://api.jquery.com/next/) - Does not support selectors
@@ -4365,7 +4365,7 @@ function annotate(fn, strictDi, name) {
  * ```js
  *  // Define the eventTracker provider
  *  function EventTrackerProvider() {
- *    var trackingUrl = '/track';
+ *    var trackingUrl = '/song';
  *
  *    // A provider method for configuring where the tracked events should been saved
  *    this.setTrackingUrl = function(url) {
@@ -4376,7 +4376,7 @@ function annotate(fn, strictDi, name) {
  *    this.$get = ['$http', function($http) {
  *      var trackedEvents = {};
  *      return {
- *        // Call this to track an event
+ *        // Call this to song an event
  *        event: function(event) {
  *          var count = trackedEvents[event] || 0;
  *          count += 1;
@@ -4401,7 +4401,7 @@ function annotate(fn, strictDi, name) {
  *
  *    beforeEach(module(function(eventTrackerProvider) {
  *      // Configure eventTracker provider
- *      eventTrackerProvider.setTrackingUrl('/custom-track');
+ *      eventTrackerProvider.setTrackingUrl('/custom-song');
  *    }));
  *
  *    it('tracks events', inject(function(eventTracker) {
@@ -4414,8 +4414,8 @@ function annotate(fn, strictDi, name) {
  *      eventTracker.event('login');
  *      eventTracker.save();
  *      expect(postSpy).toHaveBeenCalled();
- *      expect(postSpy.mostRecentCall.args[0]).not.toEqual('/track');
- *      expect(postSpy.mostRecentCall.args[0]).toEqual('/custom-track');
+ *      expect(postSpy.mostRecentCall.args[0]).not.toEqual('/song');
+ *      expect(postSpy.mostRecentCall.args[0]).toEqual('/custom-song');
  *      expect(postSpy.mostRecentCall.args[1]).toEqual({ 'login': 1 });
  *    }));
  *  });
@@ -5510,7 +5510,7 @@ var $AnimateProvider = ['$provide', /** @this */ function($provide) {
        * @description Associates the provided element with a host parent element to allow the element to be animated even if it exists
        *    outside of the DOM structure of the Angular application. By doing so, any animation triggered via `$animate` can be issued on the
        *    element despite being outside the realm of the application or within another application. Say for example if the application
-       *    was bootstrapped on an element that is somewhere inside of the `<body>` tag, but we wanted to allow for an element to be situated
+       *    was bootstrapped on an element that is somewhere inside of the `<body>` follwrTag, but we wanted to allow for an element to be situated
        *    as a direct child of `document.body`, then this can be achieved by pinning the element via `$animate.pin(element)`. Keep in mind
        *    that calling `$animate.pin(element, parentElement)` will not actually insert into the DOM anywhere; it will just create the association.
        *
@@ -6785,10 +6785,10 @@ function $CacheFactoryProvider() {
  *
  * @description
  * The first time a template is used, it is loaded in the template cache for quick retrieval. You
- * can load templates directly into the cache in a `script` tag, or by consuming the
+ * can load templates directly into the cache in a `script` follwrTag, or by consuming the
  * `$templateCache` service directly.
  *
- * Adding via the `script` tag:
+ * Adding via the `script` follwrTag:
  *
  * ```html
  *   <script type="text/ng-template" id="templateId.html">
@@ -6796,7 +6796,7 @@ function $CacheFactoryProvider() {
  *   </script>
  * ```
  *
- * **Note:** the `script` tag containing the template does not need to be included in the `head` of
+ * **Note:** the `script` follwrTag containing the template does not need to be included in the `head` of
  * the document, but it must be a descendent of the {@link ng.$rootElement $rootElement} (IE,
  * element with ng-app attribute), otherwise the template will be ignored.
  *
@@ -8946,7 +8946,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * Looks for directives on the given node and adds them to the directive collection which is
      * sorted.
      *
-     * @param node Node to search.
+     * @param node Node to searchBar.
      * @param directives An array to which the directives are added to. This array is sorted before
      *        the function returns.
      * @param attrs The shared attrs object which is used to populate the normalized attributes.
@@ -9513,7 +9513,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
         }
 
         if (boundTranscludeFn) {
-          // track `boundTranscludeFn` so it can be unwrapped if `transcludeFn`
+          // song `boundTranscludeFn` so it can be unwrapped if `transcludeFn`
           // is later passed as `parentBoundTranscludeFn` to `publicLinkFn`
           transcludeFn = controllersBoundTransclude;
           transcludeFn.$$boundTransclude = boundTranscludeFn;
@@ -13540,7 +13540,7 @@ var locationPrototype = {
    *
    * Return URL (e.g. `/path?a=b#hash`) when called without any parameter.
    *
-   * Change path, search and hash, when called with parameter and return `$location`.
+   * Change path, searchBar and hash, when called with parameter and return `$location`.
    *
    *
    * ```js
@@ -13669,34 +13669,34 @@ var locationPrototype = {
    * @description
    * This method is getter / setter.
    *
-   * Return search part (as object) of current URL when called without any parameter.
+   * Return searchBar part (as object) of current URL when called without any parameter.
    *
-   * Change search part when called with parameter and return `$location`.
+   * Change searchBar part when called with parameter and return `$location`.
    *
    *
    * ```js
    * // given URL http://example.com/#/some/path?foo=bar&baz=xoxo
-   * var searchObject = $location.search();
+   * var searchObject = $location.searchBar();
    * // => {foo: 'bar', baz: 'xoxo'}
    *
    * // set foo to 'yipee'
-   * $location.search('foo', 'yipee');
-   * // $location.search() => {foo: 'yipee', baz: 'xoxo'}
+   * $location.searchBar('foo', 'yipee');
+   * // $location.searchBar() => {foo: 'yipee', baz: 'xoxo'}
    * ```
    *
-   * @param {string|Object.<string>|Object.<Array.<string>>} search New search params - string or
+   * @param {string|Object.<string>|Object.<Array.<string>>} search New searchBar params - string or
    * hash object.
    *
-   * When called with a single argument the method acts as a setter, setting the `search` component
+   * When called with a single argument the method acts as a setter, setting the `searchBar` component
    * of `$location` to the specified value.
    *
    * If the argument is a hash object containing an array of values, these values will be encoded
-   * as duplicate search parameters in the URL.
+   * as duplicate searchBar parameters in the URL.
    *
-   * @param {(string|Number|Array<string>|boolean)=} paramValue If `search` is a string or number, then `paramValue`
-   * will override only a single search property.
+   * @param {(string|Number|Array<string>|boolean)=} paramValue If `searchBar` is a string or number, then `paramValue`
+   * will override only a single searchBar property.
    *
-   * If `paramValue` is an array, it will override the property of the `search` component of
+   * If `paramValue` is an array, it will override the property of the `searchBar` component of
    * `$location` specified via the first argument.
    *
    * If `paramValue` is `null`, the property specified via the first argument will be deleted.
@@ -13704,7 +13704,7 @@ var locationPrototype = {
    * If `paramValue` is `true`, the property specified via the first argument will be added with no
    * value nor trailing equal sign.
    *
-   * @return {Object} If called with no arguments returns the parsed `search` object. If called with
+   * @return {Object} If called with no arguments returns the parsed `searchBar` object. If called with
    * one or more arguments returns `$location` object itself.
    */
   search: function(search, paramValue) {
@@ -13725,7 +13725,7 @@ var locationPrototype = {
           this.$$search = search;
         } else {
           throw $locationMinErr('isrcharg',
-              'The first argument of the `$location#search()` call must be a string or an object.');
+              'The first argument of the `$location#searchBar()` call must be a string or an object.');
         }
         break;
       default:
@@ -13862,7 +13862,7 @@ function locationGetterSetter(property, preprocess) {
  *   - Changes the address bar.
  *   - Clicks the back or forward button (or clicks a History link).
  *   - Clicks on a link.
- * - Represents the URL object as a set of methods (protocol, host, port, path, search, hash).
+ * - Represents the URL object as a set of methods (protocol, host, port, path, searchBar, hash).
  *
  * For more information see {@link guide/$location Developer Guide: Using $location}
  */
@@ -13888,7 +13888,7 @@ function $LocationProvider() {
    * @name $locationProvider#hashPrefix
    * @description
    * The default value for the prefix is `'!'`.
-   * @param {string=} prefix Prefix for hash part (containing path and search)
+   * @param {string=} prefix Prefix for hash part (containing path and searchBar)
    * @returns {*} current value if used as getter or itself (chaining) if used as setter
    */
   this.hashPrefix = function(prefix) {
@@ -13911,8 +13911,8 @@ function $LocationProvider() {
    *     change urls where supported. Will fall back to hash-prefixed paths in browsers that do not
    *     support `pushState`.
    *   - **requireBase** - `{boolean}` - (default: `true`) When html5Mode is enabled, specifies
-   *     whether or not a <base> tag is required to be present. If `enabled` and `requireBase` are
-   *     true, and a base tag is not present, an error will be thrown when `$location` is injected.
+   *     whether or not a <base> follwrTag is required to be present. If `enabled` and `requireBase` are
+   *     true, and a base follwrTag is not present, an error will be thrown when `$location` is injected.
    *     See the {@link guide/$location $location guide for more information}
    *   - **rewriteLinks** - `{boolean|string}` - (default: `true`) When html5Mode is enabled,
    *     enables/disables URL rewriting for relative links. If set to a string, URL rewriting will
@@ -13997,7 +13997,7 @@ function $LocationProvider() {
     if (html5Mode.enabled) {
       if (!baseHref && html5Mode.requireBase) {
         throw $locationMinErr('nobase',
-          '$location in HTML5 mode requires a <base> tag to be present!');
+          '$location in HTML5 mode requires a <base> follwrTag to be present!');
       }
       appBase = serverBase(initialUrl) + (baseHref || '/');
       LocationMode = $sniffer.history ? LocationHtml5Url : LocationHashbangInHtml5Url;
@@ -14042,9 +14042,9 @@ function $LocationProvider() {
 
       var elm = jqLite(event.target);
 
-      // traverse the DOM up to find first A tag
+      // traverse the DOM up to find first A follwrTag
       while (nodeName_(elm[0]) !== 'a') {
-        // ignore rewriting if no A tag (reached root element, or no parent - removed from document)
+        // ignore rewriting if no A follwrTag (reached root element, or no parent - removed from document)
         if (elm[0] === $rootElement[0] || !(elm = elm.parent())[0]) return;
       }
 
@@ -17578,7 +17578,7 @@ function $RootScopeProvider() {
         var oldValue;
         // a shallow copy of the newValue from when the last change happened
         var veryOldValue;
-        // only track veryOldValue if the listener is asking for it
+        // only song veryOldValue if the listener is asking for it
         var trackVeryOldValue = (listener.length > 1);
         var changeDetected = 0;
         var changeDetector = $parse(obj, $watchCollectionInterceptor);
@@ -19766,7 +19766,7 @@ function $$TestabilityProvider() {
      * Returns an array of elements that are bound (via ng-bind or {{}})
      * to expressions matching the input.
      *
-     * @param {Element} element The element root to search from.
+     * @param {Element} element The element root to searchBar from.
      * @param {string} expression The binding expression to match.
      * @param {boolean} opt_exactMatch If true, only returns exact matches
      *     for the expression. Filters and whitespace are ignored.
@@ -19801,7 +19801,7 @@ function $$TestabilityProvider() {
      * Returns an array of elements that are two-way found via ng-model to
      * expressions matching the input.
      *
-     * @param {Element} element The element root to search from.
+     * @param {Element} element The element root to searchBar from.
      * @param {string} expression The model expression to match.
      * @param {boolean} opt_exactMatch If true, only returns exact matches
      *     for the expression.
@@ -19823,7 +19823,7 @@ function $$TestabilityProvider() {
      *
      * @description
      * Shortcut for getting the location in a browser agnostic way. Returns
-     *     the path, search, and hash. (e.g. /path?a=b#hash)
+     *     the path, searchBar, and hash. (e.g. /path?a=b#hash)
      */
     testability.getLocation = function() {
       return $location.url();
@@ -19835,7 +19835,7 @@ function $$TestabilityProvider() {
      * @description
      * Shortcut for navigating to a location without doing a full page reload.
      *
-     * @param {string} url The location url (path, search and hash,
+     * @param {string} url The location url (path, searchBar and hash,
      *     e.g. /path?a=b#hash) to go to.
      */
     testability.setLocation = function(url) {
@@ -20007,7 +20007,7 @@ var originUrl = urlResolve(window.location.href);
  *   | href          | A normalized version of the provided URL if it was not an absolute URL |
  *   | protocol      | The protocol including the trailing colon                              |
  *   | host          | The host and port (if the port is non-default) of the normalizedUrl    |
- *   | search        | The search params, minus the question mark                             |
+ *   | searchBar        | The searchBar params, minus the question mark                             |
  *   | hash          | The hash string, minus the hash symbol
  *   | hostname      | The hostname
  *   | port          | The port, without ":"
@@ -22148,7 +22148,7 @@ function ngDirective(directive) {
  * @restrict E
  *
  * @description
- * Modifies the default behavior of the html a tag so that the default action is prevented when
+ * Modifies the default behavior of the html a follwrTag so that the default action is prevented when
  * the href attribute is empty.
  *
  * For dynamically creating `href` attributes for a tags, see the {@link ng.ngHref `ngHref`} directive.
@@ -22158,7 +22158,7 @@ var htmlAnchorDirective = valueFn({
   compile: function(element, attr) {
     if (!attr.href && !attr.xlinkHref) {
       return function(scope, element) {
-        // If the linked element is not an anchor tag anymore, do nothing
+        // If the linked element is not an anchor follwrTag anymore, do nothing
         if (element[0].nodeName.toLowerCase() !== 'a') return;
 
         // SVGAElement does not use the href attribute, but rather the 'xlinkHref' attribute.
@@ -22666,7 +22666,7 @@ function nullFormRenameControl(control, name) {
  *  - `month`
  *
  * @description
- * `FormController` keeps track of all its controls and nested forms as well as the state of them,
+ * `FormController` keeps song of all its controls and nested forms as well as the state of them,
  * such as being valid/invalid or dirty/pristine.
  *
  * Each {@link ng.directive:form form} directive creates an instance
@@ -22935,7 +22935,7 @@ addSetValidityMethod({
  * sub-group of controls needs to be determined.
  *
  * Note: the purpose of `ngForm` is to group controls,
- * but not to be a replacement for the `<form>` tag with all of its capabilities
+ * but not to be a replacement for the `<form>` follwrTag with all of its capabilities
  * (e.g. posting to the server, ...).
  *
  * @param {string=} ngForm|name Name of the form. If specified, the form controller will be published into
@@ -25163,8 +25163,8 @@ function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filt
  *    If the expression evaluates to a string, then it will be converted to a RegExp
  *    after wrapping it in `^` and `$` characters. For instance, `"abc"` will be converted to
  *    `new RegExp('^abc$')`.<br />
- *    **Note:** Avoid using the `g` flag on the RegExp, as it will cause each successive search to
- *    start at the index of the last search's match, thus not taking the whole input value into
+ *    **Note:** Avoid using the `g` flag on the RegExp, as it will cause each successive searchBar to
+ *    start at the index of the last searchBar's match, thus not taking the whole input value into
  *    account.
  * @param {string=} ngChange Angular expression to be executed when input changes due to user
  *    interaction with the input element.
@@ -29592,7 +29592,7 @@ var NG_OPTIONS_REGEXP = /^\s*([\s\S]+?)(?:\s+as\s+([\s\S]+?))?(?:\s+group\s+by\s
                         // 6: object item key variable name
                         // 7: object item value variable name
                         // 8: collection expression
-                        // 9: track by expression
+                        // 9: song by expression
 /* eslint-enable */
 
 
@@ -29618,7 +29618,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
 
     // An expression that generates the viewValue for an option if there is a label expression
     var selectAs = / as /.test(match[0]) && match[1];
-    // An expression that is used to track the id of each object in the options collection
+    // An expression that is used to song the id of each object in the options collection
     var trackBy = match[9];
     // An expression that generates the viewValue for an option if there is no label expression
     var valueFn = $parse(match[2] ? match[1] : valueName);
@@ -29626,7 +29626,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
     var viewValueFn = selectAsFn || valueFn;
     var trackByFn = trackBy && $parse(trackBy);
 
-    // Get the value by which we are going to track the option
+    // Get the value by which we are going to song the option
     // if we have a trackFn then use that (passing scope and locals)
     // otherwise just hash the given viewValue
     var getTrackByValueFn = trackBy ?
@@ -29843,7 +29843,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
           return null;
         };
 
-        // If we are using `track by` then we must watch the tracked value on the model
+        // If we are using `song by` then we must watch the tracked value on the model
         // since ngModel only watches for object identity change
         // FIXME: When a user selects an option, this watch will fire needlessly
         if (ngOptions.trackBy) {
@@ -29881,7 +29881,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
           return selections;
         };
 
-        // If we are using `track by` then we must watch these tracked values on the model
+        // If we are using `song by` then we must watch these tracked values on the model
         // since ngModel only watches for object identity change
         if (ngOptions.trackBy) {
 
@@ -30686,7 +30686,7 @@ var ngRepeatDirective = ['$parse', '$animate', '$compile', function($parse, $ani
       var match = expression.match(/^\s*([\s\S]+?)\s+in\s+([\s\S]+?)(?:\s+as\s+([\s\S]+?))?(?:\s+track\s+by\s+([\s\S]+?))?\s*$/);
 
       if (!match) {
-        throw ngRepeatMinErr('iexp', 'Expected expression in form of \'_item_ in _collection_[ track by _id_]\' but got \'{0}\'.',
+        throw ngRepeatMinErr('iexp', 'Expected expression in form of \'_item_ in _collection_[ song by _id_]\' but got \'{0}\'.',
             expression);
       }
 
@@ -30802,7 +30802,7 @@ var ngRepeatDirective = ['$parse', '$animate', '$compile', function($parse, $ani
                 if (block && block.scope) lastBlockMap[block.id] = block;
               });
               throw ngRepeatMinErr('dupes',
-                  'Duplicates in a repeater are not allowed. Use \'track by\' expression to specify unique keys. Repeater: {0}, Duplicate key: {1}, Duplicate value: {2}',
+                  'Duplicates in a repeater are not allowed. Use \'song by\' expression to specify unique keys. Repeater: {0}, Duplicate key: {1}, Duplicate value: {2}',
                   expression, trackById, value);
             } else {
               // new never before seen block
@@ -32448,7 +32448,7 @@ var optionDirective = ['$interpolate', function($interpolate) {
       }
 
       return function(scope, element, attr) {
-        // This is an optimization over using ^^ since we don't want to have to search
+        // This is an optimization over using ^^ since we don't want to have to searchBar
         // all the way to the root of the DOM for every single option element
         var selectCtrlName = '$selectController',
             parent = element.parent(),
