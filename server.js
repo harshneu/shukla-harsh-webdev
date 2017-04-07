@@ -10,16 +10,16 @@ var passport = require('passport');
 var session = require('express-session');
 
 var mongoose = require('mongoose');
-var connectionString = 'mongodb://127.0.0.1:27017/formmaker';
-//var connectionString = 'mongodb://127.0.0.1:27017/prismaticmusic';
+mongoose.Promise = require('bluebird');
+var connectionString = 'mongodb://127.0.0.1:27017/test';
 
 //console.log(process.env);
-if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
-    connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
-        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
-        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
-        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
-        process.env.OPENSHIFT_APP_NAME;
+if(process.env.MLAB_USERNAME) {
+    connectionString = process.env.MLAB_USERNAME + ":" +
+        process.env.MLAB_PASSWORD + "@" +
+        process.env.MLAB_HOST + ':' +
+        process.env.MLAB_PORT + '/' +
+        process.env.MLAB_APP_NAME;
 }
 
 var db = mongoose.connect(connectionString);
@@ -42,18 +42,13 @@ app.use(session({ secret: process.env.SESSION_SECRET , //'medhavi',
 app.use(passport.initialize());
 app.use(passport.session());
 
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var port = process.env.PORT || 3000;
 
 app.get('/hello', function(req, res){
     res.send('hello world');
 });
 
 // for services
-//require("./public/project/server/app.js")(app);
 require("./public/project/server/app.js")(app, db, mongoose);
 
-app.listen(port, ipaddress, function() {
-    console.log("Using ", connectionString);
-    console.log("May the Force be with you!!");
-});
+app.listen(port)
