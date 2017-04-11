@@ -2,11 +2,9 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="HeaderController as model">
     <div class="container-fluid">
-
         <div class="navbar-header">
             <button type="button"
                     class="navbar-toggle collapsed"
-                    data-toggle="collapse"
                     data-target=".navbar-main-collapse"
                     aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -14,56 +12,71 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/home"> <span class="glyphicon glyphicon-music"></span> MusicZone</a>
+            <a class="navbar-brand" href="#/home"> <span class="glyphicon glyphicon-headphones"></span> Symphony</a>
         </div>
-
-        <!-- Displays Register and Login when no user if logged in.
-            Displays the Username and Logout when some user is logged in.-->
 
         <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
 
-                <li ng-show="currentUser" ng-class="active">
-                    <a href="#/profile"
-                       data-toggle="collapse" data-target=".navbar-main-collapse">Hi {{currentUser.username}}!</a>
+
+
+                <li>
+                    <span>
+                    <input type="text" name="search" placeholder="Search.."
+                           ng-model="model.searchTitle" class="glyphicon glyphicon-searchs"/>
+                        <a class="glyphicon glyphicon-search" href="#/search/artist/{{model.searchTitle}}" ></a></span>
+
                 </li>
 
                 <li ng-class="{'active' : model.$location.url() =='/home'}">
                     <a href="#/home" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-music"></span> Home
+                         Home
                         <span class="sr-only">(current)</span></a>
                 </li>
 
-                <li ng-show="currentUser"
-                    ng-class="{'active' : model.$location.url().search('/profile') >= 0}">
-                    <a href="#/profile" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-home"></span> Profile</a>
-                </li>
 
-                <li ng-class="{'active' : model.$location.url() =='/search' }">
-                    <a href="#/search" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-search"></span> Search</a>
-                </li>
 
                 <li ng-show="currentUser.roles.indexOf('admin') >= 0"
                     ng-class="{'active' : model.$location.url() =='/admin'}">
                     <a href="#/admin" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-lock"></span> Admin</a>
+                         Admin</a>
                 </li>
 
                 <li ng-hide="currentUser" ng-class="{'active':model.$location.url()== '/register'}">
                     <a href="#/register" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-user"></span> Register</a>
+                         Register</a>
                 </li>
+
+                <li >
+                    <div class="dropdown">
+                        <button class="dropbtn">Browse</button>
+                        <div class="dropdown-content">
+                            <a href="#/home/#trends" ng-click="model.topTracks" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                Top Tracks</a>
+                            <a href="#/home/artist" ng-click="model.topTracks" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                Top Artists</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li ng-show="currentUser" ng-class="active">
+                    <div class="dropdown">
+                        <button class="dropbtn">{{currentUser.firstName}}</button>
+                        <div class="dropdown-content">
+                            <a href="#/home" ng-click="model.logout()" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                Logout</a>
+                            <a href="#/profile" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                Profile</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+
+
 
                 <li ng-hide="currentUser" ng-class="{'active':model.$location.url()== '/login'}">
                     <a href="#/login" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                </li>
-
-                <li ng-show="currentUser">
-                    <a href="#/home" ng-click="model.logout()" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                         Login</a>
                 </li>
             </ul>
         </div>
