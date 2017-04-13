@@ -1,13 +1,6 @@
-/*
- * Base structure
- */
 
-/* Move down content because we have a fixed navbar that is 50px tall */
 html {
     background: url('../images/full-bkg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-color: transparent;
 }
@@ -15,40 +8,23 @@ html {
 body {
     background-color: inherit;
     padding-top: 50px;
-    color:#122b40;
 
 }
 .no-bkg{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0 , 0, 0.5);
     margin: 0 2px;
 }
 
-
-/*
- * Global add-ons
- */
 
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
 .navbar-fixed-top {
     border: 0;
 }
 
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
-/*.sidebar {
-    display: none;
-}*/
 @media (min-width: 768px) {
     .sidebar {
         position: fixed;
@@ -59,15 +35,14 @@ body {
         display: block;
         padding: 20px;
         overflow-x: hidden;
-        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        overflow-y: auto;
         background-color: #202020;
         border-right: 1px solid rgba(255, 255, 255, 0.0980392);
     }
 }
 
-/* Sidebar navigation */
 .nav-sidebar {
-    margin-right: -21px; /* 20px padding + 1px border */
+    margin-right: -21px;
     margin-bottom: 20px;
     margin-left: -20px;
 }
@@ -75,21 +50,11 @@ body {
     padding-right: 20px;
     padding-left: 20px;
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-    color: #fff;
-    background-color: #122b40;
-}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-    color: #122b40;
-    background-color: transparent;
-}
 
-/*
- * Main content
- */
+
+
+
 
 .main {
     padding: 20px;
@@ -104,38 +69,16 @@ body {
     margin-top: 0;
 }
 
-/*
- * Placeholder dashboard ideas
- */
 
-.placeholders {
-    margin-bottom: 30px;
-    text-align: center;
-}
-.placeholders h4 {
-    margin-bottom: 0;
-}
-.placeholder {
-    margin-bottom: 20px;
-}
-.placeholder img {
-    display: inline-block;
-    border-radius: 50%;
-}
 
 a {
     font-size: medium;
-    font-family: "Tahoma";
     cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-top: 1px;
+    padding: 1px 5px 5px;
 }
 
 .navbar>.container , .navbar>  {
-    font-family: serif;
-    background-color: #122b40;
+    background-color: transparent;
 }
 
 .linkcolor {
@@ -148,16 +91,9 @@ a {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: rgba(255,255,255,0.65);
+    color: #fff;
 }
 
-.media-object.img-thumbnail {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color:transparent;
-}
 a:hover {
     font-size: medium;
     text-decoration: none;
@@ -166,7 +102,7 @@ a:hover {
 
 p {
     font-size: large;
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-family: "Satisfy";
     text-decoration: none;
     color: ivory;
     overflow-wrap: break-word;
@@ -186,12 +122,12 @@ p {
     border-color: black;
 }
 
-.text-muted {
-    color: rgba(255,255,255,0.15);
-}
+
 
 label {
     color: #080808;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .alert-danger {
@@ -209,23 +145,57 @@ label {
 .form-control {
     color: black;
 }
-
-.btn {
-    color: #ffffff;
+.reg-btn {
+    color: #000;
     font-size: medium;
+    max-width: 150px;
+    min-width: 150px;
     border-color: #424242;
+    font: bold 20px Arial, sans-serif;
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    border: 3px solid;
+    border-color: #bbbbbb #a2a2a2 #888888;
+    background-color: white;
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em
+    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+}
+.btn {
+    color: #000;
+    font-size: medium;
+    max-width: 150px;
+    min-width: 150px;
+    border-color: #424242;
+    font: bold 20px Arial, sans-serif;
+    text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: auto;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    border: 3px solid;
+    border-color: #bbbbbb #a2a2a2 #888888;
+    background-color: lightgrey;
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em
+    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
 }
 
-.btn-success {
-    border-radius: 25px;
-}
+
 .tops{
     padding: 0 10%;
     margin:0 15%;
 }
 
 #trends {
-    font-family:"Marker Felt";
+    font-family: 'Dosis', sans-serif;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
@@ -245,10 +215,25 @@ label {
 #contacts a{
     text-decoration: none ;
 }
-.tops1{
-    padding: 5% 10%;
-    margin:0 15%;
+
+.tops1 {
+    padding: 5% 10% 43%;
+    margin: 0 15% 0 5%;
 }
+@media (min-width: 768px) {
+    .tops1 {
+        padding: 5% 10% 15%;
+        margin: 0 15% 0 28%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tops1 {
+        padding: 5% 10%;
+        margin: 0 15% 0 18%;
+    }
+}
+
 .footer {
     border-top: 2px solid rgba(255, 20, 147, 0.31);
     position: relative;
@@ -262,38 +247,14 @@ label {
     z-index: -999;
 }
 
-.footer-container {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #1b1b1b;
-}
-.inverted-color {
-    color: #eee;
-}
 
-.btn-default:hover {
-    color: #ffffff;
-    font-size: medium;
-    background-color: #122b40;
-    border-color: #424242;
-}
 
 .thumbnail {
-    background-color: transparent;
-    border: snow;
-    font-size: x-large;
-    padding: 0px;
+    border: INSET;
+    min-height: 320px;
 }
 
-.thumbnail > div > a {
-    color: #122b40;
-    font-size: x-large;
-    font-style: italic;
-    cursor: pointer;
-}
+
 
 table{
     background-color: rgba(0,0,0,0.4);
@@ -315,8 +276,6 @@ h2, .h2, .h3, h4, .h4, h5, .h5 {
 }
 
 .container-fluid {
-    /*padding-left: 30px;
-    padding-right: 30px;*/
     background-color: rgba(0, 0, 0, 0.4);
     color:#122b40;
 }
@@ -324,14 +283,15 @@ h2, .h2, .h3, h4, .h4, h5, .h5 {
 .row {
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: transparent;
 }
+
+
 
 /*.table.table-striped>tbody>tr:nth-of-type(odd){background-color: rgba(230, 23, 230, 0.5)}*/
 .table-hover>tbody>tr:hover{background-color:#122b40}
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    background-color: #122b40;
+    background-color: transparent;
 }
 
 .nav-tabs {
@@ -341,14 +301,13 @@ ul, ol {
     padding-left: 20px;
 }
 
-.img-rounded {
-    border-radius: 30px;
+.img-circle:hover {
+    transform: scale(1.2);
 }
-
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
     padding: 3px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0);
 }
 
 #tags {
@@ -356,6 +315,14 @@ ul, ol {
     margin-top: 20px;
 }
 
+
+.tracks{
+    font-family: 'Satisfy';
+   }
+.tracks:hover {
+
+    transform: scale(1.2);
+}
 ul#tags li {
     display: inline;
     list-style-type: none;
@@ -466,7 +433,9 @@ ul#tags
     color: #fff ;
 }
 
+
 .contact-info {
+
     font-family: "Marker Felt";
     font-weight: bolder;
     background-color: transparent !important;
@@ -492,8 +461,12 @@ ul#tags
     color: #fff; !important;
 }
 
+.navbar-heads{
+    color: #fff !important;
+}
+
 .banner {
-    background-image: url("../Contact.jpg");
+    background-image: url("../images/footer.jpg");
     background-repeat: no-repeat;
 }
 
@@ -501,29 +474,51 @@ ul#tags
     text-align: center;
     color: #000000;
     font-weight: bolder;
-    color: #ffffff;
     padding: 15%;
     width: 100%;
-    background-color: rgba(0, 113, 64, 0.4);
-    font-size: 150%;}
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 200%;}
 
-.welcome-text{
-    background-color: #000;
+.field-width{
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.reg-page-header {
+    text-align: center;
+    font-family: Satisfy;
+}
+.reg-form{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .reg-back {
+        background-color: rgba(205, 104, 137, 0.4);
+        margin: 0 137px;
+    }
 }
 
+@media (min-width: 1024px) {
+    .reg-back {
+        background-color: rgba(205, 104, 137, 0.4);
+        margin: 0 237px;
+    }
+}
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: transparent;
     color: white;
     padding: 16px;
+    margin: -2px -3px -5px -3px;
     font-size: 16px;
     border: none;
+    text-transform: capitalize;
 }
 
 .container-fluid{
-    background-color: #4CAF50;
+    background-color: rgba(0,0,0,0.2);
 }
 .navbar-brand {
-    background-color: #4CAF50;
+    background-color: transparent;
     font-family: serif;
     text-decoration: none;
 }
@@ -555,30 +550,29 @@ ul#tags
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #000;
 }
 
 .glyphicon-searchs{
     border: 0 none;
     font: bold 12px Arial,Helvetica,Sans-serif;
-    color: #777;
+    color: #fff;
     width: 150px;
     padding: 6px 15px 6px 35px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -webkit-transition: all 0.7s ease 0s;
-    -moz-transition: all 0.7s ease 0s;
-    -o-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-    margin-top: 10px;
+    margin-top: 12px;
+    margin-right: -30px;
+    background-image: url("../images/footer.jpg");
 }
 
 .glyphicon-headphones {
     float: left;
     font-weight: bold;
+}
+
+.zoom{
+    top: 4px;
+    left: -2px;
+    font-size: 15px;
+    color: #fff;
 }

@@ -1,9 +1,9 @@
 (function(){
     'use strict';
-    var ARTIST_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=artist.search&artist=ARTIST&autocorrect=1";
-    var MBID_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=artist.getInfo&mbid=MBID&autocorrect=1";
-    var TRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=artist.getTopTracks&mbid=MBID&autocorrect=1";
-    var SIMILAR_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=artist.getsimilar&artist=ARTIST&autocorrect=1";
+    var ARTIST_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=artist.search&artist=ARTIST&autocorrect=1";
+    var MBID_URL = "http://ws.audioscrobbler.com/2.0/?api_key=261d2d3d0eaf425704be192666494321&format=json&method=artist.getInfo&mbid=MBID&autocorrect=1";
+    var TRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=6a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=artist.getTopTracks&mbid=MBID&autocorrect=1";
+    var SIMILAR_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=artist.getsimilar&artist=ARTIST&autocorrect=1";
 
     angular
         .module("SymphonyApp")

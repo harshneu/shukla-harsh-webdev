@@ -1,17 +1,20 @@
-<html>
+
 <body>
 <div class="background1">
     <h2 class="welcome"><span class="welcome-text"> Your one sure destination for awesome music </span></h2>
+    <div class="tops1" ng-hide="currentUser">
 
-    <nav class="tops1" ng-hide="currentUser">
-        <div class="btn btn-success col-xs-12 col-md-6" >
-            <div class="active" ><a href="#/login">Login</a></div>
-        </div>
-        <div class="btn btn-success col-xs-12 col-md-6">
-            <div class="active"> <a href="#/register">Register</a></div>
-        </div>
+        <div class=" col-xs-12 col-md-6" >
+            <a class="btn btn-primary"
+            href="#/login">Login </a></div>
 
-</div>
+    <div class=" col-xs-12 col-md-6" >
+        <a class="btn btn-primary"
+           href="#/register">Register</a></div>
+
+        </div>
+    </div>
+
 
 <div class="no-bkg">
 <div ng-controller="HomeController">
@@ -24,11 +27,11 @@
                     <div class = "thumbnail">
                         <div class="row">
                             <a href="#/artist/details/{{track.artist.mbid}}">
-                                <img class="media-object img-rounded img-responsive" src="{{track.image.small}}" alt = "No Image Found!"> </a>
-                            <div class = "caption">
+                                <img class="img-responsive img-circle " src="{{track.image.large}}" alt = "Image Unavailable!"> </a>
+                            <p class = "caption tracks">
                                 <a href="#/player/{{track.name}}/{{track.artist.name}}">
-                                    <span class="glyphicon glyphicon-play-circle"> </span> {{track.name}}</a>
-                            </div>
+                                    <span class="glyphicon glyphicon glyphicon-play "> </span> {{track.name}}</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -61,5 +64,5 @@
         </div>
     </div>
 </div>
+    </div>
 </body>
-</html>

@@ -24,7 +24,7 @@
                     <span>
                     <input type="text" name="search" placeholder="Search.."
                            ng-model="model.searchTitle" class="glyphicon glyphicon-searchs"/>
-                        <a class="glyphicon glyphicon-search" href="#/search/artist/{{model.searchTitle}}" ></a></span>
+                        <a class="glyphicon glyphicon-search zoom" href="#/search/artist/{{model.searchTitle}}" ></a></span>
 
                 </li>
 
@@ -37,12 +37,12 @@
 
 
                 <li ng-show="currentUser.roles.indexOf('admin') >= 0"
-                    ng-class="{'active' : model.$location.url() =='/admin'}">
+                    ng-class="{'active' : model.$location.url() =='/admin'}" class="heads">
                     <a href="#/admin" data-toggle="collapse" data-target=".navbar-main-collapse">
                          Admin</a>
                 </li>
 
-                <li ng-hide="currentUser" ng-class="{'active':model.$location.url()== '/register'}">
+                <li ng-hide="currentUser" ng-class="{'active':model.$location.url()== '/register'}" class="navbar-heads">
                     <a href="#/register" data-toggle="collapse" data-target=".navbar-main-collapse">
                          Register</a>
                 </li>
@@ -61,7 +61,7 @@
 
                 <li ng-show="currentUser" ng-class="active">
                     <div class="dropdown">
-                        <button class="dropbtn">{{currentUser.firstName}}</button>
+                        <button class="dropbtn">{{currentUser.username}}</button>
                         <div class="dropdown-content">
                             <a href="#/home" ng-click="model.logout()" data-toggle="collapse" data-target=".navbar-main-collapse">
                                 Logout</a>
