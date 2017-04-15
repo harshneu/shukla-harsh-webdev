@@ -13,11 +13,6 @@
 
         } init();
 
-        // This function registers a user
-        // It checks if all the required fields are present and if both the password entered are same.
-        // it also checks if the entered username is already present or not.
-        // Appropriate error messages are sent if any error occurs.
-        // It registers the user and logs them in if no error is encountered.
         function register(user) {
             vm.message = null;
             // Username input is mandatory
@@ -53,7 +48,7 @@
                         var user = response.data;
                         if (user != null) {
                             UserService.setCurrentUser(user);
-                            $location.url("/profile");
+                            $location.url("/home");
                         }
                     },
                     function (err) {

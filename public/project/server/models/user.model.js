@@ -12,6 +12,7 @@ module.exports = function (db, mongoose) {
 
     var api = {
         createUser: createUser,
+        createUser: createAdmin,
         findAllUsers: findAllUsers,
         findUserById: findUserById,
         findUserByUsername: findUserByUsername,
@@ -27,6 +28,7 @@ module.exports = function (db, mongoose) {
     return api;
 
     function createUser(user) {
+        console.log("hiii");
         // use q to defer the response
         var deferred = q.defer();
 
@@ -47,6 +49,26 @@ module.exports = function (db, mongoose) {
         return deferred.promise;
     }
 
+
+    function createAdmin(admin) {
+        // use q to defer the response
+        var deferred = q.defer();
+
+        // insert new user with mongoose user model's create()
+        ProjectUserModel.create(admin, function (err, doc) {
+
+            if (err) {
+                deferred.reject(err);
+            } else {
+                deferred.resolve(doc);
+            }
+
+        });
+
+        // return a promise
+        return deferred.promise;
+    }
+
     function findAllUsers() {
         // use q to defer the response
         var deferred = q.defer();
@@ -54,15 +76,12 @@ module.exports = function (db, mongoose) {
         // find with mongoose user model's find()
         ProjectUserModel.find(function(err, doc) {
             if(err) {
-                // reject promise if error
                 deferred.reject(err);
             }
             else {
-                // resolve promise
                 deferred.resolve(doc);
             }
         });
-        // return a promise
         return deferred.promise;
     }
 
@@ -287,3 +306,4 @@ module.exports = function (db, mongoose) {
         return deferred.promise;
     }
 };
+

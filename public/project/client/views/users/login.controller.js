@@ -31,9 +31,9 @@
                             if ($rootScope.currentUser.roles !== null
                                 && typeof($rootScope.currentUser.roles) !== 'undefined'
                                 && $rootScope.currentUser.roles.indexOf('admin') >= 0) {
-                                $location.path("/admin");
+                                $location.path("/home");
                             } else {
-                                $location.path("/profile");
+                                $location.path("/home");
                             }
                         } else {
                             vm.message = "Wrong username and/or password.";
