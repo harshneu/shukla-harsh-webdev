@@ -1,7 +1,7 @@
 <div class="container-fuild" ng-controller="AlbumController">
     <div  class="detail">
 
-        <div class="container-fluid">
+        <div class="container-fluid album-text">
             <h1 class="page-header"> {{model.details.name}}
                 <div ng-show="currentUser" ng-switch=model.musicLiked>
 
@@ -24,7 +24,7 @@
             </h1>
         </div>
 
-        <div id="tag" class="container-fluid">
+        <div id="tag" class="container-fluid album-text">
             <div class="row">
                 <label id="tagLabel">Tags</label>
                 <ul id="tags" ng-repeat="albumTags in model.tags">
@@ -39,9 +39,9 @@
 
         <br/>
 
-        <div class="container-fluid">
+        <div class="container-fluid album-text">
             <div id="about">
-                <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{model.details.image.large}}" alt = "No Image Found!">
+                <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{model.details.image.large}}" alt = "No Image Found!">
                 <!--<div ng-show="artistImage.size.indexOf('mega')>=0">
                 <img class="media-object pull-left img-responsive" src="{{artistImage.#text}}" alt = "No Image Found!">
                 </div>-->
@@ -62,7 +62,7 @@
 
         <br/>
 
-        <div class="container-fluid">
+        <div class="container-fluid album-text">
             <!--<div ng-include="'views/song/song.view.html'"></div>-->
             <h4 class="page-header">Tracks</h4>
             <div class="row container-fluid">
@@ -75,12 +75,12 @@
             </div>
         </div>
 
-        <div id="similar" class="container-fluid">
+        <div id="similar" class="container-fluid album-text">
             <h4 class="page-header">Artists similar to {{model.artist}}</h4>
             <div ng-repeat="similarArtist in model.similar | limitTo: 5">
                 <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
                     <div class="row container-fluid">
-                        <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{similarArtist.image.medium}}" alt = "No Image Found!">
+                        <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{similarArtist.image.medium}}" alt = "No Image Found!">
                         <div class="container-fluid col-md-6">
                             <a href="#/search/artist/{{similarArtist.name}}"> {{similarArtist.name}} </a>
                         </div>
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <div id="fav" class="container-fluid">
+        <div id="fav" class="container-fluid album-text">
             <h4 class="page-header">Users who like {{model.details.name}}</h4>
             <p ng-hide="currentUser"><a href="#/login">Login</a> to see users who like this</p>
             <div ng-hide="model.favoriteUsers">
@@ -102,7 +102,7 @@
             </div>
         </div>
 
-        <div id="review" class="container-fluid">
+        <div id="review" class="container-fluid album-text">
             <h4 id="reviews" class="page-header">Reviews</h4>
             <p ng-hide="currentUser"><a href="#/login">Login</a> to post reviews</p>
             <div class="row" ng-show="currentUser">
@@ -156,4 +156,14 @@
         </div>
     </div>
 </div>
+<nav class="navbar navbar-default navbar-fixed-bottom ">
+    <div class="container-fluid">
+        <div class="pull-right ">
+            <a class="navbar-brand"
+               href="#/user/{{model.userId}}">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </div>
+    </div>
+</nav>
 </div>

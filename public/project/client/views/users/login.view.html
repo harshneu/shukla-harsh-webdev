@@ -1,8 +1,8 @@
 <!-- This file displays the Register page -->
 
 <div ng-controller="RegisterController">
-    <div class="reg-back">
-        <h1 class="reg-page-header">Register</h1>
+    <div class="log-back">
+        <h1 class="reg-page-header">Login</h1>
 
         <!-- Displays an error message -->
         <div ng-show="model.message" class="alert alert-danger" role="alert">{{model.message}}</div>
@@ -32,11 +32,21 @@
                 <button ng-click="model.login(model)" class=" reg-btn btn-success btn-block">Login</button>
             </div>
             <div class="form-group field-widths">
-                <button> <a class="reg-btn btn-danger btn-block"  href="#/register">Register</a></button>
+                <button> <a class="reg-btn btn-warning btn-block"  href="#/register">Register</a></button>
             </div>
 
         </form>
     </div>
 </div>
 
+<nav class="navbar navbar-default navbar-fixed-bottom ">
+    <div class="container-fluid">
+        <div class="pull-right ">
+            <a class="navbar-brand"
+               href="#/user/{{model.userId}}">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </div>
+    </div>
+</nav>
 

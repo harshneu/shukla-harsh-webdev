@@ -6,8 +6,8 @@
 
     <nav>
         <ul class="nav nav-tabs">
-            <li ng-show="model.topTracks"><a href="#/home">Top Tracks</a></li>
-            <li ng-show="model.topArtists" class="active"><a href="#/home/artist">Top Artists</a></li>
+            <li ng-show="model.topTracks"><a href="#/home">Songs Top 15</a></li>
+            <li ng-show="model.topArtists" class="active"><a href="#/home/artist">Composers</a></li>
         </ul>
     </nav>
 
@@ -19,7 +19,7 @@
                     <div class = "thumbnail">
                         <div class="row">
                             <a href="#/artist/details/{{artist.mbid}}">
-                                <img class="media-object img-rounded img-responsive" src="{{artist.image.large}}" alt = "No Image Found!"> </a>
+                                <img class="media-object img-circle img-responsive" src="{{artist.image.large}}" alt = "No Image Found!"> </a>
                             <div class = "caption">
                                 <a href="#/artist/details/{{artist.mbid}}">{{artist.name}}</a>
                             </div>
@@ -29,4 +29,14 @@
             </div>
         </div>
     </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom ">
+        <div class="container-fluid">
+            <div class="pull-right ">
+                <a class="navbar-brand"
+                   href="#/user/{{model.userId}}">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
 </div>

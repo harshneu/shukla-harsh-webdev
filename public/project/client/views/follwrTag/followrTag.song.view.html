@@ -22,7 +22,7 @@
             <div ng-repeat="track in model.tracks">
                 <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
                     <div class="row container-fluid">
-                        <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{track.image.medium}}" alt = "No Image Found!">
+                        <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{track.image.medium}}" alt = "No Image Found!">
                         <div class="container-fluid">
                             <a href="#/player/{{track.name}}/{{track.artist.name}}">
                                 <span class="glyphicon glyphicon-play-circle"></span> {{track.name}} </a>

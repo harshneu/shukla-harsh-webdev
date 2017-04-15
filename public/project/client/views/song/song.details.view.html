@@ -41,7 +41,7 @@
 
         <div class="container-fluid">
             <div id="about">
-                <img class="media-object pull-left img-rounded img-thumbnail img-responsive" src="{{model.album.image.large}}" alt = "No Image Found!">
+                <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{model.album.image.large}}" alt = "No Image Found!">
                 <!--<div ng-show="artistImage.size.indexOf('mega')>=0">
                 <img class="media-object pull-left img-responsive" src="{{artistImage.#text}}" alt = "No Image Found!">
                 </div>-->
@@ -93,7 +93,7 @@
             <div class="row container-fluid">
                 <ul ng-repeat="similarTrack in model.similar | limitTo: 30">
                     <li id="trackList">
-                        <img class="media-object pull-left img-rounded img-responsive" src="{{similarTrack.image.medium}}" alt = "No Image Found!">
+                        <img class="media-object pull-left img-circle img-responsive" src="{{similarTrack.image.medium}}" alt = "No Image Found!">
                         <a href="#/player/{{similarTrack.name}}/{{similarTrack.artist.name}}" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-play-circle"></span> {{similarTrack.name}}</a>
                     </li>
@@ -172,4 +172,14 @@
         </footer> -->
     </div>
 </div>
+<nav class="navbar navbar-default navbar-fixed-bottom ">
+    <div class="container-fluid">
+        <div class="pull-right ">
+            <a class="navbar-brand"
+               href="#/user/{{model.userId}}">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </div>
+    </div>
+</nav>
 </div>

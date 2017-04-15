@@ -1,25 +1,16 @@
 
 <body>
 <div class="background1">
-    <h2 class="welcome"><span class="welcome-text"> Your one sure destination for awesome music </span></h2>
-    <div class="tops1" ng-hide="currentUser">
-
-        <div class=" col-xs-12 col-md-6" >
-            <a class="btn btn-primary"
-            href="#/login">Login </a></div>
-
-    <div class=" col-xs-12 col-md-6" >
-        <a class="btn btn-primary"
-           href="#/register">Register</a></div>
-
-        </div>
-    </div>
-
+    <h2 class="welcome"><span class="welcome-text"> With whom do you listen?</span>
+        <div ng-hide="currentUser" class="login-text"><a href="#/login" style="font-size: 30px; font-family:Cursive;color:cornflowerblue">Login</a> to explore the world of Music </div>
+</h2>
+</div>
 
 <div class="no-bkg">
 <div ng-controller="HomeController">
     <div ng-show="model.topTracks">
-        <h3 id="trends">Symphony Top Tracks</h3>
+        <div ng-show="currentUser">
+        <h3 id="trends">Symphony Hits</h3>
         <div class="row">
             <div ng-repeat="track in model.topTracks">
                 <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
@@ -38,31 +29,47 @@
             </div>
         </div>
     </div>
+        </div>
 </div>
 </div>
-
-<a  name="contact"></a>
-<div id="contacts" class="banner">
-    <div class="container content-section text-center">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2 class="contact-info"> &nbsp; Contact Us:</h2>
-            <p class="contact-info-p" >Feel free to email us to provide some feedback on our application, give us suggestions for changes, or to just say hello!</p>
-            <p><a class="linkcolor" href="mailto:shukla.h@husky.neu.edu">shukla.h@husky.neu.edu</a>
-            <p><a class="linkcolor" href="tel:8573008187" &nbsp;>Call Us Here</a></p>
-            </p>
-            <ul class="list-inline banner-social-buttons">
-                <li>
-                    <a href="https://www.instagram.com/_har5h/" class="btn btn-default btn-sm"><i class="fa fa-instagram" aria-hidden="true"></i> <span class="network-name">Instagram</span></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/SoundCloud?lang=en" class="btn btn-default btn-sm"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/innershel" class="btn btn-default btn-sm"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                </li>
-            </ul>
+    <div ng-hide="currentUser" id="contacts" class="banner navbar-fixed-bottom">
+        <div class="container content-section text-center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="contact-info"> &nbsp; Contact Us:</h2>
+                <p class="contact-info-p" >Feel free to email us to provide some feedback on our application, give us suggestions for changes, or to just say hello!</p>
+                <p><a class="linkcolor" href="mailto:shukla.h@husky.neu.edu">shukla.h@husky.neu.edu</a>
+                <p><a class="linkcolor" href="tel:8573008187" &nbsp;>Call Us Here</a></p>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.instagram.com/_har5h/" class="btn btn-default btn-sm"><i class="fa fa-instagram" aria-hidden="true"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/SoundCloud?lang=en" class="btn btn-default btn-sm"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/innershel" class="btn btn-default btn-sm"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+
+
+
+
     </div>
+
 </body>
+
+<nav ng-show="currentUser"class="navbar navbar-default navbar-fixed-bottom ">
+    <div n class="container-fluid ">
+        <div class="pull-right ">
+            <a class="navbar-brand"
+               href="#/user/{{model.userId}}">
+                <span class="glyphicon glyphicon-user"></span>
+            </a>
+        </div>
+    </div>
+</nav>
+

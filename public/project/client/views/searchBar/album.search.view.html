@@ -1,13 +1,5 @@
 <div ng-controller="SearchController">
-    <h1 class="page-header">Search</h1>
-    <input class="form-control ng-pristine ng-untouched ng-valid ng-scope"
-           placeholer="Looking for music? Search here!" type="text" ng-model="model.searchTitle"/>
-    <br/>
-    <a href="#/search/album/{{model.searchTitle}}" class="btn btn-default btn-sm">
-        Search
-    </a>
-    <br/>
-    <br/>
+
 
     <div ng-show="model.search">
         <nav>
@@ -22,7 +14,7 @@
     <!--  Albums -->
     <div ng-show="model.album">
         <h2>Albums</h2>
-        <table class="table table-responsive table-striped table-hover ng-scope">
+        <table class="table table-responsive table-hover table-hover ng-scope">
             <thead>
             <tr>
                 <th>Poster</th>
