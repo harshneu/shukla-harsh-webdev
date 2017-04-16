@@ -224,6 +224,9 @@ footer {
 #education{
     padding-left: 30px !important;
 }
+#education li{
+    font-family: Raleway;
+}
 
 .banner {
     background-image: url("Contact.jpg");
