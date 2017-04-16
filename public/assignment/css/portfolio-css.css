@@ -226,6 +226,12 @@ footer {
 }
 #education li{
     font-family: Raleway;
+    font-weight: 400;
+
+}
+#experience li{
+    font-family: Raleway;
+    font-weight: 400;
 }
 
 .banner {
