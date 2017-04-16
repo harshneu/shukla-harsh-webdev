@@ -15,10 +15,8 @@
             <div ng-repeat="track in model.topTracks">
                 <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
 
-                    <div class = "thumbnail">
+                    <div class ="thumbnail">
                         <div class="row">
-                            <a href="#/artist/details/{{track.artist.mbid}}">
-                                <img class="img-responsive img-circle " src="{{track.image.large}}" alt = "Image Unavailable!"> </a>
                             <p class = "caption tracks">
                                 <a href="#/player/{{track.name}}/{{track.artist.name}}">
                                     <span class="glyphicon glyphicon glyphicon-play "> </span> {{track.name}}</a>
