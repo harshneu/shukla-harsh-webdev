@@ -54,14 +54,14 @@
 
         <div class="form-group" ng-show="currentUser.following">
             <label>Following:</label>
-            <ol class="d" ng-repeat="follow in currentUser.following">
+            <ol class="c" ng-repeat="follow in currentUser.following">
                 <li class="field-width"><a href="#/profile/{{follow.userId}}">{{follow.username}}</a></li>
             </ol>
         </div>
 
         <!-- Button for the profile update of the user to happen -->
         <div class="form-group">
-            <div>
+            <div class="c">
                 <button ng-click="model.update(model.user)" class="btn btn-default btnn">Update</button>
             </div>
         </div>
