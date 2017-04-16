@@ -224,11 +224,12 @@ label {
 
 
 #trends {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     text-align: center;
     text-transform: capitalize;
     padding-top: 10px;
+    font-weight: bold;
 }
 
 #contacts {
