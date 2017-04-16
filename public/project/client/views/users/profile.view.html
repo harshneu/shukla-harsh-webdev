@@ -46,22 +46,22 @@
             </div>
 
         <div class="form-group" ng-show="currentUser.favoriteMusic">
-            <label>Music Liked:</label>
-            <ul ng-repeat="music in currentUser.favoriteMusic">
+            <label>You like</label>
+            <ol class="d" ng-repeat="music in currentUser.favoriteMusic">
                 <li class="field-width"><a href="#/search/artist/{{music.musicTitle}}">{{music.musicTitle}}</a></li>
-            </ul>
+            </ol>
         </div>
 
         <div class="form-group" ng-show="currentUser.following">
-            <label>You are following:</label>
-            <ul ng-repeat="follow in currentUser.following">
+            <label>Following:</label>
+            <ol class="d" ng-repeat="follow in currentUser.following">
                 <li class="field-width"><a href="#/profile/{{follow.userId}}">{{follow.username}}</a></li>
-            </ul>
+            </ol>
         </div>
 
         <!-- Button for the profile update of the user to happen -->
         <div class="form-group">
-            <div class="col-sm-offset-6 ">
+            <div>
                 <button ng-click="model.update(model.user)" class="btn btn-default btnn">Update</button>
             </div>
         </div>

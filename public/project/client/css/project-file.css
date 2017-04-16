@@ -70,12 +70,12 @@ body {
 }
 .page-header{
     text-align: center;
-    font-family: Cursive;
+    font-family: "Marker Felt";
 }
 
 
 .page-header1{
-    font-family: Cursive;
+    font-family: "Marker Felt";
     font-size: 20px;
 }
 .greens{
@@ -183,6 +183,11 @@ label {
 
 .c {
     list-style-type: square;
+    text-transform: capitalize;
+    color:#fff;
+}
+.d {
+    list-style-type: lower-roman;
     text-transform: capitalize;
     color:#fff;
 }
