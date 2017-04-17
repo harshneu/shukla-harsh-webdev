@@ -18,16 +18,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/client/views/home/home.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-413">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/client/views/main/main.controller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.otheruser.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.otheruser.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.otheruser.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artist.details.view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="123" column="135" lean-forward="false" selection-start-line="123" selection-start-column="135" selection-end-line="123" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -129,7 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin</find>
       <find>bcrypt</find>
       <find>rale</find>
       <find>#intr</find>
@@ -159,6 +158,7 @@
       <find>Tracks</find>
       <find>660fbf2c8a0c4658c2dd385ac4273bc2</find>
       <find>comments</find>
+      <find>Delete Comme</find>
     </findStrings>
     <replaceStrings>
       <replace>Symphony</replace>
@@ -226,7 +226,6 @@
         <option value="$PROJECT_DIR$/public/project/client/views/admin/admin.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.controller.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.view.html" />
-        <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/follwrTag/followrTag.album.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/follwrTag/followrTag.song.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/footer/footer.view.html" />
@@ -234,6 +233,7 @@
         <option value="$PROJECT_DIR$/public/project/client/views/header/header.controller.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/home/home.artist.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/song/song.details.view.html" />
+        <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html" />
       </list>
     </option>
   </component>
@@ -691,7 +691,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105324000" />
+    <option name="totallyTimeSpent" value="105712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -942,14 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/views/follwrTag/followrTag.album.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1104,8 +1096,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/views/users/profile.otheruser.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="123" column="135" lean-forward="false" selection-start-line="123" selection-start-column="135" selection-end-line="123" selection-end-column="135" />
           <folding />
         </state>
       </provider>
