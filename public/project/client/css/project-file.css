@@ -1,4 +1,4 @@
-
+/* background image renders over full html */
 html {
     background: url('../images/full-bkg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -20,11 +20,12 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
+/* fixed navabar top */
 
 .navbar-fixed-top {
     border: 0;
 }
-
+/*media query for the sidebar responds when min width exceeds 768px*/
 @media (min-width: 768px) {
     .sidebar {
         position: fixed;
@@ -41,6 +42,7 @@ body {
     }
 }
 
+/* navbar for the sidebar */
 .nav-sidebar {
     margin-right: -21px;
     margin-bottom: 20px;
@@ -50,14 +52,11 @@ body {
     padding-right: 20px;
     padding-left: 20px;
 }
-
-
-
-
-
+/* main and the media query for main when the screen size increases to 768 px*/
 
 .main {
     padding: 20px;
+    margin-top: 0;
 }
 @media (min-width: 768px) {
     .main {
@@ -65,26 +64,31 @@ body {
         padding-left: 40px;
     }
 }
-.main .page-header {
-    margin-top: 0;
-}
+
+
+/*styling for page header*/
 .page-header{
+    argin-top: 0
     text-align: center;
     font-family: "Satisfy";
 }
-
 
 .page-header1{
     font-family: "Satisfy";
     font-size: 20px;
 }
+
+/* color constants */
 .greens{
     color: green;
 }
-
+/* color constants */
 .reds {
     color: red;
 }
+
+
+/* links css */
 a {
     font-size: medium;
     cursor: pointer;
@@ -99,7 +103,6 @@ a {
     color: #fff !important;
 }
 
-
 .navbar-inverse {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -108,6 +111,8 @@ a {
     color: #fff;
 }
 
+
+/* css whenever we hover over a link */
 a:hover {
     font-size: medium;
     text-decoration: none;
@@ -136,20 +141,21 @@ p {
     border-color: black;
 }
 
-
-
 label {
     color: #080808;
     font-weight: bolder;
     font-size: larger;
 }
 
+
+/* whenever a wrong value or undesired value is entered it gets triggered  */
 .alert-danger {
     background-color: rgba(191, 59, 59, 0.5);
     border-color: rgba(189, 0, 31, 0.4);
     text-align: center;
 }
 
+/* it gets trigeered for successful submission */
 .alert-success {
     background-color: rgba(35,99,70,0.5);
     border-color: rgba(16, 128, 111, 0.4);
@@ -159,6 +165,8 @@ label {
 .form-control {
     color: black;
 }
+
+/* registration button */
 .reg-btn {
     color: #fff;
     font-size: medium;
@@ -181,6 +189,8 @@ label {
     rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
 }
 
+
+/* class for lists */
 .c {
     list-style-type: square;
     text-transform: capitalize;
@@ -293,29 +303,21 @@ label {
 }
 
 
-
 .thumbnail {
     border: INSET;
     min-height: 320px;
 }
 
-
-
-table{
+.table{
     background-color: rgba(0,0,0,0.4);
 }
 
 .table-responsive>.table {
     background-color: rgba(0,0,0,0.4);
-    /* background-color: #181818; */
 }
 
-h1, .h1 {
-    font-family: serif;
-    color:#122b40;
-}
 
-h2, .h2, .h3, h4, .h4, h5, .h5 {
+h2, .h2, .h3 {
     font-family:"Marker Felt";
     background-color: rgba(0,0,0,0.5);
 }
@@ -338,11 +340,11 @@ h2, .h2, .h3, h4, .h4, h5, .h5 {
 }
 
 /*.table.table-striped>tbody>tr:nth-of-type(odd){background-color: rgba(230, 23, 230, 0.5)}*/
-.table-hover>tbody>tr:hover{background-color:#122b40}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    background-color: transparent;
+.table-hover>tbody>tr:hover
+{
+    background-color:rgba(230, 23, 230, 0.5)
 }
+
 
 .nav-tabs {
     display: inline-flex;
