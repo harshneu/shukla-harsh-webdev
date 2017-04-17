@@ -12,11 +12,9 @@ module.exports = function(app, musicModel, userModel) {
         var favoriteUsers = musicModel.findFavoriteUsers(mbId)
             .then(
                 function(doc) {
-                    //console.log("findFavoriteUsers -- "+doc);
-                    //music = doc;
+
                     res.json(doc.favoriteUsers);
                 },
-                // send error if promise rejected
                 function(err) {
                     res.status(400).send(err);
                 }
@@ -24,7 +22,6 @@ module.exports = function(app, musicModel, userModel) {
     }
 
     function createFavoriteUser(req, res) {
-        //console.log("in createFavoriteUser ");
         var mbId = req.params.mbId;
         var userId = req.params.userId;
         var username = req.params.username;
@@ -37,18 +34,14 @@ module.exports = function(app, musicModel, userModel) {
 
         musicModel
             .userLikesMusic(user, musicInfo)
-            // add user to movie likes
             .then(
                 function (music) {
-                    //console.log("before usermodel");
-                    //console.log(music);
                     return userModel.userFavoritesMusic(userId, music);
                 },
                 function (err) {
                     res.status(400).send(err);
                 }
             )
-            // add movie to user likes
             .then(
                 function (user) {
                     res.json(user);
@@ -111,17 +104,14 @@ module.exports = function(app, musicModel, userModel) {
 
         musicModel
             .removeFavoriteUser(userId, mbId)
-            // add user to movie likes
             .then(
                 function (music) {
-                    //console.log("before usermodel");
                     return userModel.removeFavoriteUser(userId, mbId);
                 },
                 function (err) {
                     res.status(400).send(err);
                 }
             )
-            // add movie to user likes
             .then(
                 function (user) {
                     res.json(user);

@@ -83,17 +83,13 @@ module.exports = function(app, userModel) {
             newUser.roles = ["user"];
         }
 
-        // first check if a user already exists with the username
         userModel
             .findUserByUsername(newUser.username)
             .then(
                 function(user){
-                    // if the user does not already exist
                     if(user == null) {
-                        // create a new user
                         return userModel.createUser(newUser)
                             .then(
-                                // fetch all the users
                                 function(){
                                     return userModel.findAllUsers();
                                 },
@@ -101,7 +97,6 @@ module.exports = function(app, userModel) {
                                     res.status(400).send(err);
                                 }
                             );
-                        // if the user already exists, then just fetch all the users
                     } else {
                         return userModel.findAllUsers();
                     }
@@ -181,10 +176,8 @@ module.exports = function(app, userModel) {
         var userResponse = userModel.findUserById(userId)
             .then(
                 function(doc) {
-                    //console.log(doc);
                     res.json(doc);
                 },
-                // send error if promise rejected
                 function(err) {
                     res.status(400).send(err);
                 }
@@ -199,7 +192,6 @@ module.exports = function(app, userModel) {
                     delete doc.password;
                     res.json(doc);
                 },
-                // send error if promise rejected
                 function(err) {
                     res.status(400).send(err);
                 }
@@ -236,7 +228,6 @@ module.exports = function(app, userModel) {
     }
 
     function login(req, res) {
-        //console.log("in server login");
         var user = req.user;
         loggedInUser = user;
         res.json(user);
@@ -272,7 +263,6 @@ module.exports = function(app, userModel) {
         userModel.followUser(userId, otherUser)
             .then(
                 function (doc) {
-                    //console.log(doc);
                     res.json(doc);
                 },
 
@@ -290,7 +280,6 @@ module.exports = function(app, userModel) {
         userModel.unfollowUser(userId, otherUserId)
             .then(
                 function (doc) {
-                    //console.log(doc);
                     res.json(doc);
                 },
 
@@ -305,8 +294,6 @@ module.exports = function(app, userModel) {
         userModel.findUserFavorites(userId)
             .then(
             function(doc) {
-                //console.log("findUserFavorites");
-                //console.log(doc);
                 res.json(doc.favoriteMusic);
             },
 
@@ -322,8 +309,6 @@ module.exports = function(app, userModel) {
         userModel.findFollowing(userId)
             .then(
                 function(doc) {
-                    //console.log("findUserFavorites");
-                    //console.log(doc);
                     res.json(doc.following);
                 },
 
