@@ -13,7 +13,7 @@
         vm.tagName=tagValue;
 
         function init() {
-            topTracks(tagValue);
+            topSongs(tagValue);
             topArtists(tagValue);
             topAlbums(tagValue);
         }
@@ -26,9 +26,9 @@
                 });
         }
 
-        function topTracks(tagValue) {
+        function topSongs(tagValue) {
             vm.search = true;
-            tagServices.findTracksByTag(tagValue)
+            tagServices.findSongsByTag(tagValue)
                 .then(function(response) {
                     vm.tracks = displayService.displayTrackImage(response.data.tracks);
                 });

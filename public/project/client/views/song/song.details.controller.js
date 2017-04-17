@@ -22,9 +22,9 @@
             }
 
             if(mbId === null || mbId === undefined) {
-                fetchTracks(trackName,artistName);
+                fetchSongs(trackName,artistName);
             } else {
-                fetchTracks(mbId);
+                fetchSongs(mbId);
             }
 
             musicService.findAllComments(mbId)
@@ -41,8 +41,8 @@
         }
         init();
 
-        function fetchTracks(mbId) {
-            trackService.findTracksByMbId(mbId)
+        function fetchSongs(mbId) {
+            trackService.findSongsByMbId(mbId)
                 .then(function(response) {
                     //console.log(response);
                     vm.details = response.data.track;
@@ -50,13 +50,13 @@
                     vm.artist = vm.details.artist;
                     vm.tags = vm.details.toptags.tag;
                     vm.image = displayService.displayImage(vm.album.image);
-                    similarTracks(vm.details.mbid);
+                    similarSongs(vm.details.mbid);
                     //console.log(vm);
                 });
         }
 
-        function fetchTracks(trackName,artistName) {
-            trackService.findTracksByTitleAndArtist(trackName,artistName)
+        function fetchSongs(trackName,artistName) {
+            trackService.findSongsByTitleAndArtist(trackName,artistName)
                 .then(function(response) {
                     console.log(response);
                     vm.details = response.data.track;
@@ -68,13 +68,13 @@
                     } else {
                         vm.image = displayService.displayImage(vm.album.image);
                     }
-                    similarTracks(vm.details.mbid);
+                    similarSongs(vm.details.mbid);
                     console.log(vm);
                 });
         }
 
-        function similarTracks(mbId) {
-                trackService.findSimilarTracks(mbId)
+        function similarSongs(mbId) {
+                trackService.findSimilarSongs(mbId)
                     .then(function (response) {
                         vm.similar = displayService.displayTrackImage(response.data.similartracks);
                     });
