@@ -78,7 +78,7 @@
 
         <!--<div class="container-fluid">
             &lt;!&ndash;<div ng-include="'views/song/song.view.html'"></div>&ndash;&gt;
-            <h4 class="page-header">Songs</h4>
+            <h4 class="page-header">Tracks</h4>
             <div class="row container-fluid">
                 <ul ng-repeat="song in model.tracks | limitTo: 30">
                     <li>
@@ -89,7 +89,7 @@
         </div>-->
 
         <div id="similar" class="container-fluid">
-            <h4 class="page-header">Songs similar to {{model.details.name}}</h4>
+            <h4 class="page-header">Tracks similar to {{model.details.name}}</h4>
             <div class="row container-fluid">
                 <ul ng-repeat="similarTrack in model.similar | limitTo: 30">
                     <li id="trackList">

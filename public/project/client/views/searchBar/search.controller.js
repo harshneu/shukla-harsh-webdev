@@ -41,7 +41,7 @@
 
         function fetchTrack(searchTitle) {
             vm.search = true;
-            trackService.findSongsByTitle(searchTitle)
+            trackService.findTracksByTitle(searchTitle)
                 .then(function (response) {
                     if(response.data) {
                         vm.track = displayService.displayTrackImage(response.data.results.trackmatches);
