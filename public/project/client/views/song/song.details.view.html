@@ -42,9 +42,7 @@
         <div class="container-fluid">
             <div id="about">
                 <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{model.album.image.large}}" alt = "No Image Found!">
-                <!--<div ng-show="artistImage.size.indexOf('mega')>=0">
-                <img class="media-object pull-left img-responsive" src="{{artistImage.#text}}" alt = "No Image Found!">
-                </div>-->
+
             </div>
             <div class="form col-sm-offset-1">
                 <label class="col-sm-3">Album:
@@ -76,18 +74,6 @@
         </div>
         <br/>
 
-        <!--<div class="container-fluid">
-            &lt;!&ndash;<div ng-include="'views/song/song.view.html'"></div>&ndash;&gt;
-            <h4 class="page-header">Songs</h4>
-            <div class="row container-fluid">
-                <ul ng-repeat="song in model.tracks | limitTo: 30">
-                    <li>
-                        <a href="#/player/{{song.name}}/{{song.artist.name}}">{{song.name}}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>-->
-
         <div id="similar" class="container-fluid">
             <h4 class="page-header">Songs similar to {{model.details.name}}</h4>
             <div class="row container-fluid">
@@ -116,16 +102,13 @@
 
         <div id="review" class="container-fluid">
             <h4 id="reviews" class="page-header">Reviews</h4>
-            <p ng-hide="currentUser"><a href="#/login">Login</a> to post reviews</p>
+            <p ng-hide="currentUser"><a href="#/login">Login</a> to post your comments</p>
             <div class="row" ng-show="currentUser">
                 <div class="col-md-6">
                     <div class="widget-area no-padding blank">
                         <div class="status-upload">
                             <form class="form-horizontal">
-                                <textarea id = "commentBox" placeholder="What are your thoughts about this music?" ng-model="model.commentBox"></textarea>
-                                <!--<ul>
-                                    <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
-                                </ul>-->
+                                <textarea id = "commentBox" placeholder="Share your views for the song Because sharing is caring." ng-model="model.commentBox"></textarea>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-2">
                                         <button type="submit" class="btn btn-default btn-sm" ng-click="model.postComment(model.details)">
@@ -134,8 +117,8 @@
                                     </div>
                                 </div>
                             </form>
-                        </div><!-- Status Upload  -->
-                    </div><!-- Widget Area -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -159,17 +142,13 @@
                                 </div>
                                 <div class="panel-body">
                                     {{comment.comment}}
-                                </div><!-- /panel-body -->
-                            </div><!-- /panel panel-default -->
-                        </div><!-- /col-sm-5 -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--
-        <footer>
-            <a href="{{model.details.url}}">Read more on Last.fm</a>
-        </footer> -->
     </div>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom ">

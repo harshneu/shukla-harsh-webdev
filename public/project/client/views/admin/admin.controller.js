@@ -1,16 +1,20 @@
 (function() {
     'use strict';
+
+    // Angular module declaration
     angular
         .module("SymphonyApp")
         .controller("AdminController", adminController);
 
+
+    //admin controller
     function adminController(UserService) {
 
         var vm = this;
 
         function init() {
             UserService
-                .getCurrentUser()
+                .getCurrentUser() // gives the current user.
                 .then(function(response) {
                     vm.user = response.data;
                     UserService.setCurrentUser(response.data);
@@ -27,7 +31,7 @@
         }
         init();
 
-        function remove(user, index)
+        function remove(user, index) //used to delete the user.
         {
             UserService
                 .deleteUserById(user._id)
@@ -36,7 +40,7 @@
                 });
         }
 
-        function update(user)
+        function update(user) //used to update the user.
         {
             if(user.roles) {
                 user.roles = user.roles.split(",");
@@ -53,9 +57,9 @@
                 });
         }
 
-        function add(user)
+        function add(user) // helps in adding the user.
         {
-            if(user.roles) {
+            if(user.roles) { // if the roles are more than one then it splits the roles by a comma seprator.
                 user.roles = user.roles.split(",");
             }
 

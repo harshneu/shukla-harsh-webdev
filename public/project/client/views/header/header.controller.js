@@ -8,8 +8,7 @@
         var vm = this;
         vm.$location = $location;
         vm.logout = logout;
-
-        // This function logs the current user out
+//Used to log out the user.
         function logout() {
 
             UserService.logout()

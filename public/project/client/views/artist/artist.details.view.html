@@ -120,9 +120,9 @@
                                 <div class="panel-heading">
                                     <a href="#/profile/{{comment.userId}}"><strong>{{comment.username}}</strong></a>
                                     <span class="text-muted">{{comment.timestamp}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-                                    <span id="removeGlyph" ng-show = "comment.userId==currentUser._id || currentUser.roles.indexOf('admin')>=0"
-                                          class="glyphicon glyphicon-remove" ng-click="model.deleteComment($index)">
-                                    </span>
+                                  <div>  <span id="removeGlyph" ng-show = "comment.userId==currentUser._id || currentUser.roles.indexOf('admin')>=0"
+                                               class="glyphicon glyphicon-remove" ng-click="model.deleteComment($index)">
+                                    </span>Delete Comment</div>
                                 </div>
                                 <div class="panel-body">
                                     {{comment.comment}}

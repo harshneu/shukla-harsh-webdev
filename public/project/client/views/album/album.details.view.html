@@ -42,20 +42,17 @@
         <div class="container-fluid album-text">
             <div id="about">
                 <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{model.details.image.large}}" alt = "No Image Found!">
-                <!--<div ng-show="artistImage.size.indexOf('mega')>=0">
-                <img class="media-object pull-left img-responsive" src="{{artistImage.#text}}" alt = "No Image Found!">
-                </div>-->
             </div>
             <div class="col-sm-offset-1">
                 <p >
-                    {{model.details.wiki.summary}}
+                    {{model.details.wiki.summary}} <!-- Gives the summary of a user-->
                 </p>
             </div>
 
-            <label class="col-sm-3">Listeners:
+            <label class="col-sm-3">Number of listening Counts:
                 <p>{{model.details.listeners}}</p>
             </label>
-            <label class="col-sm-3">Play Count:
+            <label class="col-sm-3">Number of plays:
                 <p>{{model.details.playcount}}</p>
             </label>
         </div>
@@ -63,7 +60,6 @@
         <br/>
 
         <div class="container-fluid album-text">
-            <!--<div ng-include="'views/song/song.view.html'"></div>-->
             <h4 class="page-header">Songs</h4>
             <div class="row container-fluid">
                 <ul ng-repeat="track in model.tracks | limitTo: 30">
@@ -99,9 +95,7 @@
                         <div class="status-upload">
                             <form class="form-horizontal">
                                 <textarea id = "commentBox" placeholder="What are your thoughts about this music?" ng-model="model.commentBox"></textarea>
-                                <!--<ul>
-                                    <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
-                                </ul>-->
+
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-2">
                                         <button type="submit" class="btn btn-default btn-sm" ng-click="model.postComment(model.details)">
@@ -110,8 +104,8 @@
                                     </div>
                                 </div>
                             </form>
-                        </div><!-- Status Upload  -->
-                    </div><!-- Widget Area -->
+                        </div>
+                    </div><
                 </div>
             </div>
 
@@ -119,11 +113,7 @@
             <!-- Displaying comments -->
                 <div ng-repeat="comment in model.comments">
                     <div class="row">
-                        <!--<div class="col-sm-1">
-                            <div class="thumbnail">
-                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                            </div>&lt;!&ndash; /thumbnail &ndash;&gt;
-                        </div>&lt;!&ndash; /col-sm-1 &ndash;&gt;-->
+
                         <div class="col-sm-5">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -135,9 +125,9 @@
                                 </div>
                                 <div class="panel-body">
                                     {{comment.comment}}
-                                </div><!-- /panel-body -->
-                            </div><!-- /panel panel-default -->
-                        </div><!-- /col-sm-5 -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
