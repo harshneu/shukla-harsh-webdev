@@ -9,13 +9,13 @@
 
     function chartService($http) {
         var api = {
-            findTopTracks: findTopTracks,
+            findTopSongs: findTopSongs,
             findTopArtists: findTopArtists
         };
 
         return api;
 
-        function findTopTracks() {
+        function findTopSongs() {
             var url = TOP_TRACK_URL;
             return $http.get(url);
         }

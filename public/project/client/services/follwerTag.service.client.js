@@ -13,7 +13,7 @@
     function tagServices($http) {
         var api = {
             fetchTagInfo: fetchTagInfo,
-            findTracksByTag: findTracksByTag,
+            findSongsByTag: findSongsByTag,
             findArtistsByTag: findArtistsByTag,
             findAlbumsByTag: findAlbumsByTag,
             findSimilarTag: findSimilarTag
@@ -21,7 +21,7 @@
 
         return api;
 
-        function findTracksByTag(tag) {
+        function findSongsByTag(tag) {
             var url = TAGTRACK_URL.replace("TAG", tag);
             return $http.get(url);
         }
