@@ -5,7 +5,7 @@
     'use strict';
     angular
         .module("SymphonyApp")
-        .controller("n ProfileOtherUserController", ProfileOtherUserController);
+        .controller("ProfileOtherUserController", ProfileOtherUserController);
 
     function ProfileOtherUserController($routeParams, UserService, $rootScope) {
         var vm = this;
