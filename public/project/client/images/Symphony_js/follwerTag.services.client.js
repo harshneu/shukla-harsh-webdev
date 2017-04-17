@@ -8,30 +8,30 @@
 
     angular
         .module("SymphonyApp")
-        .factory("tagService", tagService);
+        .factory("tagServices", tagServices);
 
-    function tagService($http) {
+    function tagServices($http) {
         var api = {
             fetchTagInfo: fetchTagInfo,
-            findTracksByTag: findTracksByTag,
+            findTracksByTag: findTracksByTags,
             findArtistsByTag: findArtistsByTag,
-            findAlbumsByTag: findAlbumsByTag,
-            findSimilarTag: findSimilarTag
+            findAlbumsByTag: findAlbumsByTags,
+            findSimilarTag: findSimilarTags
         };
 
         return api;
 
-        function findTracksByTag(tag) {
+        function findTracksByTags(tag) {
             var url = TAGTRACK_URL.replace("TAG", tag);
             return $http.get(url);
         }
 
-        function findArtistsByTag(tag) {
+        function findArtistsByTags(tag) {
             var url = TAGARTIST_URL.replace("TAG", tag);
             return $http.get(url);
         }
 
-        function findAlbumsByTag(tag) {
+        function findAlbumsByTags(tag) {
             var url = TAGALUMB_URL.replace("TAG", tag);
             return $http.get(url);
         }
@@ -41,7 +41,7 @@
             return $http.get(url);
         }
 
-        function findSimilarTag(tag) {
+        function findSimilarTags(tag) {
             var url = SIMILARTAG_URL.replace("TAG", tag);
             return $http.get(url);
         }

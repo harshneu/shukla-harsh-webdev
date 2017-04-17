@@ -397,6 +397,10 @@ ul#tags
     padding: 3px 10px;
 }
 
+
+#title{
+    color: orange;
+}
 #tags a:link, #tags a:visited
 {
     color: #fff;

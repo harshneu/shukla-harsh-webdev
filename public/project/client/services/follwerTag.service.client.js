@@ -8,9 +8,9 @@
 
     angular
         .module("SymphonyApp")
-        .factory("tagService", tagService);
+        .factory("tagServices", tagServices);
 
-    function tagService($http) {
+    function tagServices($http) {
         var api = {
             fetchTagInfo: fetchTagInfo,
             findTracksByTag: findTracksByTag,
