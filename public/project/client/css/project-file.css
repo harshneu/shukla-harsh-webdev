@@ -68,7 +68,7 @@ body {
 
 /*styling for page header*/
 .page-header{
-    argin-top: 0
+    margin-top: 0;
     text-align: center;
     font-family: "Satisfy";
 }
@@ -186,7 +186,8 @@ label {
     border-color: #bbbbbb #a2a2a2 #888888;
     background-color: #000;
     box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em
-    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset,
+    0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
 }
 
 
@@ -231,7 +232,8 @@ label {
     border-color: #bbbbbb #a2a2a2 #888888;
     background-color: #0f0f0f !important;
     box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em
-    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+    rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3)
+    inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
 }
 
 .text{
@@ -356,10 +358,13 @@ ul, ol {
 .img-circle:hover {
     transform: scale(1.2);
 }
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+.table>thead>tr>th, .table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td, .table>tbody>tr>td,
+.table>tfoot>tr>td {
     padding: 3px;
     text-align: center;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #tags {
@@ -651,8 +656,10 @@ margin-top: 10px;}
     margin-top: 10px;
 }
 
-.dropdown-content a:hover {background-color: rgba(191, 59, 59, 0.5);
-color: #fff;}
+.dropdown-content a:hover {
+    background-color: rgba(191, 59, 59, 0.5);
+    color: #fff;
+    }
 
 .dropdown:hover .dropdown-content {
     display: block;
