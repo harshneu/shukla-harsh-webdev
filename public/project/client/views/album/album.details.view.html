@@ -75,19 +75,7 @@
             </div>
         </div>
 
-        <div id="similar" class="container-fluid album-text">
-            <h4 class="page-header">Artists similar to {{model.artist}}</h4>
-            <div ng-repeat="similarArtist in model.similar | limitTo: 5">
-                <div class="col-sm-6 col-md-3 col-ms-6 text-center hover-me">
-                    <div class="row container-fluid">
-                        <img class="media-object pull-left img-circle img-thumbnail img-responsive" src="{{similarArtist.image.medium}}" alt = "No Image Found!">
-                        <div class="container-fluid col-md-6">
-                            <a href="#/search/artist/{{similarArtist.name}}"> {{similarArtist.name}} </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <div id="fav" class="container-fluid album-text">
             <h4 class="page-header">Users who like {{model.details.name}}</h4>
