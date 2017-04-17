@@ -31,10 +31,6 @@
             return $http.put('/api/project/user/' + userId + '/music', music);
         }
 
-        function findUserFavorites(userId) {
-            return $http.get('/api/project/user/' + userId +'/music');
-        }
-
         function setCurrentUser(user) {
             $rootScope.currentUser = user;
         }
@@ -42,12 +38,6 @@
         function getCurrentUser () {
             return $http.get('/api/project/loggedin');
         }
-
-
-        function findAllUsers(callback) {
-            return $http.get('/api/project/admin/user');
-        }
-
 
         function createUser(user) {
             return $http.post('/api/project/admin/user', user);
@@ -61,6 +51,9 @@
             return $http.delete('/api/project/admin/user/' + userId);
         }
 
+        function findAllUsers(callback) {
+            return $http.get('/api/project/admin/user');
+        }
 
         function findUserById(userId) {
             return $http.get('/api/project/user/' + userId);
@@ -87,6 +80,9 @@
             return $http.post('/api/project/logout');
         }
 
+        function findUserFavorites(userId) {
+            return $http.get('/api/project/user/' + userId +'/music');
+        }
 
         function followUser(otherUser, userId) {
             return $http.post('/api/project/user/' + userId + '/follow', otherUser);

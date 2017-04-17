@@ -1,7 +1,3 @@
-
-/**
- * Created by harshshukla on 4/17/17.
- */
 (function(){
     'use strict';
     angular
@@ -58,6 +54,14 @@
                     loggedin: checkCurrentUser
                 }
             })
+            .when("/artist/details/:mb_id", {
+                templateUrl: "views/artist/artist.details.view.html",
+                controller: "ArtistController",
+                controllerAs: "model",
+                resolve: {
+                    loggedin: checkCurrentUser
+                }
+            })
             .when("/song/details/:mb_id", {
                 templateUrl: "views/song/song.details.view.html",
                 controller: "TrackController",
@@ -90,15 +94,15 @@
                     loggedin: checkLoggedin
                 }
             })
-            .when("/artist/details/:mb_id", {
-                templateUrl: "views/artist/artist.details.view.html",
-                controller: "ArtistController",
-                controllerAs: "model",
+            .when('/profile/:userId', {
+                templateUrl: "views/users/profile.otheruser.view.html",
+                controller: "ProfileOtherUserController",
+                controllerAs : "model",
                 resolve: {
                     loggedin: checkCurrentUser
                 }
-            })
 
+            })
             .when("/register", {
                 templateUrl: "views/users/register.view.html",
                 controller: "RegisterController",
@@ -116,16 +120,6 @@
                 resolve: {
                     loggedin: checkAdmin
                 }
-            })
-
-            .when('/profile/:userId', {
-                templateUrl: "views/users/profile.otheruser.view.html",
-                controller: "ProfileOtherUserController",
-                controllerAs : "model",
-                resolve: {
-                    loggedin: checkCurrentUser
-                }
-
             })
             .when("/player/:trackName/:artistName", {
                 templateUrl: "views/player/player.view.html",
@@ -212,6 +206,8 @@
 
         return deferred.promise;
     };
+
+
     var checkAdmin = function($q, $timeout, $http, $location, $rootScope)
     {
         var deferred = $q.defer();
