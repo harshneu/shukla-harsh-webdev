@@ -126,7 +126,18 @@ p {
     color: ivory;
     overflow-wrap: break-word;
 }
+.btnn{
+    background-color: #0f0f0f !important;
+    border-color: #2c2c2c;
+    color: #ffffff;
+}
 
+.btnnn{
+    background-color: #0f0f0f !important;
+    border-color: #2c2c2c;
+    color: #ffffff;
+    border-radius: 50px;
+}
 .panel-body {
     color: white;
     background-color: rgba(255, 255, 255, 0);
@@ -686,15 +697,6 @@ color: #fff;}
     color: #fff;
 }
 
-.btnn{
-    background-color: #0f0f0f !important;
-    border-color: #2c2c2c;
-    color: #ffffff;
-}
-
-.btnnn{
-    background-color: #0f0f0f !important;
-    border-color: #2c2c2c;
-    color: #ffffff;
-    border-radius: 50px;
+.text-follow{
+    text-transform: capitalize;
 }
