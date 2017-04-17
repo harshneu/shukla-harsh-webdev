@@ -180,6 +180,9 @@ label {
     box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em
     rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
 }
+#title{
+    color: orange;
+}
 
 .c {
     list-style-type: square;
@@ -357,7 +360,7 @@ ul, ol {
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
     padding: 3px;
     text-align: center;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0 ,0);
 }
 
 #tags {
@@ -484,6 +487,11 @@ ul#tags
 }
 
 #profileDetails {
+    color:white;
+    font-weight: bold;
+}
+
+#profileDetails1 {
     color:white;
     font-weight: bold;
 }
