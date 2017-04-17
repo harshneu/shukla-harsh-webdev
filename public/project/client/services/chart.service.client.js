@@ -7,7 +7,6 @@
         .module("SymphonyApp")
         .factory("chartService", chartService);
 
-    // declaration for playlist capablity.
     function chartService($http) {
         var api = {
             findTopSongs: findTopSongs,
@@ -16,13 +15,11 @@
 
         return api;
 
-        //function returns top songs.
         function findTopSongs() {
             var url = TOP_TRACK_URL;
             return $http.get(url);
         }
 
-        //function returns the top artists.
         function findTopArtists() {
             var url = TOP_ARTIST_URL;
             return $http.get(url);

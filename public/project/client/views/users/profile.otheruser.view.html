@@ -38,7 +38,7 @@
                 <button ng-hide="model.followUsers.indexOf(model.user.username) >=0 "
                         type="button" class="btn btn-primary" ng-click="model.followUser()">Follow</button>
             </div>
-            <div ng-switch-when="no" class="text-follow">
+            <div ng-switch-when="no">
                 <!--<button ng-show="model.followUsers.indexOf(model.user.username) >=0 " type="button" class="btn btn-primary" ng-click="model.unfollowUser()">Unollow</button>-->
                 <p ng-show="model.followUsers.indexOf(model.user.username) >=0">You are following {{model.user.firstName}}!</p>
                 <button ng-show="model.followUsers.indexOf(model.user.username) >=0 "
