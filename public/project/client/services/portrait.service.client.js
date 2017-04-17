@@ -16,31 +16,31 @@
         return api;
 
         function displayImage (images){
-            for (var i in images){
-                images[images[i]['size']] = images[i]['#text'];
+            for (var r in images){
+                images[images[r]['size']] = images[r]['#text'];
             }
         }
 
         function displayArtistImage(res) {
             var artists = res.artist;
-            for (var a in artists)
-                displayImage(artists[a].image);
+            for (var c in artists)
+                displayImage(artists[c].image);
             return res.artist;
         }
-
-        function displayTrackImage(res) {
-            var tracks = res.track;
-            for (var t in tracks)
-                displayImage(tracks[t].image);
-            return res.track;
-        }
-
         function displayAlbumImage(res) {
             var albums = res.album;
             for (var a in albums)
                 displayImage(albums[a].image);
             return res.album;
         }
+        function displayTrackImage(res) {
+            var tracks = res.track;
+            for (var s in tracks)
+                displayImage(tracks[s].image);
+            return res.track;
+        }
+
+
     }
 
 })();

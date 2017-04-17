@@ -1,7 +1,9 @@
 (function(){
     'use strict';
-    var TOP_ARTIST_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=chart.gettopartists&limit=16";
-    var TOP_TRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=660fbf2c8a0c4658c2dd385ac4273bc2&format=json&method=chart.gettoptracks&limit=16";
+
+    //Api URl fins tracks and artists from the api and renders them on the application.
+    var TOP_ARTIST_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=chart.gettopartists&limit=16";
+    var TOP_TRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=chart.gettoptracks&limit=16";
 
     angular
         .module("SymphonyApp")

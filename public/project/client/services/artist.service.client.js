@@ -9,6 +9,7 @@
         .module("SymphonyApp")
         .factory("artistService", artistService);
 
+    //api functions declaration
     function artistService($http) {
         var api = {
             findArtistByMbId: findArtistByMbId,
