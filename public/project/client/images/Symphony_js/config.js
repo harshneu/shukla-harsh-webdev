@@ -164,13 +164,9 @@
             .success(function(user)
             {
                 $rootScope.errorMessage = null;
-                // User is Authenticated
                 if (user !== '0')
                 {
-                    //console.log("in checkCurrentUser");
-                    //console.log(user);
                     $rootScope.currentUser = user;
-                    //console.log($rootScope.currentUser);
                 }
                 deferred.resolve();
             });
@@ -185,14 +181,9 @@
         $http.get('/api/project/loggedin').success(function(user)
         {
             $rootScope.errorMessage = null;
-            // User is Authenticated
-            //console.log(user);
             if (user !== '0')
             {
                 $rootScope.currentUser = user;
-                //$rootScope.currentUser = user[0];
-                //console.log("in checkLoggedin");
-                //console.log($rootScope.currentUser);
                 deferred.resolve();
             }
             // User is Not Authenticated
@@ -214,14 +205,12 @@
 
         $http.get('/api/project/loggedin').success(function(user)
         {
-            //console.log(user);
             $rootScope.errorMessage = null;
             // User is Authenticated
             if (user !== '0' && user.roles.indexOf('admin') != -1)
             {
                 $rootScope.currentUser = user;
                 console.log("in checkAdmin");
-                //console.log($rootScope.currentUser);
                 deferred.resolve();
             }
         });

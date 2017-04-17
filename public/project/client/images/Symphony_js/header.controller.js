@@ -9,7 +9,6 @@
         vm.$location = $location;
         vm.logout = logout;
 
-        // This function logs the current user out
         function logout() {
 
             UserService.logout()

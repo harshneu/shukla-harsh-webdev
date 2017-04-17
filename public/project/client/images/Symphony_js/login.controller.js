@@ -12,8 +12,6 @@
         function init() {
 
         } init();
-        // This function verifys the credentials of a user and logs then in.
-        // If the username or password is incorrect it sends an error message to be displayed.
         function login(user) {
             vm.message = null;
             if(!user || !user.password || !user.username) {

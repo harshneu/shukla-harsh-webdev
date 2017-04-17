@@ -25,10 +25,8 @@
                     console.log(response);
                     vm.musicTitle = response.data;
                 });
-            //console.log(vm);
         } init();
 
-        // This function updates the details of a particular user ID
         function update(modelUser) {
 
             var id=modelUser._id;

@@ -16,15 +16,12 @@
         function fetchTopChart() {
             chartService.findTopTracks()
                 .then(function(response) {
-                    //console.log(response);
                     vm.topTracks = displayService.displayTrackImage(response.data.tracks);
                 });
             chartService.findTopArtists()
                 .then(function(response) {
-                    //console.log(response);
                     vm.topArtists = displayService.displayArtistImage(response.data.artists);
                 });
-            //console.log(vm);
         }
     }
 })();
