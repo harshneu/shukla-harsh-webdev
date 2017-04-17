@@ -70,7 +70,7 @@
         }
 
         function trackInfo(mbId) {
-            artistService.findSongsByMbId(mbId)
+            artistService.findTracksByMbId(mbId)
                 .then(function (response) {
                     vm.data = response.data;
                     vm.tracks = displayService.displayTrackImage(vm.data.toptracks);

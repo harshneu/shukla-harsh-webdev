@@ -14,10 +14,10 @@
         init();
 
         function fetchTopChart() {
-            chartService.findTopSongs()
+            chartService.findTopTracks()
                 .then(function(response) {
                     //console.log(response);
-                    vm.topSongs = displayService.displayTrackImage(response.data.tracks);
+                    vm.topTracks = displayService.displayTrackImage(response.data.tracks);
                 });
             chartService.findTopArtists()
                 .then(function(response) {

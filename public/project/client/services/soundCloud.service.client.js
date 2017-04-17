@@ -5,7 +5,7 @@ function playSong(genre) {
     SC.get('/tracks', {
         genres: genre, limit:10
     }, function (tracks) {
-        console.log("Songs");
+        console.log("Tracks");
         console.log(tracks);
         SC.oEmbed(tracks[4].uri, {auto_play: false, maxHeight: 200}, document.getElementById('player'));
 
