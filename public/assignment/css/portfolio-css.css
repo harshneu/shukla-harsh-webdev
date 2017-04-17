@@ -59,6 +59,12 @@ body {
     padding: 15px;
 }
 
+.text-justified{
+    text-align: justify;
+    font-family: Raleway;
+
+}
+
 #intro-text {
     margin: auto;
     text-align: center;
@@ -89,7 +95,8 @@ body {
     color: #000;
     font-weight: bolder;
     padding: 0.5vw;
-font-family: Raleway}
+    font-family: Raleway
+}
 
 .li{
     font-family: Raleway;
@@ -248,3 +255,4 @@ footer {
     font-family: Copperplate;
     font-size: larger;
 }
+
