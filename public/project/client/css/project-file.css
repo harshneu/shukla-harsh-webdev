@@ -191,6 +191,11 @@ label {
     text-transform: capitalize;
     color:#fff;
 }
+
+#profileDetails{
+    text-transform: capitalize;
+    font-family: Raleway;
+}
 .tags{
     color: #ffffff;
 }
@@ -411,7 +416,15 @@ ul#tags
     text-transform: capitalize;
 }
 
+.label-left{
+    font-family: "Marker Felt";
+    color: #fff !important;
+}
 
+.control-label{
+    font-family: "Marker Felt";
+    color: #fff !important;
+}
 
 #tagLabel {
     color: #fff;
