@@ -95,8 +95,8 @@
                 }
             })
             .when('/profile/:userId', {
-                templateUrl: "views/users/profile.readonly.view.html",
-                controller: "ProfileReadOnlyController",
+                templateUrl: "views/users/profile.otheruser.view.html",
+                controller: "ProfileOtherUserController",
                 controllerAs : "model",
                 resolve: {
                     loggedin: checkCurrentUser

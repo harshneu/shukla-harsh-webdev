@@ -5,9 +5,9 @@
     'use strict';
     angular
         .module("SymphonyApp")
-        .controller("ProfileReadOnlyController", ProfileReadOnlyController);
+        .controller("n ProfileOtherUserController", ProfileOtherUserController);
 
-    function ProfileReadOnlyController($routeParams, UserService, $rootScope) {
+    function ProfileOtherUserController($routeParams, UserService, $rootScope) {
         var vm = this;
 
         var currUser= $rootScope.currentUser;
