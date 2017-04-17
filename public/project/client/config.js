@@ -86,23 +86,7 @@
                     loggedin: checkCurrentUser
                 }
             })
-            .when("/profile", {
-                templateUrl: "views/users/profile.view.html",
-                controller: "ProfileController",
-                controllerAs: "model",
-                resolve: {
-                    loggedin: checkLoggedin
-                }
-            })
-            .when('/profile/:userId', {
-                templateUrl: "views/users/profile.otheruser.view.html",
-                controller: "ProfileOtherUserController",
-                controllerAs : "model",
-                resolve: {
-                    loggedin: checkCurrentUser
-                }
 
-            })
             .when("/register", {
                 templateUrl: "views/users/register.view.html",
                 controller: "RegisterController",
@@ -120,6 +104,23 @@
                 resolve: {
                     loggedin: checkAdmin
                 }
+            })
+            .when("/profile", {
+                templateUrl: "views/users/profile.view.html",
+                controller: "ProfileController",
+                controllerAs: "model",
+                resolve: {
+                    loggedin: checkLoggedin
+                }
+            })
+            .when('/profile/:userId', {
+                templateUrl: "views/users/profile.otheruser.view.html",
+                controller: "ProfileOtherUserController",
+                controllerAs : "model",
+                resolve: {
+                    loggedin: checkCurrentUser
+                }
+
             })
             .when("/player/:trackName/:artistName", {
                 templateUrl: "views/player/player.view.html",
@@ -156,27 +157,6 @@
             });
     }
 
-    var checkCurrentUser = function($q, $timeout, $http, $location, $rootScope)
-    {
-        var deferred = $q.defer();
-
-        $http.get('/api/project/loggedin')
-            .success(function(user)
-            {
-                $rootScope.errorMessage = null;
-                // User is Authenticated
-                if (user !== '0')
-                {
-                    //console.log("in checkCurrentUser");
-                    //console.log(user);
-                    $rootScope.currentUser = user;
-                    //console.log($rootScope.currentUser);
-                }
-                deferred.resolve();
-            });
-
-        return deferred.promise;
-    };
 
     var checkLoggedin = function($q, $timeout, $http, $location, $rootScope)
     {
@@ -206,6 +186,31 @@
 
         return deferred.promise;
     };
+
+
+    var checkCurrentUser = function($q, $timeout, $http, $location, $rootScope)
+    {
+        var deferred = $q.defer();
+
+        $http.get('/api/project/loggedin')
+            .success(function(user)
+            {
+                $rootScope.errorMessage = null;
+                // User is Authenticated
+                if (user !== '0')
+                {
+                    //console.log("in checkCurrentUser");
+                    //console.log(user);
+                    $rootScope.currentUser = user;
+                    //console.log($rootScope.currentUser);
+                }
+                deferred.resolve();
+            });
+
+        return deferred.promise;
+    };
+
+
 
 
     var checkAdmin = function($q, $timeout, $http, $location, $rootScope)
