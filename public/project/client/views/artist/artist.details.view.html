@@ -73,14 +73,14 @@
 
             <div ng-switch-when="no">
                 <a ng-click="model.userFavoritesMusic(model.details)">
-                                <span class="glyphicon glyphicon-heart-empty whites">
+                                <span"><button class="btn btn-default btnns">Like</button>
                                 </span>
                 </a>
             </div>
 
             <div ng-switch-when="yes">
                 <a ng-click="model.userFavoritesMusic(model.details)">
-                            <span class="glyphicon glyphicon-heart reds">
+                            <span><button class="btn btn-default btnns">Liked</button>
                             </span>
                 </a>
             </div>
@@ -116,11 +116,11 @@
                     <div class="row">
 
                         <div class="col-sm-5">
-                            <div class="panel panel-default">
+                            <div class="table table-responsive">
                                 <div class="panel-heading">
                                     <a href="#/profile/{{comment.userId}}"><strong>{{comment.username}}</strong></a>
-                                    <span class="text-muted">{{comment.timestamp}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-                                    <span id="removeGlyph" ng-show = "comment.userId==currentUser._id || currentUser.roles.indexOf('admin')>=0"
+                                    <span class="text-muted">{{comment.timestamp}} &nbsp; </span>
+                                    <span  ng-show = "comment.userId==currentUser._id || currentUser.roles.indexOf('admin')>=0"
                                                 ng-click="model.deleteComment($index)">Delete-Comment</span>
                                 </div>
                                 <div class="panel-body">

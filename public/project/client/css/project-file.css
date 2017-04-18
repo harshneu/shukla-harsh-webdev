@@ -84,9 +84,7 @@ body {
     color: green;
 }
 /* color constants */
-.reds {
-    color: red;
-}
+
 
 
 /* links css */
@@ -130,10 +128,13 @@ p {
 
 .panel-body {
     color: white;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: cornflowerblue;
+}
+.panel-heading{
+    background-color: #2b669a;
 }
 
-.panel-default>.panel-heading {
+.panel-default {
     background-color: rgba(78, 20, 52, 0.55);
     border-color: #122b40;
 }
@@ -467,14 +468,8 @@ ul#tags
     color:#fff;
 }
 
-.glyphicon-heart{
-    font-size: 35px;
-}
 
-.whites{
-    color: white;
-    font-size: 35px;
-}
+
 
 .comment{
     font-family: Cursive;
@@ -699,3 +694,10 @@ color: #fff;}
     color: #ffffff;
     border-radius: 50px;
 }
+
+.btnns{
+    min-width: 15px !important;
+    max-width: 90px !important;
+    font-size: 10px;
+}
+
