@@ -28,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project-file.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project-file.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/client/css/project-file.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="133" column="30" lean-forward="false" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+            <state relative-caret-position="133">
+              <caret line="137" column="15" lean-forward="true" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/project/client/views/header/header.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="94" lean-forward="false" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -73,16 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="466">
               <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/test/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,8 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.c</find>
-      <find>page-header</find>
       <find>c a</find>
       <find>page</find>
       <find>readonly</find>
@@ -157,8 +155,10 @@
       <find>red</find>
       <find>heart</find>
       <find>colored</find>
-      <find>reds</find>
       <find>panel</find>
+      <find>reds</find>
+      <find>glyphicon-musi</find>
+      <find>panel-hea</find>
     </findStrings>
     <replaceStrings>
       <replace>Symphony</replace>
@@ -203,7 +203,6 @@
         <option value="$PROJECT_DIR$/public/project/client/services/soundCloud.service.client.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.controller.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/follwrTag/followrTag.controller.js" />
-        <option value="$PROJECT_DIR$/public/project/client/views/header/header.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/home/home.controller.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/home/home.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/searchBar/search.controller.js" />
@@ -234,6 +233,7 @@
         <option value="$PROJECT_DIR$/public/project/client/views/song/song.details.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html" />
         <option value="$PROJECT_DIR$/public/project/client/css/project-file.css" />
+        <option value="$PROJECT_DIR$/public/project/client/views/header/header.view.html" />
       </list>
     </option>
   </component>
@@ -719,12 +719,12 @@
       <workItem from="1492394593240" duration="7366000" />
       <workItem from="1492460822566" duration="477000" />
       <workItem from="1492463191034" duration="355000" />
-      <workItem from="1492485094858" duration="1694000" />
+      <workItem from="1492485094858" duration="3221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110260000" />
+    <option name="totallyTimeSpent" value="111787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -882,6 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="64" column="61" lean-forward="false" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -926,13 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="421" column="0" lean-forward="false" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/client/views/header/header.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="71" lean-forward="false" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,8 +1114,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/css/project-file.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="133" column="30" lean-forward="false" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+        <state relative-caret-position="133">
+          <caret line="137" column="15" lean-forward="true" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/client/views/header/header.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="94" lean-forward="false" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
           <folding />
         </state>
       </provider>

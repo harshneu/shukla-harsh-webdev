@@ -134,6 +134,10 @@ p {
     background-color: #2b669a;
 }
 
+.reds{
+    color: red;
+}
+
 .panel-default {
     background-color: rgba(78, 20, 52, 0.55);
     border-color: #122b40;
