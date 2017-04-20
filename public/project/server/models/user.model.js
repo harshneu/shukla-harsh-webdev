@@ -21,7 +21,9 @@ module.exports = function (db, mongoose) {
         removeFavoriteUser:removeFavoriteUser,
         findUserFavorites : findUserFavorites,
         followUser : followUser,
-        unfollowUser : unfollowUser
+        unfollowUser : unfollowUser,
+        findUserByGoogleId: findUserByGoogleId
+
     };
     return api;
 
@@ -73,6 +75,9 @@ module.exports = function (db, mongoose) {
         return deferred.promise;
     }
 
+    function findUserByGoogleId(googleId) {
+                return ProjectUserModel.findOne({"google.id": googleId})
+    }
 
     function findUserById(userId) {
         var deferred = q.defer();
