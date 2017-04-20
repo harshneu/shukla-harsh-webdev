@@ -6,10 +6,6 @@ module.exports = function(mongoose) {
         firstName : String,
         lastName : String,
         emails : [String],
-        google: {
-            id:    String,
-            token: String
-        },
         phones : [String],
         roles : [String],
         favoriteMusic : [{mbId : String, musicTitle : String}],
