@@ -51,4 +51,4 @@ app.get('/hello', function(req, res){
 // for services
 require("./public/project/server/app.js")(app, db, mongoose);
 
-app.listen(port)
+app.listen(3000)

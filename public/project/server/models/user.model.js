@@ -21,12 +21,12 @@ module.exports = function (db, mongoose) {
         removeFavoriteUser:removeFavoriteUser,
         findUserFavorites : findUserFavorites,
         followUser : followUser,
-        unfollowUser : unfollowUser
+        unfollowUser : unfollowUser,
+        findUserByGoogleId: findUserByGoogleId
     };
     return api;
 
     function createUser(user) {
-        console.log("hiii");
         var deferred = q.defer();
 
         ProjectUserModel.create(user, function (err, doc) {
@@ -59,6 +59,10 @@ module.exports = function (db, mongoose) {
         return deferred.promise;
     }
 
+    function findUserByGoogleId(googleId) {
+        return ProjectUserModel.findOne({"google.id": googleId})
+
+    }
     function findAllUsers() {
         var deferred = q.defer();
 
