@@ -35,7 +35,7 @@ module.exports = function(app, userModel) {
     var googleConfig = {
         clientID     : "1001582057320-a9up2m3tlghoe4aok2nsf04975ca96k1.apps.googleusercontent.com", //process.env.GOOGLE_CLIENT_ID,
         clientSecret : "u7KywSaF2LJM69cyXzfu6vpD", //process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL  :  "http://shukla-harsh-webdev.herokuapp.com/google/auth/callback" //process.env.GOOGLE_CALLBACK_URL
+        callbackURL  :  "http://localhost:3000/google/auth/callback" //process.env.GOOGLE_CALLBACK_URL
     };
 
 
