@@ -737,7 +737,9 @@ div.social-wrap button:active {
 }
 
 
-
+#googleplus a{
+    color: white !important;
+}
 
 ul.sm-wrap {
     list-style-type: none;
