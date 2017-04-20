@@ -1,6 +1,8 @@
 var passport         = require('passport');
 var LocalStrategy    = require('passport-local').Strategy;
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
+
 var bcrypt = require("bcrypt-nodejs");
 
 module.exports = function(app, userModel) {
@@ -27,6 +29,16 @@ module.exports = function(app, userModel) {
     app.get('/api/project/user/:userId/following', findFollowing);
 
     passport.use(new LocalStrategy(localStrategy));
+
+    var facebookConfig = {
+        clientID:      process.env.FACEBOOK_CLIENT_ID,
+        clientSecret:  process.env.FACEBOOK_CLIENT_SECRET,
+        callbackURL:   process.env.FACEBOOK_CALLBACK_URL,
+        profileFields: ['id','displayName', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified']
+    };
+
+    passport.use(new FacebookStrategy(facebookConfig, facebookStrategy));
+
     passport.serializeUser(serializeUser);
     passport.deserializeUser(deserializeUser);
 
@@ -35,6 +47,10 @@ module.exports = function(app, userModel) {
                 clientSecret : process.env.GOOGLE_CLIENT_SECRET,
                 callbackURL  : process.env.GOOGLE_CALLBACK_URL
        };
+
+
+
+
      app.get('/google/auth/', passport.authenticate('google', { scope : ['profile', 'email'] }));
      app.get('/google/auth/callback',
              passport.authenticate('google', {
@@ -44,6 +60,8 @@ module.exports = function(app, userModel) {
          }));
 
          passport.use(new GoogleStrategy(googleConfig, googleStrategy));
+
+
      function googleStrategy(token, refreshToken, profile, done) {
              userModel
                  .findUserByGoogleId(profile.id)
@@ -98,6 +116,46 @@ module.exports = function(app, userModel) {
                     if (err) { return done(err); }
                 }
             );
+    }
+
+    app.get('/auth/facebook',passport.authenticate('facebook',{ scope : 'email'}));
+    app.get('/auth/facebook/callback',passport.authenticate('facebook', {
+        failureRedirect: '/#/login'
+    }), function(req, res){
+        var url = '/project/client/index.html#/home' + req.user._id.toString();
+        res.redirect(url);
+    });
+
+    function facebookStrategy(token, refreshToken, profile, done) {
+        userModel
+            .findUserByFacebookId(profile.id)
+            .then(function(user) {
+                    if(user) {
+                        // If User exists
+                        return done(null, user);
+                    } else {
+                        var names = profile.displayName.split(" ");
+                        var newFacebookUser = {
+
+                            firstName:  names[0],
+                            lastName:  names[1],
+                            username: names[0] ,
+                            facebook: {
+                                id:    profile.id,
+                                token: token
+                            },
+                            email: profile.emails[0].value
+                        };
+                        userModel
+                            .createUser(newFacebookUser)
+                            .then(function (user) {
+                                return done(null, user);
+                            });
+                    }
+                },
+                function(err) {
+                    if (err) { return done(err); }
+                });
     }
 
     function serializeUser(user, done) {

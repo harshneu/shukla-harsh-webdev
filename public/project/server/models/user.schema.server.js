@@ -10,6 +10,10 @@ module.exports = function(mongoose) {
                   id:    String,
                   token: String
             },
+        facebook: {
+            id:String,
+            token: String
+        },
         phones : [String],
         roles : [String],
         favoriteMusic : [{mbId : String, musicTitle : String}],

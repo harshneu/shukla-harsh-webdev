@@ -22,13 +22,17 @@ module.exports = function (db, mongoose) {
         findUserFavorites : findUserFavorites,
         followUser : followUser,
         unfollowUser : unfollowUser,
+        findUserByFacebookId: findUserByFacebookId,
         findUserByGoogleId: findUserByGoogleId
+
 
     };
     return api;
+    function findUserByFacebookId(facebookId) {
+        return ProjectUserModel.findOne({'facebook.id': facebookId});
+    }
 
     function createUser(user) {
-        console.log("hiii");
         var deferred = q.defer();
 
         ProjectUserModel.create(user, function (err, doc) {
