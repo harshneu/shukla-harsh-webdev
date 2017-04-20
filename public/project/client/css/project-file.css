@@ -705,3 +705,66 @@ color: #fff;}
     font-size: 10px;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+div.social-wrap button {
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
+}
+
+button#googleplus {
+    border-color: #111;
+    background-color: #222;
+    text-shadow: #333 -1px -1px 0;
+    background-image: url(http://www.iconsdb.com/icons/preview/white/google-plus-xxl.png);
+}
+
+div.social-wrap button:active {
+    background-color: #222;
+}
+
+
+
+
+ul.sm-wrap {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul.sm-wrap li {
+    font-family: "Helvetica", sans-serif;
+    font-size: 11px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+ul.sm-wrap li#facebook-sm {
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}
+
+ul.sm-wrap li#twitter-sm {
+    background-image: url(https://g.twimg.com/Twitter_logo_blue.png);
+}
+
+ul.sm-wrap li#gplus-sm {
+    background-image: url(https://lh3.googleusercontent.com/-IMGb4CkWC98/VeXR6rWlM1I/AAAAAAAA7c4/aC-I28R6_psCNtxmIXAtNuMja5wCYUR9A/w1664-h1664/GooglePlus-logos-02.png);
+}
+
+ul.sm-wrap a {
+    text-decoration: none;
+}
