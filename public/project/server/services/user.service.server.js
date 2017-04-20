@@ -43,7 +43,6 @@ module.exports = function(app, userModel) {
     app.get('/google/auth/callback',
         passport.authenticate('google', {
             successRedirect: '/project/client/index.html#/home',
-
             failureRedirect: '/#/login'
         }));
 
