@@ -38,8 +38,8 @@ module.exports = function(app, userModel) {
      app.get('/google/auth/', passport.authenticate('google', { scope : ['profile', 'email'] }));
      app.get('/google/auth/callback',
              passport.authenticate('google', {
-                     successRedirect: '/#/home',
-        
+                     successRedirect: '/project/client/index.html#/home',
+
                      failureRedirect: '/#/login'
          }));
 
