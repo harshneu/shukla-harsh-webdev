@@ -33,16 +33,16 @@ module.exports = function(app, userModel) {
     passport.deserializeUser(deserializeUser);
 
     var googleConfig = {
-        clientID     : "1001582057320-a9up2m3tlghoe4aok2nsf04975ca96k1.apps.googleusercontent.com", //process.env.GOOGLE_CLIENT_ID,
-        clientSecret : "u7KywSaF2LJM69cyXzfu6vpD", //process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL  :  "http://shukla-harsh-webdev.herokuapp.com/google/auth/callback" //process.env.GOOGLE_CALLBACK_URL
+        clientID     : process.env.GOOGLE_CLIENT_ID,
+        clientSecret : process.env.GOOGLE_CLIENT_SECRET,
+        callbackURL  : process.env.GOOGLE_CALLBACK_URL
     };
 
 
     app.get('/google/auth/', passport.authenticate('google', { scope : ['profile', 'email'] }));
     app.get('/google/auth/callback',
         passport.authenticate('google', {
-            successRedirect: '/#/home',
+            successRedirect: '/project/client/index.html#/home',
 
             failureRedirect: '/#/login'
         }));
@@ -91,10 +91,8 @@ module.exports = function(app, userModel) {
             .then(
                 function(user) {
                     if(user && bcrypt.compareSync(password, user.password)) {
-                        console.log("hello");
                         return done(null, user);
                     } else {
-                        console.log("he");
                         return done(null, false);
                     }
                 },

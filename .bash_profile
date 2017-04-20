@@ -1,0 +1,3 @@
+export GOOGLE_CLIENT_ID=1001582057320-a9up2m3tlghoe4aok2nsf04975ca96k1.apps.googleusercontent.com
+export GOOGLE_CLIENT_SECRET=u7KywSaF2LJM69cyXzfu6vpD
+GOOGLE_CALLBACK_URL=http://localhost:3000/google/auth/callback
