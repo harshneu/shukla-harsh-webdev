@@ -7,7 +7,6 @@ var bcrypt = require("bcrypt-nodejs");
 
 module.exports = function(app, userModel) {
 
-
     var auth = authorized;
     var loggedInUser;
 

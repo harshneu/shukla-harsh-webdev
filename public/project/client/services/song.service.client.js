@@ -1,7 +1,7 @@
 (function(){
     'use strict';
     var TRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=artist.getTopTracks&mbid=MBID&autocorrect=1";
-    var INFO_URL = "http://ws.audioscrobbler.com/2.0/?api_key=261d2d3d0eaf425704be192666494321&format=json&method=album.getInfo&mbid=MBID&autocorrect=1";
+    var INFO_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=album.getInfo&mbid=MBID&autocorrect=1";
     var TOPTRACK_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=artist.getTopTracks&mbid=MBID&autocorrect=1";
     var SIMILAR_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=song.getsimilar&mbid=MBID&autocorrect=1";
     var TRACKARTIST_URL = "http://ws.audioscrobbler.com/2.0/?api_key=a0226414b0fa5bd98dc56b8cb73242d0&format=json&method=song.getInfo&song=TRACK&artist=ARTIST&autocorrect=1";
