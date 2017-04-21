@@ -1,6 +1,6 @@
 (function(){
 
-    angular// angular module declaration.
+    angular
         .module("SymphonyApp")
         .controller("AlbumController", AlbumController);
 
@@ -16,7 +16,7 @@
         var userId;
 
         function init() {
-            if (currentUser != null) { // base condition for no current user
+            if (currentUser != null) {
                 userId = currentUser._id;
             } else {
                 userId = null;
@@ -26,7 +26,7 @@
 
             musicService.findAllComments(mbId)
                 .then(function (response) {
-                    if (response.data === null) { // Finds the comments here
+                    if (response.data === null) {
                         vm.comments = null;
                     } else {
                         vm.comments = response.data.comments;
@@ -44,7 +44,7 @@
                 .then(function (response) {
                     vm.favoriteUsers = response.data;
                     if (currentUser !== undefined) {
-                        if (vm.favoriteUsers.length > 0) { // gives the user that like a paricular composer or the singer.
+                        if (vm.favoriteUsers.length > 0) {
                             for (var i in vm.favoriteUsers) {
                                 if (vm.favoriteUsers[i].username === currentUser.username) {
                                     vm.musicLiked = "yes";
@@ -59,7 +59,7 @@
 
         function fetchAlbum(mbId) {
             albumService.findAlbumsByMbId(mbId)
-                .then(function (response) { // this function displays the image when we search the album or songs.
+                .then(function (response) {
                     vm.details = displayService.displayAlbumImage(response.data);
                     vm.albumImage = displayService.displayImage(vm.details.image);
                     vm.tags = vm.details.tags.tag;
@@ -82,12 +82,12 @@
         vm.postComment = postComment;
 
         function postComment(favMusicData) {
-            if (currentUser === undefined) { // if current user is not available it asks the user to login.
+            if (currentUser === undefined) {
                 alert("You need to login to post a comment!!");
                 $location.path("/login");
             }
             else {
-                var comment = { // if the user exists a user can post the comments.
+                var comment = {
                     commentId: (new Date).getTime(),
                     userId: $rootScope.currentUser._id,
                     username: $rootScope.currentUser.username,
@@ -109,7 +109,7 @@
 
         vm.deleteComment = deleteComment;
 
-        function deleteComment(index) { // deletes the comment by pressing the view close.
+        function deleteComment(index) {
             if (currentUser === undefined) {
                 alert("You need to login to post a comment!!");
                 $location.path("/login");

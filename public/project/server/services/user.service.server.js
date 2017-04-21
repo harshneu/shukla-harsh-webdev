@@ -6,7 +6,6 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 var bcrypt = require("bcrypt-nodejs");
 
 module.exports = function(app, userModel) {
-    userModel.createUser({username: 'admin524',password: bcrypt.hashSync('aaaaa'),roles:['user','admin']});
 
 
     var auth = authorized;
