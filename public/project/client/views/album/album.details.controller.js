@@ -1,6 +1,6 @@
 (function(){
 
-    angular// angular module declaration.
+    angular
         .module("SymphonyApp")
         .controller("AlbumController", AlbumController);
 
@@ -71,7 +71,7 @@
         }
 
         function similarArtists(artistName) {
-            if(artistName) {
+            if(artistName) { // searches for similar artists.
                 artistService.findSimilarArtists(artistName)
                     .then(function (response) {
                         vm.similar = displayService.displayArtistImage(response.data.similarartists);
