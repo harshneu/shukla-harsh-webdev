@@ -21,18 +21,58 @@
       <file leaf-file-name="artist.details.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="2070">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album.details.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.service.server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/server/services/user.service.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3705">
+              <caret line="247" column="24" lean-forward="false" selection-start-line="247" selection-start-column="24" selection-end-line="247" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/client/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album.details.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/client/views/album/album.details.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="1920">
+              <caret line="128" column="38" lean-forward="true" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -49,10 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>heart-e</find>
-      <find>rgba</find>
-      <find>panel-body</find>
-      <find>red</find>
       <find>heart</find>
       <find>colored</find>
       <find>panel</find>
@@ -79,6 +115,10 @@
       <find>aaaaa</find>
       <find>http://ws.audioscrobbler.com/2.0/?api_key=261d2d3d0eaf425704be192666494321&amp;format=json&amp;method=album.getInfo&amp;mbid=All%20That%20Remains&amp;autocorrect=1</find>
       <find>http://ws.audioscrobbler.com/2.0/?api_key=261d2d3d0eaf425704be192666494321&amp;format=json&amp;method=album.getInfo&amp;mbid</find>
+      <find>req.lo</find>
+      <find>ngRoute</find>
+      <find>routeParams</find>
+      <find>https</find>
     </findStrings>
     <replaceStrings>
       <replace>Symphony</replace>
@@ -149,12 +189,12 @@
         <option value="$PROJECT_DIR$/public/project/server/models/user.model.js" />
         <option value="$PROJECT_DIR$/public/project/client/css/project-file.css" />
         <option value="$PROJECT_DIR$/public/project/client/views/users/login.view.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.controller.js" />
         <option value="$PROJECT_DIR$/public/project/server/services/user.service.server.js" />
         <option value="$PROJECT_DIR$/public/project/client/services/album.service.client.js" />
         <option value="$PROJECT_DIR$/public/project/client/services/song.service.client.js" />
         <option value="$PROJECT_DIR$/public/project/client/views/album/album.details.view.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -642,8 +682,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -745,18 +785,20 @@
       <workItem from="1492688411686" duration="4578000" />
       <workItem from="1492698952469" duration="54000" />
       <workItem from="1492749249361" duration="2120000" />
-      <workItem from="1492768799732" duration="676000" />
+      <workItem from="1492768799732" duration="1716000" />
+      <workItem from="1492790441342" duration="483000" />
+      <workItem from="1492819811514" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127215000" />
+    <option name="totallyTimeSpent" value="128811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23960535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23819591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -994,20 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="723">
@@ -1040,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12525">
           <caret line="835" column="1" lean-forward="false" selection-start-line="835" selection-start-column="1" selection-end-line="835" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,15 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="167" column="70" lean-forward="true" selection-start-line="167" selection-start-column="70" selection-end-line="167" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,19 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/server/services/user.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/services/song.service.client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="94" lean-forward="false" selection-start-line="3" selection-start-column="94" selection-end-line="3" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="95" lean-forward="false" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,7 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="79" column="44" lean-forward="false" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,22 +1133,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/views/artist/artist.details.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="2070">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project/client/views/album/album.details.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="1920">
+          <caret line="128" column="38" lean-forward="true" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/server/services/user.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3705">
+          <caret line="247" column="24" lean-forward="false" selection-start-line="247" selection-start-column="24" selection-end-line="247" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
           <folding />
         </state>
       </provider>
