@@ -2,6 +2,9 @@
   "name": "web-dev",
   "version": "1.0.0",
   "description": "Heroku Sample Application",
+ "engines": {
+    "node": "6.11.1"
+  }
   "author": {
     "name": "Harsh Shukla"
   },
